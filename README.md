@@ -44,7 +44,7 @@ Given that you have some bitstrings stored as *main.py* produces them, you can u
 To execute the Second Order Test you need to create the sequences mixed via the *Mix_Sequences* method in *Analyse_Data.py*. Then you can do the test by calling *KS_Shen_Test*. The output will be the p-values obtained, as well as de distrutions created. Both will be in the *KS_Results* folder by default. 
 
 ## Citation
-If you use or reference this repository, please cite:
+If you use or reference this repository, please cite:  <br />
 Lucas Nicolás Hernández Bellón and Higinio Mora. Testing QRNG in Computers from the NISQ Era. https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers
 
 ## Contact
