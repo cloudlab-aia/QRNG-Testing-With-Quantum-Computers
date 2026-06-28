@@ -13,7 +13,7 @@ Lucas Nicolás Hernández Bellón and Higinio Mora
 
 **Affiliation:** Department of Computer Technology and Computation, University of Alicante, Spain   
 
-**Repository:** [https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers] (https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers)  
+**Repository:** https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers
 
 The repository is structured as follows:
   1. On *Root* there are the scripts, each focused in a specific task. We will talk about them later
@@ -45,7 +45,7 @@ To execute the Second Order Test you need to create the sequences mixed via the 
 
 ## Citation
 If you use or reference this repository, please cite:
-Lucas Nicolás Hernández Bellón and Higinio Mora. Testing QRNG in Computers from the NISQ Era. [https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers] (https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers)
+Lucas Nicolás Hernández Bellón and Higinio Mora. Testing QRNG in Computers from the NISQ Era. https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers
 
 ## Contact
 **Corresponding author:**
