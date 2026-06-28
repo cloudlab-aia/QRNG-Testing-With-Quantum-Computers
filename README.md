@@ -2,7 +2,7 @@
 
 This repository contains all code used to extract, refine and study bitstrings of QRNG computed by Quantum Computers of IBM and AWS Cloud. 
 Associated with the paper: 
-**"Testing QRNG in Computers from the NISQ Era"**
+**"Testing Quantum Randon Number Generators made with Computers from the Noisy Intermediate-Scale Quantum Era"**
 Using a simple Hadamard-Transform Circuit, one can generate strings of n bits which ideally is random. The proposition of the TFG was to 
 investigate to which point we can use the actual available QC to generate such randomness in the premise of *impredictibility*, *independance* and *uniformness* of bits in both the sequences and the space 
 containing all sequences of length n {0,1}^n.
