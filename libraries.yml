@@ -1,0 +1,24 @@
+name: QuantumComp
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - python=3.10
+  - scipy
+  - conda-forge::qiskit
+  - conda-forge::qiskit-ibm-runtime
+  - tqdm
+  - pylatexenc
+  - spyder
+  - pyqt6-sip
+  - ipykernel
+  - ipython
+  - jupyter_client
+  - jupyter_core
+  - pyqt
+  - pyzmq
+  - qt
+  - spyder-kernels
+  - uncertainties
+  - pyppmd
