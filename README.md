@@ -9,8 +9,11 @@ containing all sequences of length n {0,1}^n.
 
 **Authors:**
 Lucas Nicolás Hernández Bellón and Higinio Mora
+
 **Affiliation:** Department of Computer Technology and Computation, University of Alicante, Spain 
+
 **Repository:** [https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers] (https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers)
+
 The repository is structured as follows:
   1. On *Root* there are the scripts, each focused in a specific task. We will talk about them later
   2. *Data_Processing* contains the study logs of the sequences obtained.
