@@ -49,7 +49,6 @@ Lucas Nicolás Hernández Bellón and Higinio Mora. Testing QRNG in Computers fr
 ## Contact
 **Corresponding author:**
 Lucas Nicolás Hernández Bellón -- University of Alicante, Spain; [https://www.ua.es](https://www.ua.es)  
-
 lnhb1@alu.ua.es
 
 ## License Information
