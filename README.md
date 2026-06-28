@@ -1,6 +1,4 @@
 # QRNG_With_QC
-Work done as an Undergraduate Thesis in Physics by Lucas Hernández Bellón.
-
 This repository contains all code used to extract, refine and study bitstrings of QRNG computed by Quantum Computers of IBM and AWS Cloud. 
 Using a simple Hadamard-Transform Circuit, one can generate strings of n bits which ideally is random. The proposition of the TFG was to 
 investigate to which point we can use the actual available QC to generate such randomness in the premise of *impredictibility*, *independance* and *uniformness* of bits in both the sequences and the space 
