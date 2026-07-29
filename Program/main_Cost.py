@@ -28,11 +28,12 @@ FAQT = AD.AWS_Cost_Function(nBits,*AQT)
 FIbm = AD.IBM_Cost_Function(nBits, *Ibm)
 
 # Budget
-maxCost = 66
+maxCost = 200//3 # Budget of each computer
+bitsNeeded = 10**9 # Bits needed to satisfy statistical requirements
 #%% Plot
 plt.close("all")
 fontsize = 13 # Text scale for plots
-numbersize = [13,13] # Scale for axis tick labels
+numbersize = [15,15] # Scale for axis tick labels
 plt.rc('font', size=fontsize) # Set text scaling for plots
 #%%% AWS comparison
 fig,ax = plt.subplots()
@@ -62,10 +63,11 @@ ax2.set_ylim(0,np.max(FIbm))
 ax2.grid()
 ax2.set_xlabel("bits")
 ax2.set_ylabel(r"Cost ($ \$ $)")
-ax2.semilogx(nBits,FCep, label = "Cepheus™-1-108Q")
-ax2.semilogx(nBits, FAQT,label = "Ibex")
-ax2.semilogx(nBits,FAquila, label = "Aquila")
-ax2.plot(nBits, FIbm, label = "ibm_kingston")
-ax2.plot([minBit,maxBit],[maxCost,maxCost], linestyle = "dashed", label = f"AWS Budget ({maxCost} $\$ $)", color = "black")
-ax2.legend()
+ax2.semilogx(nBits,FCep, label = "Cepheus™-1-108Q", linewidth = 3)
+ax2.semilogx(nBits, FAQT,label = "Ibex", linewidth = 3)
+ax2.semilogx(nBits,FAquila, label = "Aquila", linewidth = 3)
+ax2.plot(nBits, FIbm, label = "ibm_kingston", linewidth = 3)
+ax2.plot([minBit,maxBit],[maxCost,maxCost], linestyle = "dashed", label = f"AWS Budget ({maxCost} $\$ $)", color = "black", linewidth = 2)
+ax2.plot([bitsNeeded,bitsNeeded],[0,10**4], linestyle = "dashed", label = "# of bits desired per QC", color = "black", linewidth = 2)
+ax2.legend(loc = "best")
 fig2.show()

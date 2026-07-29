@@ -1,45 +1,45 @@
-SECOND ORDEN TESTS RESULTS (Based on KS distance and Shen's proposal)
+SECOND ORDER TESTS RESULTS (Based on KS distance and Shen's proposal)
 Files from directories:
 	 RNG: Outputs/Simulation
 	 Mixed: Mix_Sequences/Mixed_Sim
-epsilon = 0.01 --> K = 1.9549752159266272
-
-
-	 (o) Monobit Test: 0.16 -- True
-	 (o) Frequency Within a Block Test: 0.13999999999999996 -- True
-	 (o) Run Test: 0.14 -- True
-	 (o) Longest One Block Test: 0.16000000000000003 -- True
-	 (o) Spectral Test: 0.16000000000000003 -- True
-	 (o) Approximate Entropy Test: 0.14 -- True
-	 (o) Cusum Test: 0.1 -- True
-	 (o) Maurer Test: 0.18 -- True
-	 (o) Binary Matrix Test: 0.26000000000000006 -- True
-	 (o) Linear Complexity Test: 0.28 -- True
+	 alpha = 0.01
+RESULTS (pvalues):
+	 (o) Monobit Test: 0.5441424115741981 (pvalues) -- True
+	 (o) Frequency Within a Block Test: 0.7112351950296897 (pvalues) -- True
+	 (o) Run Test: 0.711235195029689 (pvalues) -- True
+	 (o) Longest One Block Test: 0.544142411574198 (pvalues) -- True
+	 (o) Spectral Test: 0.544142411574198 (pvalues) -- True
+	 (o) Approximate Entropy Test: 0.711235195029689 (pvalues) -- True
+	 (o) Cusum Test: 0.9639452436648751 (pvalues) -- True
+	 (o) Maurer Test: 0.39273070794065446 (pvalues) -- True
+	 (o) Binary Matrix Test: 0.0680922218447663 (pvalues) -- True
+	 (o) Linear Complexity Test: 0.039681879538114355 (pvalues) -- True
 	 (o) Random Excursions Test:
-	 	 -4: 0.18000000000000005 -- True
-	 	 -3: 0.15999999999999998 -- True
-	 	 -2: 0.19999999999999996 -- True
-	 	 -1: 0.17999999999999994 -- True
-	 	 +1: 0.15999999999999992 -- True
-	 	 +2: 0.1 -- True
-	 	 +3: 0.16000000000000003 -- True
-	 	 +4: 0.19999999999999996 -- True
+	 	 -4: 0.39273070794065407 -- True
+	 	 -3: 0.5441424115741985 -- True
+	 	 -2: 0.2699996716773548 -- True
+	 	 -1: 0.39273070794065484 -- True
+	 	 +1: 0.5441424115741988 -- True
+	 	 +2: 0.9639452436648751 -- True
+	 	 +3: 0.544142411574198 -- True
+	 	 +4: 0.2699996716773548 -- True
 	 (o) Random Excursions Variant Test:
-	 	 -9: 0.18 -- True
-	 	 -8: 0.2 -- True
-	 	 -7: 0.16000000000000003 -- True
-	 	 -6: 0.1399999999999999 -- True
-	 	 -5: 0.16000000000000003 -- True
-	 	 -4: 0.16000000000000003 -- True
-	 	 -3: 0.17999999999999994 -- True
-	 	 -2: 0.24000000000000005 -- True
-	 	 -1: 0.14000000000000007 -- True
-	 	 +1: 0.12 -- True
-	 	 +2: 0.15999999999999992 -- True
-	 	 +3: 0.32 -- True
-	 	 +4: 0.26 -- True
-	 	 +5: 0.16000000000000003 -- True
-	 	 +6: 0.14 -- True
-	 	 +7: 0.16000000000000003 -- True
-	 	 +8: 0.14 -- True
+	 	 -9: 0.39273070794065446 (pvalues)-- True
+	 	 -8: 0.26999967167735456 (pvalues)-- True
+	 	 -7: 0.544142411574198 (pvalues)-- True
+	 	 -6: 0.71123519502969 (pvalues)-- True
+	 	 -5: 0.544142411574198 (pvalues)-- True
+	 	 -4: 0.544142411574198 (pvalues)-- True
+	 	 -3: 0.39273070794065484 (pvalues)-- True
+	 	 -2: 0.11224966667072488 (pvalues)-- True
+	 	 -1: 0.7112351950296885 (pvalues)-- True
+	 	 +1: 0.8642827790506042 (pvalues)-- True
+	 	 +2: 0.5441424115741988 (pvalues)-- True
+	 	 +3: 0.011952043239196616 (pvalues)-- True
+	 	 +4: 0.06809222184476636 (pvalues)-- True
+	 	 +5: 0.544142411574198 (pvalues)-- True
+	 	 +6: 0.711235195029689 (pvalues)-- True
+	 	 +7: 0.544142411574198 (pvalues)-- True
+	 	 +8: 0.711235195029689 (pvalues)-- True
+	 	 +9: 0.711235195029689 (pvalues)-- True
 

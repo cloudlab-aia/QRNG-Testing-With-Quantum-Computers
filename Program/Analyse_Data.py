@@ -36,9 +36,12 @@ import lzip as lzip # Compresor de Cadenas de Markov https://www.nongnu.org/lzip
 import pyppmd as ppm # Compresor PPM https://pyppmd.readthedocs.io/en/latest/api_guide.html
 
 from uncertainties import ufloat
+
+# For Second Order Test
+from scipy.special import kolmogorov as QKS
 #%% Global Variables
 readStep = 10**6 # N of bytes for each read order
-epsilon = 0.01 # Tolerance of tests
+alpha = 0.01 # Tolerance of tests
 #%% Functions
 
 #%%% Plots
@@ -87,7 +90,7 @@ def Compute_Prob(path, showCount = False):
         print(f"ERROR: File was not found in path \n {path}")
         return None,None
     if showCount:
-        print(f"0s: {zCount} ({zCount*100/bitCount}), 1s: {oCount} ({oCount*100/bitCount}), bits: {bitCount}, diffPer: {(oCount-zCount)/bitCount}")
+        print(f"0s: {zCount} ({zCount*100/bitCount}), 1s: {oCount} ({oCount*100/bitCount}), bits: {bitCount}, diffPer: {100*(oCount-zCount)/bitCount}")
     # Calculamos las probabilidades
     zProb  = zCount/bitCount
     oProb = 1-zProb
@@ -109,7 +112,7 @@ def Estimate_Hmin(fileName):
 def Estimate_H(fileName):
     probs = Compute_Prob(fileName)
     return -probs[0]*np.log2(probs[0]) - probs[1]*np.log2(probs[1])
-#%%% Analisis de la complejidad (distintos compresores)
+#%%% Complexity estimation by different compressor algorithms
 def Estimate_KComplexity(path):
     """
     Estimate_KComplexity:
@@ -127,7 +130,7 @@ def Estimate_KComplexity(path):
     maxComp = min(deflate,lempel,PPM)
     d = initLength - maxComp
     probD = 2**(-d)
-    return maxComp,d,probD, probD > epsilon # Si superas epsilon, eres aleatoria
+    return maxComp,d,probD, probD > alpha # If prob is greater than alpha, H0 is accepted
 #%%% Calculo de la tasa de generado
 def Compute_Creation_Ratio(filePath):
     """
@@ -158,7 +161,7 @@ def Compute_Creation_Ratio(filePath):
     ratio = totalBits/meanTime # Velocidad bits/s
     errRatio = errMean/meanTime * ratio # Error abs
     return ratio,errRatio
-#%%% Calculo de la funcion Costo 
+#%%% COST FUNCTIONS
 
 def AWS_Cost_Function(nBits,cs,ct,sMax,sMin,nqbits):
     """
@@ -182,7 +185,7 @@ def IBM_Cost_Function(nBits,ratio, cost_perSecond):
     timeNeeded = nBits/ratio 
     return cost_perSecond*timeNeeded
 
-#%%% TEST SEGUNDO ORDEN
+#%%% SECOND ORDER TEST
 def Mix_Sequences(dirPr,dirRef,outDir = "Mix_Sequences/Mixed_IBM"):
     """
     Mix Sequences:Given two bitfiles, we xor both.
@@ -201,7 +204,7 @@ def Mix_Sequences(dirPr,dirRef,outDir = "Mix_Sequences/Mixed_IBM"):
         
         bitsOut = np.empty(nOut,dtype = str)
         for i in range(nOut):
-            bitsOut[i] = bitsPr[i] ^ bitsRef[i] # ^ es la operacion XOR en bits 
+            bitsOut[i] = bitsPr[i] ^ bitsRef[i] # ^ represts XOR operation in bits
         
         prBaseName = os.path.basename(bitsPrArr[j])
         refBaseName = os.path.basename(bitsRefArr[j])
@@ -214,28 +217,35 @@ def Compute_Distribution(t,pValues):
     nPoints = len(t)
     out = np.zeros(nPoints)
     for i in range(nPoints): 
-        aux = np.where(pValues <= t[i])
-        out[i] = len(aux[0])
+        out[i] = np.sum(pValues <= t[i]) # After all True=1 and False =0
     return out/m
 
 def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     """
     dirPr: Directory containing the sequences from the problem generator
-    dirRef: Directory containing the p-values from the reference generator
+    dirMix: Directory containing the p-values from the Mix Reference^Problem
     nPoints: Number of points used for the discretization of the G distributions
     We run the complete NIST test suite
+    We expect to have as many Mixed sequences as sequences of reference RNG. 
+    So if the sample size is of m, pvalues
+    the renormalization factor of the KS metric is in the form of 
+    M = sqrt(m*m/(m+m)) = sqrt(m/2)
+    
+    We finally decided to obtain pvalues by evaluating K in the KS distribution, QKS.
+    Another approach would be to compare K with an upper bound determined by the threshold alpha,
+    K(alpha)
     """
-    K = np.sqrt(-0.5 *np.log2(epsilon/2)) # Second-order test threshold
+    #K = np.sqrt(-0.5 *np.log(alpha/2)) # Second-order test threshold K(alpha). WITH KS EVALUATION IT IS NOW NOT NECCESARY
 
     tests = [ft.monobit_test,Block_Frequency_Test,rt.run_test, rt.longest_one_block_test,st.spectral_test,aet.approximate_entropy_test,
              cst.cumulative_sums_test,ut.statistical_test,
              Binary_Matrix_Test,ct.linear_complexity_test]
 
-    testsNames = ["Monobit Test","Frequency Within a Block Test", "Run Test", "Longest One Block Test",
-                  "Spectral Test", "Approximate Entropy Test", "Cusum Test", "Maurer Test", "Binary Matrix Test",
+    testsNames = ["Monobit Test","Frequency Test Within a Block", "Runs Test", "Test for the Longest Run of Ones in a Block",
+                  "Spectral Test", "Approximate Entropy Test", "Cusum Test", "Maurer's Test", "Binary Matrix Rank Test",
                   "Linear Complexity Test"]
-
-    #tests = [ft.monobit_test] # Debugging
+    # Debugging
+    #tests = [ft.monobit_test]
     #testsNames = ["Monobit Test"]
     # Run tests separately
     nTests = len(tests)
@@ -248,7 +258,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     nPr = len(pathPr)
     nMix = len(pathMix)
 
-    if nPr > nMix:
+    if nPr > nMix: # We discard files in order to create the distributions with the same number of pvalues (m)
         minFile = nMix
     else:
         minFile = nPr
@@ -256,10 +266,11 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     Gpr = np.zeros((nTests,nPoints))
     GMix = np.zeros((nTests,nPoints))
     tMatrix = np.zeros(nTests,dtype = object)
-
+    
     pr_pValues = np.zeros((nTests,minFile))
     mix_pValues = np.zeros((nTests,minFile))
-
+    M = np.sqrt(minFile/2) # Renormalization factor simplified by m = n (M = sqrt(m*n/(m+n)))
+    
     KSResults = np.zeros(nTests)
     passArr = np.zeros(nTests,dtype = bool)
 
@@ -267,7 +278,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
         for j in tqdm.tqdm(range(minFile)):
             currMix = WF.ReadFile(pathMix[j])
             currPr = WF.ReadFile(pathPr[j])
-
+             
             # Run the test
             mix_pValues[i,j] = tests[i](currMix)[0]
             pr_pValues[i,j] = tests[i](currPr)[0]
@@ -281,9 +292,10 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
         GMix[i,:] = Compute_Distribution(tMatrix[i],mix_pValues[i,:])
 
         # Calculate KS distance
-        KSResults[i] = np.max(abs(Gpr[i,:]-GMix[i,:]))
-        passArr[i] = KSResults[i] < K
-
+        # RENORMALIZATION FACTOR INCLUDED HERE + KS distribution obtain p-value associated.
+        KSResults[i] = QKS(M*np.max(abs(Gpr[i,:]-GMix[i,:]))) # Could be done with scipy.ks_2samp
+        passArr[i] = KSResults[i] > alpha
+    
     # Handle Random Excursions separately
     print("Running Random Excursions Test...")
 
@@ -320,8 +332,8 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
         GMixRD[i,:] = Compute_Distribution(tMatrixRd[i],mixRD[i,:])
 
         # Calculate KS distance
-        KSRD[i] = np.max(abs(GprRD[i,:]-GMixRD[i,:]))
-        passRD[i] = KSRD[i] < K
+        KSRD[i] = QKS(M*np.max(abs(GprRD[i,:]-GMixRD[i,:])))
+        passRD[i] = KSRD[i] > alpha
 
 
     # Variant
@@ -329,8 +341,9 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     print("Running Random Excursions Variant Test...")
 
     nVar = 18 # Variant tests consist of 18 tests
-    mixVar = np.ones((nVar,minFile))*2 # Initialized to 2 to ignore missing cases
-    prVar = np.ones((nVar,minFile))*2
+    mixVar = np.full((nVar,minFile), np.nan) # Initialized to NaN to mark missing cases
+    prVar = np.full((nVar,minFile), np.nan)
+
     tMatrixVar = np.zeros(nVar,dtype = object)
     KSVar = np.zeros(nVar)
     passVar = np.zeros(nVar,dtype = bool)
@@ -367,21 +380,27 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
                 index = pos + 9
 
             prVar[index,j] = prAux[pr][3]
-
+    
     for i in range(nVar):
+        filtered_Mix = mixVar[i,~np.isnan(mixVar[i,:])] # ~ is for inversion of the boolean
+        filtered_Var = prVar[i, ~np.isnan(mixVar[i,:])]
+        n = len(filtered_Mix)
+        m = len(filtered_Var)
+        Mi = np.sqrt(n*m/(n+m)) # When discarding invalid results the number of pvalues obtained changes
+        
         # Check the maximum p-value to define the distribution domain
-        maxMix = np.max([mixVar[i,:],prVar[i,:]])
+        maxMix = np.max([filtered_Mix,filtered_Var])
 
         # Calculate the distributions
         tMatrixVar[i] = np.linspace(0,maxMix,nPoints)
-        GprVar[i,:] = Compute_Distribution(tMatrixVar[i],prVar[i,:])
-        GMixVar[i,:] = Compute_Distribution(tMatrixVar[i],mixVar[i,:])
+        GprVar[i,:] = Compute_Distribution(tMatrixVar[i],filtered_Var)
+        GMixVar[i,:] = Compute_Distribution(tMatrixVar[i],filtered_Mix)
 
         # Calculate KS distance
-        KSVar[i] = np.max(abs(GprVar[i,:]-GMixVar[i,:]))
-        passVar[i] = KSVar[i] < K
-
-    print("Done! Saving Results...")
+        KSVar[i] = QKS(Mi*np.max(abs(GprVar[i,:]-GMixVar[i,:])))
+        passVar[i] = KSVar[i] > alpha
+    
+    print("\nDone! Saving Results...")
 
     # Write distances to a file
     msg = []
@@ -389,14 +408,12 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     msg.append("Files from directories:")
     msg.append(f"\t RNG: {dirPr}")
     msg.append(f"\t Mixed: {dirMix}")
-    msg.append(f"epsilon = {epsilon} --> K = {K}")
+    msg.append(f"\t alpha = {alpha}")
     msg.append("")
-
-    msg.append("")
-
+    msg.append("RESULTS (pvalues):")
     for i in range(nTests):
         msg.append(f"\t (o) {testsNames[i]}: {KSResults[i]} -- {passArr[i]}")
-
+    
     # Run Test
     numbersRd = ["-4","-3","-2","-1","+1","+2","+3","+4"]
 
@@ -413,9 +430,11 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
 
     for i in range(nVar):
         msg.append(f"\t \t {numbersVar[i]}: {KSVar[i]} -- {passVar[i]}")
-
+    
+    # Saving...
     WF.Write_Analysis_Files("KS", msg, directory = outDir)
-
+    
+    
     # Write obtained distributions to a folder
     WF.Write_Distribution_Files(tMatrix, Gpr, testsNames, directory = "KS_Results/Distributions/Pr")
     WF.Write_Distribution_Files(tMatrix, GMix, testsNames, directory = "KS_Results/Distributions/Mixed")
@@ -427,7 +446,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     # Write Variant Test distributions
     numbersVar = ["-9","-8","-7","-6","-5","-4","-3","-2","-1",
                "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9"]
-
+    
     WF.Write_Distribution_Files(tMatrixVar,GprVar,numbersVar,directory = "KS_Results/Distributions/Pr/Variant_Test")
     WF.Write_Distribution_Files(tMatrixVar, GMixVar, numbersVar, directory = "KS_Results/Distributions/Mixed/Variant_Test")
 
@@ -478,10 +497,10 @@ def Binary_Matrix_Test(binary_data): # Implemented by Lucas Hernández Bellón
         for higher precision, but with sufficiently large M and Q it is not necessary
         (because their values will be < 0.005).
     """
-    X2 = (rankM - 0.2888*N)**2/(0.2888*N) + (rankM1 - 0.5776*N)**2/(0.5776*N) + (rankLessM1 - 0.1336*N)**2/(0.13336*N)
+    X2 = (rankM - 0.2888*N)**2/(0.2888*N) + (rankM1 - 0.5776*N)**2/(0.5776*N) + (rankLessM1 - 0.1336*N)**2/(0.1336*N)
     pval = np.exp(-X2/2)
     # Boolean value to check whether the test was passed
-    return pval, pval > epsilon
+    return pval, pval > alpha
 
 def Block_Frequency_Test(data):
     data_size = len(data) # To select the number of blocks
@@ -521,15 +540,15 @@ def NIST_Battery(QC,filePath):
     n_blocks = data_size//block_size # Only used for the txt message
 
     p,passMsg = Block_Frequency_Test(data)
-    message.append(Construct_Sol_Message(f"Within a Block (used {block_size} bits for each block. Used {n_blocks} blocks)", p, passMsg))
+    message.append(Construct_Sol_Message(f"Frequency Test Within a Block (used {block_size} bits for each block. Used {n_blocks} blocks)", p, passMsg))
 
     # runTest
     p,passMsg = rt.run_test(data)
-    message.append(Construct_Sol_Message("runTest",p,passMsg))
+    message.append(Construct_Sol_Message("Runs Test",p,passMsg))
 
     # Longest One Block
     p,passMsg = rt.longest_one_block_test(data)
-    message.append(Construct_Sol_Message("Longest One Block",p,passMsg))
+    message.append(Construct_Sol_Message("Test for the Longest Run of Ones in a Block",p,passMsg))
 
     # Discrete Fourier Transform (Spectral) Tests
     message.append("\t \t SPECTRAL TESTS")
@@ -568,7 +587,7 @@ def NIST_Battery(QC,filePath):
 
     # Maurer Universal Statistical Test
     p,passMsg = ut.statistical_test(data)
-    message.append(Construct_Sol_Message("Universal Maurer Test",p,passMsg))
+    message.append(Construct_Sol_Message("Maurer's Test",p,passMsg))
 
     # Binary Matrix Tests.
     """
@@ -577,7 +596,7 @@ def NIST_Battery(QC,filePath):
     I decided to implement it manually using numpy.
     """
     p,passMsg = Binary_Matrix_Test(data)
-    message.append(Construct_Sol_Message("Binary Matrix Test",p,passMsg))
+    message.append(Construct_Sol_Message("Binary Matrix Rank Test",p,passMsg))
 
     # Linear Complexity Test
     p,passMsg = ct.linear_complexity_test(data)
@@ -1118,93 +1137,93 @@ def Get_Summary_Results(dataDir, outDir="Data_Summary"):
                      f"\t \t \t --> Worst Complexity =  {np.min(maximumComplexityList)} bits",
                     f"\t \t --> Deficiency Function = {ufloat(meanDeficiency,errDeficiency)}",
                     f"\t \t\t --> Worst Deficiency Function = {np.max(DeficiencyFunctionList)}",
-                    f"\t \t --> p-value = {ufloat(meanComplexPValue,errComplexPValue)} -- {str(meanComplexPValue >= epsilon)} ({ComplexityPValuePassed})",
-                    f"\t \t\t --> Worst p-value = {np.min(ComplexPValueList)} --  {np.min(ComplexPValueList) >= epsilon}"]
+                    f"\t \t --> p-value = {ufloat(meanComplexPValue,errComplexPValue)} -- {str(meanComplexPValue >= alpha)} ({ComplexityPValuePassed})",
+                    f"\t \t\t --> Worst p-value = {np.min(ComplexPValueList)} --  {np.min(ComplexPValueList) >= alpha}"]
         
         msg.append("\t --> NIST Battery Test:")
         
         msg.append("\t \t --> FREQUENCY IN SEQUENCES")
-        msg.append(Construct_Sol_Message("Monobit_Test", ufloat(meanMonobit,errMonobit), meanMonobit >= epsilon,monobitPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(monobitList)} --  {np.min(monobitList) >= epsilon}")
-        msg.append(Construct_Sol_Message("Within a Block", ufloat(meanWithin,errWithin), meanWithin >= epsilon,withinPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(withinList)} --  {np.min(withinList) >= epsilon}")
-        msg.append(Construct_Sol_Message("Run Test", ufloat(meanRun,errRun), meanRun >= epsilon,runPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(runList)} --  {np.min(runList) >= epsilon}")
-        msg.append(Construct_Sol_Message("Longest One Block",ufloat(meanLongest,errLongest),meanLongest >= epsilon,longestPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(longestList)} --  {np.min(longestList) >= epsilon}")
+        msg.append(Construct_Sol_Message("Monobit_Test", ufloat(meanMonobit,errMonobit), meanMonobit >= alpha,monobitPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(monobitList)} --  {np.min(monobitList) >= alpha}")
+        msg.append(Construct_Sol_Message("Frequency Test Within a Block", ufloat(meanWithin,errWithin), meanWithin >= alpha,withinPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(withinList)} --  {np.min(withinList) >= alpha}")
+        msg.append(Construct_Sol_Message("Runs Test", ufloat(meanRun,errRun), meanRun >= alpha,runPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(runList)} --  {np.min(runList) >= alpha}")
+        msg.append(Construct_Sol_Message("Test for the Longest Run of Ones in a Block",ufloat(meanLongest,errLongest),meanLongest >= alpha,longestPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(longestList)} --  {np.min(longestList) >= alpha}")
         
         msg.append("\t \t SPECTRAL TESTS")
-        msg.append(Construct_Sol_Message("Spectral Test",ufloat(meanSpectral,errSpectral),meanSpectral >= epsilon,spectralPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(spectralList)} --  {np.min(spectralList) >= epsilon}")
+        msg.append(Construct_Sol_Message("Spectral Test",ufloat(meanSpectral,errSpectral),meanSpectral >= alpha,spectralPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(spectralList)} --  {np.min(spectralList) >= alpha}")
         msg.append("\t \t STATISTICAL MECHANICS TESTS")
-        msg.append(Construct_Sol_Message("Approximate Entropy Test",ufloat(meanApprox,errApprox),meanApprox >= epsilon,approxEntPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(approxEntList)} --  {np.min(approxEntList) >= epsilon}")
-        msg.append(Construct_Sol_Message("Cusum Test",ufloat(meanCusum,errCusum),meanCusum >= epsilon,cusumPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(cusumList)} --  {np.min(cusumList) >= epsilon}")
+        msg.append(Construct_Sol_Message("Approximate Entropy Test",ufloat(meanApprox,errApprox),meanApprox >= alpha,approxEntPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(approxEntList)} --  {np.min(approxEntList) >= alpha}")
+        msg.append(Construct_Sol_Message("Cusum Test",ufloat(meanCusum,errCusum),meanCusum >= alpha,cusumPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(cusumList)} --  {np.min(cusumList) >= alpha}")
         
         msg.append("\t \t \t (o) Random Excursions Test:")
-        msg.append(f"\t \t \t \t -4: {ufloat(meanRD0,errRD0)} -- {meanRD0 >= epsilon}  ({rdExc0Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc0)} --  {np.min(rdExc0) >= epsilon}")
-        msg.append(f"\t \t \t \t -3: {ufloat(meanRD1,errRD1)} -- {meanRD1 >= epsilon} ({rdExc1Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc1)} --  {np.min(rdExc1) >= epsilon}")
-        msg.append(f"\t \t \t \t -2: {ufloat(meanRD2,errRD2)} -- {meanRD2 >= epsilon}  ({rdExc2Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc2)} --  {np.min(rdExc2) >= epsilon}")
-        msg.append(f"\t \t \t \t  -1: {ufloat(meanRD3,errRD3)} -- {meanRD3 >= epsilon} ({rdExc3Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc3)} --  {np.min(rdExc3) >= epsilon}")
-        msg.append(f"\t \t \t \t +1: {ufloat(meanRD4,errRD4)} -- {meanRD4 >= epsilon} ({rdExc4Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc4)} --  {np.min(rdExc4) >= epsilon}")
-        msg.append(f"\t \t \t \t +2: {ufloat(meanRD5,errRD5)} -- {meanRD5 >= epsilon} ({rdExc5Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc5)} --  {np.min(rdExc5) >= epsilon}")
-        msg.append(f"\t \t \t \t +3: {ufloat(meanRD6,errRD6)} -- {meanRD6 >= epsilon} ({rdExc6Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc6)} --  {np.min(rdExc6) >= epsilon}")
-        msg.append(f"\t \t \t \t +4: {ufloat(meanRD7,errRD7)} -- {meanRD7 >= epsilon} ({rdExc7Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc7)} --  {np.min(rdExc7) >= epsilon}")
+        msg.append(f"\t \t \t \t -4: {ufloat(meanRD0,errRD0)} -- {meanRD0 >= alpha}  ({rdExc0Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc0)} --  {np.min(rdExc0) >= alpha}")
+        msg.append(f"\t \t \t \t -3: {ufloat(meanRD1,errRD1)} -- {meanRD1 >= alpha} ({rdExc1Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc1)} --  {np.min(rdExc1) >= alpha}")
+        msg.append(f"\t \t \t \t -2: {ufloat(meanRD2,errRD2)} -- {meanRD2 >= alpha}  ({rdExc2Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc2)} --  {np.min(rdExc2) >= alpha}")
+        msg.append(f"\t \t \t \t  -1: {ufloat(meanRD3,errRD3)} -- {meanRD3 >= alpha} ({rdExc3Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc3)} --  {np.min(rdExc3) >= alpha}")
+        msg.append(f"\t \t \t \t +1: {ufloat(meanRD4,errRD4)} -- {meanRD4 >= alpha} ({rdExc4Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc4)} --  {np.min(rdExc4) >= alpha}")
+        msg.append(f"\t \t \t \t +2: {ufloat(meanRD5,errRD5)} -- {meanRD5 >= alpha} ({rdExc5Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc5)} --  {np.min(rdExc5) >= alpha}")
+        msg.append(f"\t \t \t \t +3: {ufloat(meanRD6,errRD6)} -- {meanRD6 >= alpha} ({rdExc6Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc6)} --  {np.min(rdExc6) >= alpha}")
+        msg.append(f"\t \t \t \t +4: {ufloat(meanRD7,errRD7)} -- {meanRD7 >= alpha} ({rdExc7Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {np.min(rdExc7)} --  {np.min(rdExc7) >= alpha}")
         
         msg.append("\t \t \t (o) Random Excursions Variant Test:")
-        msg.append(f"\t \t \t \t -9: {ufloat(meanVar0,errVar0)} -- {meanVar0 >= epsilon} ({varExc0Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc0,default = np.nan)} --  {min(varExc0,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -8: {ufloat(meanVar1,errVar1)} -- {meanVar1 >= epsilon} ({varExc1Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc1,default = np.nan)} --  {min(varExc1,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -7: {ufloat(meanVar2,errVar2)} -- {meanVar2 >= epsilon} ({varExc2Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc2,default = np.nan)} --  {min(varExc2,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -6: {ufloat(meanVar3,errVar3)} -- {meanVar3 >= epsilon} ({varExc3Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc3,default = np.nan)} --  {min(varExc3,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -5: {ufloat(meanVar4,errVar4)} -- {meanVar4 >= epsilon} ({varExc4Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc4,default = np.nan)} --  {min(varExc4,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -4: {ufloat(meanVar5,errVar5)} -- {meanVar5 >= epsilon} ({varExc5Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc5,default = np.nan)} --  {min(varExc5,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -3: {ufloat(meanVar6,errVar6)} -- {meanVar6 >= epsilon} ({varExc6Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc6,default = np.nan)} --  {min(varExc6,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -2: {ufloat(meanVar7,errVar7)} -- {meanVar7 >= epsilon} ({varExc7Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc7,default = np.nan)} --  {min(varExc7,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t -1: {ufloat(meanVar8,errVar8)} -- {meanVar8 >= epsilon} ({varExc8Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc8,default = np.nan)} --  {min(varExc8,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +1: {ufloat(meanVar9,errVar9)} -- {meanVar9 >= epsilon} ({varExc9Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc9,default = np.nan)} --  {min(varExc9,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +2: {ufloat(meanVar10,errVar10)} -- {meanVar10 >= epsilon} ({varExc10Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc10,default = np.nan)} --  {min(varExc10,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +3: {ufloat(meanVar11,errVar11)} -- {meanVar11 >= epsilon} ({varExc11Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc11,default = np.nan)} --  {min(varExc11,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +4: {ufloat(meanVar12,errVar12)} -- {meanVar12 >= epsilon} ({varExc12Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc12,default = np.nan)} --  {min(varExc12,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +5: {ufloat(meanVar13,errVar13)} -- {meanVar13 >= epsilon} ({varExc13Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc13,default = np.nan)} --  {min(varExc13,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +6: {ufloat(meanVar14,errVar14)} -- {meanVar14 >= epsilon} ({varExc14Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc14,default = np.nan)} --  {min(varExc14,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +7: {ufloat(meanVar15,errVar15)} -- {meanVar15 >= epsilon} ({varExc15Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc15,default = np.nan)} --  {min(varExc15,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +8: {ufloat(meanVar16,errVar16)} -- {meanVar16 >= epsilon} ({varExc16Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc16,default = np.nan)} --  {min(varExc16,default = np.nan) >= epsilon}")
-        msg.append(f"\t \t \t \t +9: {ufloat(meanVar17,errVar17)} -- {meanVar17 >= epsilon} ({varExc17Passed})")
-        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc17,default = np.nan)} --  {min(varExc17,default = np.nan) >= epsilon}")
+        msg.append(f"\t \t \t \t -9: {ufloat(meanVar0,errVar0)} -- {meanVar0 >= alpha} ({varExc0Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc0,default = np.nan)} --  {min(varExc0,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -8: {ufloat(meanVar1,errVar1)} -- {meanVar1 >= alpha} ({varExc1Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc1,default = np.nan)} --  {min(varExc1,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -7: {ufloat(meanVar2,errVar2)} -- {meanVar2 >= alpha} ({varExc2Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc2,default = np.nan)} --  {min(varExc2,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -6: {ufloat(meanVar3,errVar3)} -- {meanVar3 >= alpha} ({varExc3Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc3,default = np.nan)} --  {min(varExc3,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -5: {ufloat(meanVar4,errVar4)} -- {meanVar4 >= alpha} ({varExc4Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc4,default = np.nan)} --  {min(varExc4,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -4: {ufloat(meanVar5,errVar5)} -- {meanVar5 >= alpha} ({varExc5Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc5,default = np.nan)} --  {min(varExc5,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -3: {ufloat(meanVar6,errVar6)} -- {meanVar6 >= alpha} ({varExc6Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc6,default = np.nan)} --  {min(varExc6,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -2: {ufloat(meanVar7,errVar7)} -- {meanVar7 >= alpha} ({varExc7Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc7,default = np.nan)} --  {min(varExc7,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t -1: {ufloat(meanVar8,errVar8)} -- {meanVar8 >= alpha} ({varExc8Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc8,default = np.nan)} --  {min(varExc8,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +1: {ufloat(meanVar9,errVar9)} -- {meanVar9 >= alpha} ({varExc9Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc9,default = np.nan)} --  {min(varExc9,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +2: {ufloat(meanVar10,errVar10)} -- {meanVar10 >= alpha} ({varExc10Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc10,default = np.nan)} --  {min(varExc10,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +3: {ufloat(meanVar11,errVar11)} -- {meanVar11 >= alpha} ({varExc11Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc11,default = np.nan)} --  {min(varExc11,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +4: {ufloat(meanVar12,errVar12)} -- {meanVar12 >= alpha} ({varExc12Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc12,default = np.nan)} --  {min(varExc12,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +5: {ufloat(meanVar13,errVar13)} -- {meanVar13 >= alpha} ({varExc13Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc13,default = np.nan)} --  {min(varExc13,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +6: {ufloat(meanVar14,errVar14)} -- {meanVar14 >= alpha} ({varExc14Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc14,default = np.nan)} --  {min(varExc14,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +7: {ufloat(meanVar15,errVar15)} -- {meanVar15 >= alpha} ({varExc15Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc15,default = np.nan)} --  {min(varExc15,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +8: {ufloat(meanVar16,errVar16)} -- {meanVar16 >= alpha} ({varExc16Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc16,default = np.nan)} --  {min(varExc16,default = np.nan) >= alpha}")
+        msg.append(f"\t \t \t \t +9: {ufloat(meanVar17,errVar17)} -- {meanVar17 >= alpha} ({varExc17Passed})")
+        msg.append(f"\t \t \t \t \t Worst p-value: {min(varExc17,default = np.nan)} --  {min(varExc17,default = np.nan) >= alpha}")
         
         msg.append("\t \t KOLMOGOROV COMPLEXITY TEST")
-        msg.append(Construct_Sol_Message("Universal Maurer Test",ufloat(meanMaurer,errMaurer),meanMaurer >= epsilon, maurerPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(maurerList)} --  {np.min(maurerList) >= epsilon}")
-        msg.append(Construct_Sol_Message("Binary Matrix Test",ufloat(meanMatrix,errMatrix),meanMatrix >= epsilon,matrixPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(matrixList)} --  {np.min(matrixList) >= epsilon}")
-        msg.append(Construct_Sol_Message("Linear Complexity Test",ufloat(meanLinear,errLinear),meanLinear >= epsilon, linearPassed))
-        msg.append(f"\t \t \t \t Worst p-value: {np.min(linearList)} --  {np.min(linearList) >= epsilon}")
+        msg.append(Construct_Sol_Message("Maurer's Test",ufloat(meanMaurer,errMaurer),meanMaurer >= alpha, maurerPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(maurerList)} --  {np.min(maurerList) >= alpha}")
+        msg.append(Construct_Sol_Message("Binary Matrix Rank Test",ufloat(meanMatrix,errMatrix),meanMatrix >= alpha,matrixPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(matrixList)} --  {np.min(matrixList) >= alpha}")
+        msg.append(Construct_Sol_Message("Linear Complexity Test",ufloat(meanLinear,errLinear),meanLinear >= alpha, linearPassed))
+        msg.append(f"\t \t \t \t Worst p-value: {np.min(linearList)} --  {np.min(linearList) >= alpha}")
         
         WF.Write_Analysis_Files(currComp,msg,directory=outDir,showEndMessage=False)
     return
