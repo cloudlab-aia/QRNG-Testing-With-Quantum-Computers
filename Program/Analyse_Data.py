@@ -18,7 +18,7 @@ import numpy as np
 import os as os
 import WriteFile as WF
 import tqdm as tqdm
-
+import matplotlib.pyplot as plt
 # Tests NIST (by stevenang: https://github.com/stevenang/randomness_testsuite)
 from NIST.ApproximateEntropy import ApproximateEntropy as aet
 from NIST.Complexity import ComplexityTest as ct
@@ -57,7 +57,7 @@ def Axe_Canvas(n,cost,ax, linesNames = [], multipleLines = False):
             ax.plot(n[i], cost[i], label = linesNames[i])
         ax.legend()
     else:
-        ax.plot(n[i],cost[i])
+        ax.plot(n,cost)
     return ax
 
 #%%% Entropy Analysis
@@ -271,7 +271,8 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     mix_pValues = np.zeros((nTests,minFile))
     M = np.sqrt(minFile/2) # Renormalization factor simplified by m = n (M = sqrt(m*n/(m+n)))
     
-    KSResults = np.zeros(nTests)
+    KSResults = np.zeros(nTests) # KS Metric results
+    secondPval = np.zeros(nTests) # PValues of the second order Test 
     passArr = np.zeros(nTests,dtype = bool)
 
     for i in tqdm.tqdm(range(nTests)):     # Calculate KS test by test
@@ -293,8 +294,9 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
 
         # Calculate KS distance
         # RENORMALIZATION FACTOR INCLUDED HERE + KS distribution obtain p-value associated.
-        KSResults[i] = QKS(M*np.max(abs(Gpr[i,:]-GMix[i,:]))) # Could be done with scipy.ks_2samp
-        passArr[i] = KSResults[i] > alpha
+        KSResults[i] = M*np.max(abs(Gpr[i,:]-GMix[i,:]))
+        secondPval[i] = QKS(KSResults[i]) #Imported from scipy.special.kolmogorov. Could also be done with scipy.ks_2samp
+        passArr[i] = secondPval[i] > alpha
     
     # Handle Random Excursions separately
     print("Running Random Excursions Test...")
@@ -305,6 +307,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     prRD = np.zeros((nRd,minFile))
     tMatrixRd = np.zeros(nRd, dtype = object)
     KSRD = np.zeros(nRd)
+    secondPvalRD = np.zeros(nRd)
     passRD = np.zeros(nRd,dtype = bool)
 
     GprRD = np.zeros((nRd,nPoints))
@@ -332,8 +335,9 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
         GMixRD[i,:] = Compute_Distribution(tMatrixRd[i],mixRD[i,:])
 
         # Calculate KS distance
-        KSRD[i] = QKS(M*np.max(abs(GprRD[i,:]-GMixRD[i,:])))
-        passRD[i] = KSRD[i] > alpha
+        KSRD[i] = M*np.max(abs(GprRD[i,:]-GMixRD[i,:]))
+        secondPvalRD[i] = QKS(KSRD[i])
+        passRD[i] = secondPvalRD[i] > alpha
 
 
     # Variant
@@ -346,6 +350,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
 
     tMatrixVar = np.zeros(nVar,dtype = object)
     KSVar = np.zeros(nVar)
+    secondPvalVar = np.zeros(nVar)
     passVar = np.zeros(nVar,dtype = bool)
 
     GprVar = np.zeros((nVar,nPoints))
@@ -397,8 +402,9 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
         GMixVar[i,:] = Compute_Distribution(tMatrixVar[i],filtered_Mix)
 
         # Calculate KS distance
-        KSVar[i] = QKS(Mi*np.max(abs(GprVar[i,:]-GMixVar[i,:])))
-        passVar[i] = KSVar[i] > alpha
+        KSVar[i] = Mi*np.max(abs(GprVar[i,:]-GMixVar[i,:]))
+        secondPvalVar[i] = QKS(KSVar[i])
+        passVar[i] = secondPvalVar[i] > alpha
     
     print("\nDone! Saving Results...")
 
@@ -410,9 +416,9 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     msg.append(f"\t Mixed: {dirMix}")
     msg.append(f"\t alpha = {alpha}")
     msg.append("")
-    msg.append("RESULTS (pvalues):")
+    msg.append("RESULTS [KS Metric result](pvalues):")
     for i in range(nTests):
-        msg.append(f"\t (o) {testsNames[i]}: {KSResults[i]} -- {passArr[i]}")
+        msg.append(f"\t (o) {testsNames[i]}: [{KSResults[i]}] {secondPval[i]}-- {passArr[i]}")
     
     # Run Test
     numbersRd = ["-4","-3","-2","-1","+1","+2","+3","+4"]
@@ -420,7 +426,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     msg.append("\t (o) Random Excursions Test:")
 
     for i in range(8):
-        msg.append(f"\t \t {numbersRd[i]}: {KSRD[i]} -- {passRD[i]}")
+        msg.append(f"\t \t {numbersRd[i]}: [{KSRD[i]}] {secondPvalRD[i]} -- {passRD[i]}")
 
     # Variant
     numbersVar = ["-9","-8","-7","-6","-5","-4","-3","-2","-1",
@@ -429,7 +435,7 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     msg.append("\t (o) Random Excursions Variant Test:")
 
     for i in range(nVar):
-        msg.append(f"\t \t {numbersVar[i]}: {KSVar[i]} -- {passVar[i]}")
+        msg.append(f"\t \t {numbersVar[i]}: [{KSVar[i]}] {secondPvalVar[i]} -- {passVar[i]}")
     
     # Saving...
     WF.Write_Analysis_Files("KS", msg, directory = outDir)
@@ -452,7 +458,25 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
 
     return
 
-
+def Plot_KS_Statistic(maxK=2,nSums = 10**5,nK = 10**3):
+    """
+    Kolmogorovo_Smirnov_Statistic:
+        Plots Approximate Kolmogorov-Smirnov Statistic.
+        The number of terms can be modified by nSums property
+    """
+    # Create KS Statistic
+    KArr = np.linspace(0.01,maxK, nK)
+    pvalueArr = np.zeros(nK)
+    for j in range(1,nSums):
+        pvalueArr += 2*(-1)**(j-1)*np.exp(-2*j**2*KArr**2)
+    fig,ax = plt.subplots()
+    fig.suptitle("Kolmogorov-Smirnov Statistic")
+    ax.set_xlabel("D")
+    ax.set_ylabel("Pvalue")
+    ax.grid()
+    ax.scatter(KArr, pvalueArr, s = 7)
+    fig.show()
+    return
 #%%% NIST test suite
 def Construct_Sol_Message(testName,p,passMsg, nPassed = ""):
     if nPassed != "":
@@ -1227,4 +1251,3 @@ def Get_Summary_Results(dataDir, outDir="Data_Summary"):
         
         WF.Write_Analysis_Files(currComp,msg,directory=outDir,showEndMessage=False)
     return
-    

@@ -9,18 +9,19 @@ investigate to which point we can use the actual available QC to generate such r
 containing all sequences of length n {0,1}^n.
 
 **Authors:**
-Lucas Nicolás Hernández Bellón and Higinio Mora  
+Lucas Hernández Bellón and Higinio Mora  
 
 **Affiliation:** Department of Computer Technology and Computation, University of Alicante, Spain   
 
 **Repository:** https://github.com/cloudlab-aia/QRNG-Testing-With-Quantum-Computers
 
 The repository is structured as follows:
-  1. On *Root* there are the scripts, each focused in a specific task. We will talk about them later
-  2. *Data_Processing* contains the study logs of the sequences obtained.
-  3. *Outputs* would contain any sequence obtained by the scripts by default. It can be changed.
-  4. *NIST* contains all the tests of the *NIST800-22-1a Test Suite*, ported to Python by stevenang et.al.( https://github.com/stevenang/randomness_testsuite; On MIT License), but with some changes to focus only in the test's methods.   
+  1. On *Program* there are the scripts, each focused in a specific task. We will talk about them later
+  2. *Program\Data_Processing* contains the study logs of the sequences obtained.
+  3. *Program\Outputs* would contain any sequence obtained by the scripts by default. It can be changed.
+  4. *Program\NIST* contains all the tests of the *NIST800-22-1a Test Suite*, ported to Python by stevenang et.al.( https://github.com/stevenang/randomness_testsuite; On MIT License), but with some changes to focus only in the test's methods.   
 
+Results obtained by the research can be consulted in *Paper Results*
 ## Requirements
 To reproduce or extend this implementation, ensure the components of the 'libraries.yml' file are installed.
 

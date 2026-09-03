@@ -36,6 +36,7 @@ fontsize = 13 # Text scale for plots
 numbersize = [15,15] # Scale for axis tick labels
 plt.rc('font', size=fontsize) # Set text scaling for plots
 #%%% AWS comparison
+"""
 fig,ax = plt.subplots()
 fig.suptitle("Cost Between AWS Computers")
 ax.grid()
@@ -48,7 +49,9 @@ ax.plot([minBit,maxBit],[maxCost,maxCost], linestyle = "dashed", label = f"Budge
 ax.semilogx(nBits, FAQT,label = "IBEX Q1")
 ax.legend()
 fig.show()
+"""
 #%%% IBM
+"""
 fig3,ax3 = plt.subplots()
 fig3.suptitle("Approximate Cost of IBM")
 ax3.grid()
@@ -56,6 +59,7 @@ ax3.set_xlabel("bits")
 ax3.set_ylabel(r"Cost ($ \$ $)")
 ax3.semilogx(nBits,FIbm)
 fig3.show()
+"""
 #%%% Comparison of all providers
 fig2,ax2 = plt.subplots()
 fig2.suptitle("Cost Between Computers")
@@ -68,6 +72,6 @@ ax2.semilogx(nBits, FAQT,label = "Ibex", linewidth = 3)
 ax2.semilogx(nBits,FAquila, label = "Aquila", linewidth = 3)
 ax2.plot(nBits, FIbm, label = "ibm_kingston", linewidth = 3)
 ax2.plot([minBit,maxBit],[maxCost,maxCost], linestyle = "dashed", label = f"AWS Budget ({maxCost} $\$ $)", color = "black", linewidth = 2)
-ax2.plot([bitsNeeded,bitsNeeded],[0,10**4], linestyle = "dashed", label = "# of bits desired per QC", color = "black", linewidth = 2)
+ax2.plot([bitsNeeded,bitsNeeded],[0,np.max(FAQT)], linestyle = "dashed", label = "# of bits desired per QC", color = "black", linewidth = 2)
 ax2.legend(loc = "best")
 fig2.show()

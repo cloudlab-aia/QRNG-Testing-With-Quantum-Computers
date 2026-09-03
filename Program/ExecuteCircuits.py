@@ -78,7 +78,7 @@ def Run_Urandom(Nshots, saveData = True, directory = "Outputs/BCryptGenRandom", 
 
     shotResults = shotResults[:Nshots]
     t1 = time.time()
-    print(len(shotResults))
+    #print(len(shotResults))
     #print(shotResults)
     if saveData:
         savedName = WF.Write_Bitfiles(directory,"BCryptGenRandom" + extraName , shotResults)
@@ -131,7 +131,7 @@ def AWS_GetTimeSpent(jobId):
     metadata = result.task_metadata
     
     # There is no exact value of QTime, so we do it with the task total time - time in queue
-    start = metadata.createdAt[:-1] # Elimino la "Z" del final porque el uso horario es cte
+    start = metadata.createdAt[:-1] # We remove the "Z" as the times will be on the same timezone
     end = metadata.endedAt[:-1]
     
     # Changing formatting to compute the difference
@@ -153,7 +153,7 @@ def AWS_GetTimeSpent(jobId):
     endHours[-1] = np.floor(endHours[-1])
     endHours = np.array(endHours,dtype = int)
     
-    # We use datetime to compute de difference
+    # We use datetime to compute the difference
     # datetime usa year, month, day, hour, minute, second, microsecond , y tzinfo.
     startDateTime = datetime.datetime(startDate[0],startDate[1],startDate[2],startHours[0],startHours[1],startHours[2],startMicroseconds)
     endDateTime = datetime.datetime(endDate[0],endDate[1],endDate[2],endHours[0],endHours[1],endHours[2],endMicroseconds)

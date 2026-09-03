@@ -27,6 +27,7 @@ hQbitsQuEra = 256
 hQbitsRigetti = 106
 hQbitsSim = 20
 hQbitsAQT = 12
+
 # Upper shot limits
 lsIonQ = 5000
 lsRigetti = 5*10**4
@@ -83,8 +84,6 @@ for i in tqdm.tqdm(range(nJobs)):
     UrandomHadamard = Execute.Run_Urandom(N,extraName = f"_CSPRNG--{N}")
     #AQTHadamard = Execute.Run_On_AWS(HAQT, AQTBackend,AQTShots,liAQT,lsAQT,extraName = f"_{AQTBackend}--{hQbitsAQT}", subQC = "AQT")
     pass
-
-# Generate bits using NumPy random
 
 #%% End of the program
 print("************")

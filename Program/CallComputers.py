@@ -17,7 +17,6 @@ import matplotlib.pyplot as plt
 from braket.ahs.atom_arrangement import AtomArrangement
 from braket.timings.time_series import TimeSeries
 from braket.ahs.driving_field import DrivingField
-from braket.timings.time_series import TimeSeries
 from braket.ahs.analog_hamiltonian_simulation import AnalogHamiltonianSimulation
 from braket.devices import LocalSimulator # Debugging
 from collections import Counter # Visualize results
@@ -34,12 +33,11 @@ IBM: ibm-kingston (Uses Heron R2)
 AWS:
     QuEra: Aquila (based on laser-trapped neutral atoms, 256 qubits). us-east-1. $0.30/task + $0.01/shot (on demand)
         https://us-west-2.console.aws.amazon.com/braket/home?region=us-west-2#/devices/arn:aws:braket:us-east-1::device/qpu/quera/Aquila
-    IonQ: Forte Enterprise 1 (trapped ions)
-        https://us-west-2.console.aws.amazon.com/braket/home?region=us-west-2#/devices/arn:aws:braket:us-east-1::device/qpu/ionq/Forte-Enterprise-1
+    AQT: IBEXQ1
+        https://us-east-1.console.aws.amazon.com/braket/home?region=us-east-1#/devices/arn:aws:braket:eu-north-1::device/qpu/aqt/Ibex-Q1
     Rigetti: Cepheus™-1-108Q $0.30/task + $0.000425/shot (on demand).
      <<CZ gates are more robust against phase errors, which are common in superconducting systems>>
         https://us-west-2.console.aws.amazon.com/braket/home?region=us-west-2#/devices/arn:aws:braket:us-west-1::device/qpu/rigetti/Cepheus-1-108Q
-    AWS itself:
 
 Setup:
 https://aws.amazon.com/es/blogs/quantum-computing/setting-up-your-local-development-environment-in-amazon-braket/
