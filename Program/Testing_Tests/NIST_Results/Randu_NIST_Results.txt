@@ -1,0 +1,4505 @@
+ANALYSIS OF randu-1.000000e+07-0-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995384114371472 bits
+		 --> H = 0.9999999261340126 bits
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.13990330350586166 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.19113798347835873 -- True
+	 	 	 (o) Runs Test: 0.5700337433993274 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.44320921068305374 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.5210716388607064 -- True
+	 	 	 (o) Cusum Test: 0.15003318261403062 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.35506829334147144 -- True
+	 	 	 	 -3: 0.879315908907414 -- True
+	 	 	 	 -2: 0.4742559758098197 -- True
+	 	 	 	 -1: 0.45113720868052554 -- True
+	 	 	 	 +1: 0.6358272097970524 -- True
+	 	 	 	 +2: 0.20881256587394226 -- True
+	 	 	 	 +3: 0.3010005195823288 -- True
+	 	 	 	 +4: 0.9025553075856626 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.3823551163475337 -- True
+	 	 	 	 -8.0: 0.30266789158603336 -- True
+	 	 	 	 -7.0: 0.3775526272175781 -- True
+	 	 	 	 -6.0: 0.42056690741653757 -- True
+	 	 	 	 -5.0: 0.4962890410591897 -- True
+	 	 	 	 -4.0: 0.6256786611572751 -- True
+	 	 	 	 -3.0: 0.925139463706789 -- True
+	 	 	 	 -2.0: 0.33183031244338745 -- True
+	 	 	 	 -1.0: 0.17679940164471086 -- True
+	 	 	 	 +1.0: 0.5284883562390079 -- True
+	 	 	 	 +2.0: 0.889739849840878 -- True
+	 	 	 	 +3.0: 0.8720323980425967 -- True
+	 	 	 	 +4.0: 0.5860691188463373 -- True
+	 	 	 	 +5.0: 0.17047301242534896 -- True
+	 	 	 	 +6.0: 0.10141630796425079 -- True
+	 	 	 	 +7.0: 0.15458606517246834 -- True
+	 	 	 	 +8.0: 0.2450420106323863 -- True
+	 	 	 	 +9.0: 0.3628416593716639 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.486848721374175 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7291215066566332 -- True
+	 	 	 (o) Linear Complexity Test: 0.5920009765816756 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.1477035684443497 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.38036647657323197 -- True
+	 	 	 (o) Runs Test: 0.8140199701579122 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.08681368165286339 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8117472053124827 -- True
+	 	 	 (o) Cusum Test: 0.13968396271665234 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.18220892158812904 -- True
+	 	 	 	 -3: 0.700340330027067 -- True
+	 	 	 	 -2: 0.6543135057459842 -- True
+	 	 	 	 -1: 0.7040043608390598 -- True
+	 	 	 	 +1: 0.7224763582434472 -- True
+	 	 	 	 +2: 0.9767683763643158 -- True
+	 	 	 	 +3: 0.9228932815400481 -- True
+	 	 	 	 +4: 0.2420116841382343 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.42446835234102753 -- True
+	 	 	 	 -8.0: 0.49772956232642285 -- True
+	 	 	 	 -7.0: 0.23600539121215958 -- True
+	 	 	 	 -6.0: 0.2399354681856103 -- True
+	 	 	 	 -5.0: 0.3554799404035749 -- True
+	 	 	 	 -4.0: 0.19097683593421 -- True
+	 	 	 	 -3.0: 0.13833007225437796 -- True
+	 	 	 	 -2.0: 0.18561299803252596 -- True
+	 	 	 	 -1.0: 0.2784517838502776 -- True
+	 	 	 	 +1.0: 0.40445273053107345 -- True
+	 	 	 	 +2.0: 0.5798975938156019 -- True
+	 	 	 	 +3.0: 0.9109407908084778 -- True
+	 	 	 	 +4.0: 0.7586686857189762 -- True
+	 	 	 	 +5.0: 0.621822038498008 -- True
+	 	 	 	 +6.0: 0.5338516350855151 -- True
+	 	 	 	 +7.0: 0.43176990816765504 -- True
+	 	 	 	 +8.0: 0.33540458088980574 -- True
+	 	 	 	 +9.0: 0.3496962119776188 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.4375321202658269 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7615550632741461 -- True
+	 	 	 (o) Linear Complexity Test: 0.5625544645441529 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7029282096881493 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9183253991236581 -- True
+	 	 	 (o) Runs Test: 0.33795378105639096 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9051499170595398 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9358368655597841 -- True
+	 	 	 (o) Cusum Test: 0.9640079179536025 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3818972993643708 -- True
+	 	 	 	 -3: 0.47888310270210954 -- True
+	 	 	 	 -2: 0.7469072965080756 -- True
+	 	 	 	 -1: 0.36440288479383254 -- True
+	 	 	 	 +1: 0.2527627723664606 -- True
+	 	 	 	 +2: 0.5002486303746952 -- True
+	 	 	 	 +3: 0.42158990822851805 -- True
+	 	 	 	 +4: 0.8260709731085216 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7733086973497172 -- True
+	 	 	 	 -8.0: 0.7085056599983863 -- True
+	 	 	 	 -7.0: 0.7214877224776477 -- True
+	 	 	 	 -6.0: 0.8675408508839084 -- True
+	 	 	 	 -5.0: 0.5617312683450557 -- True
+	 	 	 	 -4.0: 0.33126117978061176 -- True
+	 	 	 	 -3.0: 0.4362646073402965 -- True
+	 	 	 	 -2.0: 0.4467525580821916 -- True
+	 	 	 	 -1.0: 0.9093288448156781 -- True
+	 	 	 	 +1.0: 0.13873803910955895 -- True
+	 	 	 	 +2.0: 0.17920346699327894 -- True
+	 	 	 	 +3.0: 0.1602474037466386 -- True
+	 	 	 	 +4.0: 0.1841016626797346 -- True
+	 	 	 	 +5.0: 0.27331227350653875 -- True
+	 	 	 	 +6.0: 0.28711696052144386 -- True
+	 	 	 	 +7.0: 0.20002112794752147 -- True
+	 	 	 	 +8.0: 0.13811347201876295 -- True
+	 	 	 	 +9.0: 0.10401239633705568 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.11008146438550466 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.947456308261151 -- True
+	 	 	 (o) Linear Complexity Test: 0.764534332710696 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6217898087299398 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4209547451367283 -- True
+	 	 	 (o) Runs Test: 0.9179524175883308 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.7806520264618059 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9869328504237453 -- True
+	 	 	 (o) Cusum Test: 0.23858481836188325 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.0259734810508603 -- True
+	 	 	 	 -3: 0.6424374007604943 -- True
+	 	 	 	 -2: 0.7605386375216603 -- True
+	 	 	 	 -1: 0.3005982082640399 -- True
+	 	 	 	 +1: 0.6216479433820552 -- True
+	 	 	 	 +2: 0.649414029670268 -- True
+	 	 	 	 +3: 0.3520981403513207 -- True
+	 	 	 	 +4: 0.48368247728880664 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.13487358969479235 -- True
+	 	 	 	 -8.0: 0.12405181831790614 -- True
+	 	 	 	 -7.0: 0.09561557213006812 -- True
+	 	 	 	 -6.0: 0.12045715930598173 -- True
+	 	 	 	 -5.0: 0.12918379984731426 -- True
+	 	 	 	 -4.0: 0.10904237326577201 -- True
+	 	 	 	 -3.0: 0.10096352189954544 -- True
+	 	 	 	 -2.0: 0.12557156781008572 -- True
+	 	 	 	 -1.0: 0.19340665025165038 -- True
+	 	 	 	 +1.0: 0.14521709704295524 -- True
+	 	 	 	 +2.0: 0.29315024554962843 -- True
+	 	 	 	 +3.0: 0.5530045226908519 -- True
+	 	 	 	 +4.0: 0.6440281869489951 -- True
+	 	 	 	 +5.0: 0.841933982633509 -- True
+	 	 	 	 +6.0: 0.46577383058491173 -- True
+	 	 	 	 +7.0: 0.5068753772100829 -- True
+	 	 	 	 +8.0: 0.6239391033161606 -- True
+	 	 	 	 +9.0: 0.672527736662892 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5378480591310286 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.2861634998231977 -- True
+	 	 	 (o) Linear Complexity Test: 0.5108895729128664 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5437465194599174 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5123719281398114 -- True
+	 	 	 (o) Runs Test: 0.4527481597132267 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6509819989822185 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8007453812266754 -- True
+	 	 	 (o) Cusum Test: 0.9011715322326386 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.21627595505734068 -- True
+	 	 	 	 -3: 0.7311669840444959 -- True
+	 	 	 	 -2: 0.5054567152309696 -- True
+	 	 	 	 -1: 0.5464814311234056 -- True
+	 	 	 	 +1: 0.19704188680041712 -- True
+	 	 	 	 +2: 0.17562193114545707 -- True
+	 	 	 	 +3: 0.22126292103792214 -- True
+	 	 	 	 +4: 0.8049855282586986 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.1951532894337351 -- True
+	 	 	 	 -8.0: 0.14541154914834026 -- True
+	 	 	 	 -7.0: 0.3207511000028842 -- True
+	 	 	 	 -6.0: 0.6764728293982212 -- True
+	 	 	 	 -5.0: 0.459518726163619 -- True
+	 	 	 	 -4.0: 0.36396207510247747 -- True
+	 	 	 	 -3.0: 0.7050459271733794 -- True
+	 	 	 	 -2.0: 0.9631309036172084 -- True
+	 	 	 	 -1.0: 0.7058429794735998 -- True
+	 	 	 	 +1.0: 0.028917782345872757 -- True
+	 	 	 	 +2.0: 0.08843303019689151 -- True
+	 	 	 	 +3.0: 0.7550241983891997 -- True
+	 	 	 	 +4.0: 0.7229713882616038 -- True
+	 	 	 	 +5.0: 0.604102336720018 -- True
+	 	 	 	 +6.0: 0.3773213175284035 -- True
+	 	 	 	 +7.0: 0.21838471699685968 -- True
+	 	 	 	 +8.0: 0.14137292441481533 -- True
+	 	 	 	 +9.0: 0.07268331821037939 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8018901389534976 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3557351484278485 -- True
+	 	 	 (o) Linear Complexity Test: 0.5685556226856703 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7499103415953584 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.23973840446605027 -- True
+	 	 	 (o) Runs Test: 0.6680418607120442 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.17970959556412153 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6945346805160765 -- True
+	 	 	 (o) Cusum Test: 0.9375228443206016 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3858640302681957 -- True
+	 	 	 	 -3: 0.8128211719326337 -- True
+	 	 	 	 -2: 0.5170935058570605 -- True
+	 	 	 	 -1: 0.894495446422667 -- True
+	 	 	 	 +1: 0.24661680429186106 -- True
+	 	 	 	 +2: 0.20770106593947898 -- True
+	 	 	 	 +3: 0.5756045982645401 -- True
+	 	 	 	 +4: 0.13894110431435158 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7833413230246211 -- True
+	 	 	 	 -8.0: 0.9067887033103331 -- True
+	 	 	 	 -7.0: 0.8458788529379317 -- True
+	 	 	 	 -6.0: 0.7678287377825412 -- True
+	 	 	 	 -5.0: 0.7183021120914272 -- True
+	 	 	 	 -4.0: 0.9782455471105973 -- True
+	 	 	 	 -3.0: 0.5368152169392506 -- True
+	 	 	 	 -2.0: 0.49378218969041987 -- True
+	 	 	 	 -1.0: 0.7260217420628353 -- True
+	 	 	 	 +1.0: 0.2978938514067738 -- True
+	 	 	 	 +2.0: 0.27618099304183885 -- True
+	 	 	 	 +3.0: 0.43059291115036213 -- True
+	 	 	 	 +4.0: 0.9751387112095822 -- True
+	 	 	 	 +5.0: 0.6403354580557984 -- True
+	 	 	 	 +6.0: 0.9876032126373786 -- True
+	 	 	 	 +7.0: 0.7815678528210969 -- True
+	 	 	 	 +8.0: 0.6838948854795018 -- True
+	 	 	 	 +9.0: 0.8239452358425997 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.47491272257381756 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3428284649389942 -- True
+	 	 	 (o) Linear Complexity Test: 0.4810821417882679 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6502098971258601 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.07020494106136603 -- True
+	 	 	 (o) Runs Test: 0.9429739561363925 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.47881179791818274 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.959987463341377 -- True
+	 	 	 (o) Cusum Test: 0.3660382477374955 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5871588099405018 -- True
+	 	 	 	 -3: 0.5901189232989126 -- True
+	 	 	 	 -2: 0.11294336085508085 -- True
+	 	 	 	 -1: 0.14601001790005813 -- True
+	 	 	 	 +1: 0.9823301624525961 -- True
+	 	 	 	 +2: 0.945187433650156 -- True
+	 	 	 	 +3: 0.07306980711245159 -- True
+	 	 	 	 +4: 0.6464244303105516 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.47100034951143277 -- True
+	 	 	 	 -8.0: 0.8067579195077692 -- True
+	 	 	 	 -7.0: 0.7967141285551871 -- True
+	 	 	 	 -6.0: 0.6420237588846793 -- True
+	 	 	 	 -5.0: 0.3962702054098832 -- True
+	 	 	 	 -4.0: 0.24099051242027314 -- True
+	 	 	 	 -3.0: 0.44469920631384474 -- True
+	 	 	 	 -2.0: 0.6370036895092153 -- True
+	 	 	 	 -1.0: 0.2494409579748127 -- True
+	 	 	 	 +1.0: 0.9259991314124834 -- True
+	 	 	 	 +2.0: 0.9743329135471787 -- True
+	 	 	 	 +3.0: 0.7585584991057848 -- True
+	 	 	 	 +4.0: 0.6941876114228427 -- True
+	 	 	 	 +5.0: 0.5815745627528539 -- True
+	 	 	 	 +6.0: 0.3080340189962145 -- True
+	 	 	 	 +7.0: 0.21627672742650295 -- True
+	 	 	 	 +8.0: 0.23237021379633238 -- True
+	 	 	 	 +9.0: 0.5106809287562688 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.14411232949166267 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.537826284329194 -- True
+	 	 	 (o) Linear Complexity Test: 0.12658391110734904 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.09386073649369997 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9954566411218553 -- True
+	 	 	 (o) Runs Test: 0.054554163264442714 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.2709935911979248 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8080405317232078 -- True
+	 	 	 (o) Cusum Test: 0.15003318261403062 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.07678098655038174 -- True
+	 	 	 	 -3: 0.3653450265431493 -- True
+	 	 	 	 -2: 0.39633642537289304 -- True
+	 	 	 	 -1: 0.3897007099806467 -- True
+	 	 	 	 +1: 0.8076871689579008 -- True
+	 	 	 	 +2: 0.17440482310413763 -- True
+	 	 	 	 +3: 0.08389003280523943 -- True
+	 	 	 	 +4: 0.5988911656516395 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.12287664975217465 -- True
+	 	 	 	 -8.0: 0.14251997518652584 -- True
+	 	 	 	 -7.0: 0.12651615713107364 -- True
+	 	 	 	 -6.0: 0.14082556621397677 -- True
+	 	 	 	 -5.0: 0.2639979136542848 -- True
+	 	 	 	 -4.0: 0.5335860308452031 -- True
+	 	 	 	 -3.0: 0.7605182493684879 -- True
+	 	 	 	 -2.0: 0.43128713297288357 -- True
+	 	 	 	 -1.0: 0.3634879469815159 -- True
+	 	 	 	 +1.0: 0.9095609385561121 -- True
+	 	 	 	 +2.0: 0.5550275785104803 -- True
+	 	 	 	 +3.0: 0.07540356287126339 -- True
+	 	 	 	 +4.0: 0.07135321211950368 -- True
+	 	 	 	 +5.0: 0.9245846478029164 -- True
+	 	 	 	 +6.0: 0.5263329810590804 -- True
+	 	 	 	 +7.0: 0.6937208216557195 -- True
+	 	 	 	 +8.0: 0.7805291569463104 -- True
+	 	 	 	 +9.0: 0.9670365689616548 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.49637233192878094 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.17754600208382332 -- True
+	 	 	 (o) Linear Complexity Test: 0.3725837723431543 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8773580988067802 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.0746510847104096 -- True
+	 	 	 (o) Runs Test: 0.7890679244187436 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4374419496963552 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.645079672173333 -- True
+	 	 	 (o) Cusum Test: 0.5884911523170541 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.515268618792853 -- True
+	 	 	 	 -3: 0.13765304391579347 -- True
+	 	 	 	 -2: 0.48359627804833694 -- True
+	 	 	 	 -1: 0.6859810953667026 -- True
+	 	 	 	 +1: 0.35027038528293497 -- True
+	 	 	 	 +2: 0.24337982934976443 -- True
+	 	 	 	 +3: 0.018456363828591747 -- True
+	 	 	 	 +4: 0.06304353640370676 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.052193628244449224 -- True
+	 	 	 	 -8.0: 0.04555207307738612 -- True
+	 	 	 	 -7.0: 0.030968077314497255 -- True
+	 	 	 	 -6.0: 0.036298073565313324 -- True
+	 	 	 	 -5.0: 0.059393385468978814 -- True
+	 	 	 	 -4.0: 0.123769967723702 -- True
+	 	 	 	 -3.0: 0.17076709984940308 -- True
+	 	 	 	 -2.0: 0.17819200438143867 -- True
+	 	 	 	 -1.0: 0.28843908362699466 -- True
+	 	 	 	 +1.0: 0.03677085814801314 -- True
+	 	 	 	 +2.0: 0.016790406801682475 -- True
+	 	 	 	 +3.0: 0.10549302773036316 -- True
+	 	 	 	 +4.0: 0.28365876168216664 -- True
+	 	 	 	 +5.0: 0.1519135006639617 -- True
+	 	 	 	 +6.0: 0.12419896740455946 -- True
+	 	 	 	 +7.0: 0.1308596731968196 -- True
+	 	 	 	 +8.0: 0.104785605494492 -- True
+	 	 	 	 +9.0: 0.0858267393152436 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8549032073323555 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.43746684756343374 -- True
+	 	 	 (o) Linear Complexity Test: 0.9617366180998682 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5172214004851852 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.24513127182293037 -- True
+	 	 	 (o) Runs Test: 0.23712949667086358 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6061697552662169 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7152064354778233 -- True
+	 	 	 (o) Cusum Test: 0.6998212397374686 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.7329506596571629 -- True
+	 	 	 	 -3: 0.8427236387075763 -- True
+	 	 	 	 -2: 0.9717806123473769 -- True
+	 	 	 	 -1: 0.9730443690261469 -- True
+	 	 	 	 +1: 0.41895554582805594 -- True
+	 	 	 	 +2: 0.21816043640653418 -- True
+	 	 	 	 +3: 0.35699436408283375 -- True
+	 	 	 	 +4: 0.11173629521112281 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.744083567609028 -- True
+	 	 	 	 -8.0: 0.7338119306536041 -- True
+	 	 	 	 -7.0: 0.4823887428876692 -- True
+	 	 	 	 -6.0: 0.4045733865835043 -- True
+	 	 	 	 -5.0: 0.49330877522611505 -- True
+	 	 	 	 -4.0: 0.4372884919697265 -- True
+	 	 	 	 -3.0: 0.5008565212083147 -- True
+	 	 	 	 -2.0: 0.9201284349568248 -- True
+	 	 	 	 -1.0: 0.9308002454202042 -- True
+	 	 	 	 +1.0: 0.4344835405125663 -- True
+	 	 	 	 +2.0: 0.5038275055543638 -- True
+	 	 	 	 +3.0: 0.38576754615827225 -- True
+	 	 	 	 +4.0: 0.2461709958297228 -- True
+	 	 	 	 +5.0: 0.2734622068866185 -- True
+	 	 	 	 +6.0: 0.13559132979415903 -- True
+	 	 	 	 +7.0: 0.10147411420748798 -- True
+	 	 	 	 +8.0: 0.1947312155824905 -- True
+	 	 	 	 +9.0: 0.21530563526293822 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.30962455669458433 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7760883272837971 -- True
+	 	 	 (o) Linear Complexity Test: 0.3375939078049929 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.4858240741846154 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.24483395103760466 -- True
+	 	 	 (o) Runs Test: 0.4559625633778649 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5226418519033316 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8845306453154244 -- True
+	 	 	 (o) Cusum Test: 0.6909210448019869 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.44271926872579637 -- True
+	 	 	 	 -3: 0.060072116764005555 -- True
+	 	 	 	 -2: 0.01684774750559561 -- True
+	 	 	 	 -1: 0.8031280504026962 -- True
+	 	 	 	 +1: 0.49288422492553063 -- True
+	 	 	 	 +2: 0.9933070917932671 -- True
+	 	 	 	 +3: 0.6087771432240674 -- True
+	 	 	 	 +4: 0.36269196889538746 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6079344747659138 -- True
+	 	 	 	 -8.0: 0.6236990793358187 -- True
+	 	 	 	 -7.0: 0.38155949599027594 -- True
+	 	 	 	 -6.0: 0.2894398968059768 -- True
+	 	 	 	 -5.0: 0.40960442886554227 -- True
+	 	 	 	 -4.0: 0.6161070435404459 -- True
+	 	 	 	 -3.0: 0.6650864223153979 -- True
+	 	 	 	 -2.0: 0.4076929270437677 -- True
+	 	 	 	 -1.0: 0.19682072268751882 -- True
+	 	 	 	 +1.0: 0.942837891478522 -- True
+	 	 	 	 +2.0: 0.8360175902083613 -- True
+	 	 	 	 +3.0: 0.8099420718892767 -- True
+	 	 	 	 +4.0: 0.6943417844721547 -- True
+	 	 	 	 +5.0: 0.5501542848988108 -- True
+	 	 	 	 +6.0: 0.3469896712401792 -- True
+	 	 	 	 +7.0: 0.2611770041825936 -- True
+	 	 	 	 +8.0: 0.335690374855771 -- True
+	 	 	 	 +9.0: 0.32581835323420527 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7624714255875812 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.128199042130498 -- True
+	 	 	 (o) Linear Complexity Test: 0.5308247343386834 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5408126961185392 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7498519995248782 -- True
+	 	 	 (o) Runs Test: 0.5890347541474885 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.3381170844120133 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.24543154066516235 -- True
+	 	 	 (o) Cusum Test: 0.752641779937478 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6069016449853226 -- True
+	 	 	 	 -3: 0.6352511067036408 -- True
+	 	 	 	 -2: 0.7621419063339934 -- True
+	 	 	 	 -1: 0.8748376157129469 -- True
+	 	 	 	 +1: 0.5878297718317349 -- True
+	 	 	 	 +2: 0.9102612124021898 -- True
+	 	 	 	 +3: 0.41316539202981467 -- True
+	 	 	 	 +4: 0.05341903686276576 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.3564446837211972 -- True
+	 	 	 	 -8.0: 0.3654554874644894 -- True
+	 	 	 	 -7.0: 0.33371719797107524 -- True
+	 	 	 	 -6.0: 0.30442985041641246 -- True
+	 	 	 	 -5.0: 0.3908218591695084 -- True
+	 	 	 	 -4.0: 0.5295296331017203 -- True
+	 	 	 	 -3.0: 0.3616722166592744 -- True
+	 	 	 	 -2.0: 0.25768040506232903 -- True
+	 	 	 	 -1.0: 0.47590378321206406 -- True
+	 	 	 	 +1.0: 0.5524529048817779 -- True
+	 	 	 	 +2.0: 0.4235215196809614 -- True
+	 	 	 	 +3.0: 0.352425125933145 -- True
+	 	 	 	 +4.0: 0.1485790715369798 -- True
+	 	 	 	 +5.0: 0.08372720934818359 -- True
+	 	 	 	 +6.0: 0.068591904450456 -- True
+	 	 	 	 +7.0: 0.053878144057339976 -- True
+	 	 	 	 +8.0: 0.04032998926383657 -- True
+	 	 	 	 +9.0: 0.027825499901933674 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7403922473045512 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.37889414227779344 -- True
+	 	 	 (o) Linear Complexity Test: 0.06791990180270524 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.816942911862477 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7453833911158542 -- True
+	 	 	 (o) Runs Test: 0.09177470800175988 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4418631867711261 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9731891481468099 -- True
+	 	 	 (o) Cusum Test: 0.44943481975605204 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.44162034417006213 -- True
+	 	 	 	 -3: 0.37436696451348767 -- True
+	 	 	 	 -2: 0.4776812473990304 -- True
+	 	 	 	 -1: 0.489451263059577 -- True
+	 	 	 	 +1: 0.8626641542414577 -- True
+	 	 	 	 +2: 0.7273288388070523 -- True
+	 	 	 	 +3: 0.2942874961274231 -- True
+	 	 	 	 +4: 0.037701445470846036 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.05128183501989823 -- True
+	 	 	 	 -8.0: 0.02435195314711042 -- True
+	 	 	 	 -7.0: 0.026561406909818987 -- True
+	 	 	 	 -6.0: 0.038966902069265015 -- True
+	 	 	 	 -5.0: 0.02577524917366922 -- True
+	 	 	 	 -4.0: 0.03465435187371384 -- True
+	 	 	 	 -3.0: 0.06721543743806829 -- True
+	 	 	 	 -2.0: 0.13538240979958607 -- True
+	 	 	 	 -1.0: 0.22669029509393301 -- True
+	 	 	 	 +1.0: 0.43956881941105763 -- True
+	 	 	 	 +2.0: 0.37520177116886866 -- True
+	 	 	 	 +3.0: 0.1510528010322845 -- True
+	 	 	 	 +4.0: 0.1228108854102117 -- True
+	 	 	 	 +5.0: 0.27136401718692016 -- True
+	 	 	 	 +6.0: 0.39117708969256526 -- True
+	 	 	 	 +7.0: 0.4563939295567654 -- True
+	 	 	 	 +8.0: 0.36372613418112876 -- True
+	 	 	 	 +9.0: 0.3303767811448949 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.23979487811208078 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.05595635080689104 -- True
+	 	 	 (o) Linear Complexity Test: 0.2337075037720611 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.24505139669074427 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.06435457810640022 -- True
+	 	 	 (o) Runs Test: 0.9635159337375266 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9236235935193732 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6181585894159436 -- True
+	 	 	 (o) Cusum Test: 0.4780623371222324 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.190652739187063 -- True
+	 	 	 	 -3: 0.17606995913487755 -- True
+	 	 	 	 -2: 0.707602917218586 -- True
+	 	 	 	 -1: 0.7997709096934039 -- True
+	 	 	 	 +1: 0.7638938360962206 -- True
+	 	 	 	 +2: 0.705077446407066 -- True
+	 	 	 	 +3: 0.9667745207886608 -- True
+	 	 	 	 +4: 0.9531752185492564 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.8776116249265369 -- True
+	 	 	 	 -8.0: 0.6063788020370067 -- True
+	 	 	 	 -7.0: 0.636240050680969 -- True
+	 	 	 	 -6.0: 0.8503207206199492 -- True
+	 	 	 	 -5.0: 0.5676922398241624 -- True
+	 	 	 	 -4.0: 0.2248801605638192 -- True
+	 	 	 	 -3.0: 0.11550221388508404 -- True
+	 	 	 	 -2.0: 0.1369360296299943 -- True
+	 	 	 	 -1.0: 0.24933020126664063 -- True
+	 	 	 	 +1.0: 0.9782905858429398 -- True
+	 	 	 	 +2.0: 0.4666513701497571 -- True
+	 	 	 	 +3.0: 0.6408564375881585 -- True
+	 	 	 	 +4.0: 0.9753847060523089 -- True
+	 	 	 	 +5.0: 0.9373407195558281 -- True
+	 	 	 	 +6.0: 0.8524649081654858 -- True
+	 	 	 	 +7.0: 0.600781171743028 -- True
+	 	 	 	 +8.0: 0.5441237131390606 -- True
+	 	 	 	 +9.0: 0.9473786430499266 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.9336522111305935 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7221454420241842 -- True
+	 	 	 (o) Linear Complexity Test: 0.8769977924350936 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.12904130509946815 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.233703432712599 -- True
+	 	 	 (o) Runs Test: 0.6930285231824724 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.3321689414767539 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6668052634322605 -- True
+	 	 	 (o) Cusum Test: 0.10428515500719378 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.2747627246713354 -- True
+	 	 	 	 -3: 0.24087695715093527 -- True
+	 	 	 	 -2: 0.2143326824583823 -- True
+	 	 	 	 -1: 0.5925454521314033 -- True
+	 	 	 	 +1: 0.008766714375610874 -- False
+	 	 	 	 +2: 0.0012054719365160748 -- False
+	 	 	 	 +3: 0.019529569851057797 -- True
+	 	 	 	 +4: 0.07058980962312121 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.4408605373563472 -- True
+	 	 	 	 -8.0: 0.3829641694605699 -- True
+	 	 	 	 -7.0: 0.41859703592331443 -- True
+	 	 	 	 -6.0: 0.7295951652341213 -- True
+	 	 	 	 -5.0: 0.9252200258897332 -- True
+	 	 	 	 -4.0: 0.8373740945151144 -- True
+	 	 	 	 -3.0: 0.6018809634113162 -- True
+	 	 	 	 -2.0: 0.39017278980988535 -- True
+	 	 	 	 -1.0: 0.31458517395938435 -- True
+	 	 	 	 +1.0: 0.0007275648003932548 -- False
+	 	 	 	 +2.0: 0.00014634271036482598 -- False
+	 	 	 	 +3.0: 0.005598858300204994 -- False
+	 	 	 	 +4.0: 0.04161690802747783 -- True
+	 	 	 	 +5.0: 0.1018703064077701 -- True
+	 	 	 	 +6.0: 0.44842984325522584 -- True
+	 	 	 	 +7.0: 0.6675366211011233 -- True
+	 	 	 	 +8.0: 0.6402260872473908 -- True
+	 	 	 	 +9.0: 0.8952145582348465 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6129408251200099 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8152759758893371 -- True
+	 	 	 (o) Linear Complexity Test: 0.08196008245096284 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7706215329738272 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8505681179918297 -- True
+	 	 	 (o) Runs Test: 0.08924739186967257 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6334160454541291 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9851460595192443 -- True
+	 	 	 (o) Cusum Test: 0.4063446294341948 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6055174963323309 -- True
+	 	 	 	 -3: 0.9382194704728976 -- True
+	 	 	 	 -2: 0.7442430433676847 -- True
+	 	 	 	 -1: 0.8522032184149901 -- True
+	 	 	 	 +1: 0.41891457534494414 -- True
+	 	 	 	 +2: 0.9351162591526533 -- True
+	 	 	 	 +3: 0.5740637110245287 -- True
+	 	 	 	 +4: 0.4778633358461968 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7998798924617654 -- True
+	 	 	 	 -8.0: 0.9810718105240644 -- True
+	 	 	 	 -7.0: 0.7841129303169375 -- True
+	 	 	 	 -6.0: 0.8953014616546527 -- True
+	 	 	 	 -5.0: 0.990835771493412 -- True
+	 	 	 	 -4.0: 0.8963781514571851 -- True
+	 	 	 	 -3.0: 0.918174803107881 -- True
+	 	 	 	 -2.0: 0.6761096112356242 -- True
+	 	 	 	 -1.0: 0.9267875997733682 -- True
+	 	 	 	 +1.0: 0.12377698080564646 -- True
+	 	 	 	 +2.0: 0.33961785174255743 -- True
+	 	 	 	 +3.0: 0.8251888576882787 -- True
+	 	 	 	 +4.0: 0.9480792630480628 -- True
+	 	 	 	 +5.0: 0.721793235427857 -- True
+	 	 	 	 +6.0: 0.48420670370980257 -- True
+	 	 	 	 +7.0: 0.3522672787877841 -- True
+	 	 	 	 +8.0: 0.36258298147606294 -- True
+	 	 	 	 +9.0: 0.2487883754564013 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6201578080658012 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7332827745824306 -- True
+	 	 	 (o) Linear Complexity Test: 0.3869789901244613 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7508697951236701 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4721201653355444 -- True
+	 	 	 (o) Runs Test: 0.8213921720291114 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4620362019626202 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.40105394208441053 -- True
+	 	 	 (o) Cusum Test: 0.48760883323410514 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5854980450422688 -- True
+	 	 	 	 -3: 0.5222990096493683 -- True
+	 	 	 	 -2: 0.6899159781591351 -- True
+	 	 	 	 -1: 0.32311372607613514 -- True
+	 	 	 	 +1: 0.648418135668946 -- True
+	 	 	 	 +2: 0.22349883752096059 -- True
+	 	 	 	 +3: 0.457122671616789 -- True
+	 	 	 	 +4: 0.4159925766474448 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.22899832558220745 -- True
+	 	 	 	 -8.0: 0.3582897867237661 -- True
+	 	 	 	 -7.0: 0.4367429030123312 -- True
+	 	 	 	 -6.0: 0.37297794283286756 -- True
+	 	 	 	 -5.0: 0.29359651419702193 -- True
+	 	 	 	 -4.0: 0.26407401156003873 -- True
+	 	 	 	 -3.0: 0.12098326098309801 -- True
+	 	 	 	 -2.0: 0.06374959937626477 -- True
+	 	 	 	 -1.0: 0.28445492409337425 -- True
+	 	 	 	 +1.0: 0.6188409313975107 -- True
+	 	 	 	 +2.0: 0.45940313022789225 -- True
+	 	 	 	 +3.0: 0.4831982667867539 -- True
+	 	 	 	 +4.0: 0.5688114004133373 -- True
+	 	 	 	 +5.0: 0.8682897609105342 -- True
+	 	 	 	 +6.0: 0.2793333259447317 -- True
+	 	 	 	 +7.0: 0.23176443848334005 -- True
+	 	 	 	 +8.0: 0.24606369693247632 -- True
+	 	 	 	 +9.0: 0.20064125607265282 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6704384725365122 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.6973599973349965 -- True
+	 	 	 (o) Linear Complexity Test: 0.8811446902746569 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9626712666475659 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.07991022943294716 -- True
+	 	 	 (o) Runs Test: 0.0956096851022979 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9258502077529845 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9377812393914096 -- True
+	 	 	 (o) Cusum Test: 0.6844036681013952 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3095547361744278 -- True
+	 	 	 	 -3: 0.42692466961190356 -- True
+	 	 	 	 -2: 0.1128488353904447 -- True
+	 	 	 	 -1: 0.7724210562628945 -- True
+	 	 	 	 +1: 0.8332915589849441 -- True
+	 	 	 	 +2: 0.3530583433214162 -- True
+	 	 	 	 +3: 0.07651715852001317 -- True
+	 	 	 	 +4: 0.9653256845567321 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.2514655015337769 -- True
+	 	 	 	 -8.0: 0.23655662699002578 -- True
+	 	 	 	 -7.0: 0.19794676533415945 -- True
+	 	 	 	 -6.0: 0.2028307738290086 -- True
+	 	 	 	 -5.0: 0.3487463984058101 -- True
+	 	 	 	 -4.0: 0.49582081553063895 -- True
+	 	 	 	 -3.0: 0.6241580887941349 -- True
+	 	 	 	 -2.0: 0.6233887973285861 -- True
+	 	 	 	 -1.0: 0.4030911100727159 -- True
+	 	 	 	 +1.0: 0.8175851876871861 -- True
+	 	 	 	 +2.0: 0.9535410881813865 -- True
+	 	 	 	 +3.0: 0.8064696657878314 -- True
+	 	 	 	 +4.0: 0.9435312014685735 -- True
+	 	 	 	 +5.0: 0.7878573720341078 -- True
+	 	 	 	 +6.0: 0.9480166124629935 -- True
+	 	 	 	 +7.0: 0.8259478632597259 -- True
+	 	 	 	 +8.0: 0.7801222192830797 -- True
+	 	 	 	 +9.0: 0.7031288656590216 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6439463563455756 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.017652034464930258 -- True
+	 	 	 (o) Linear Complexity Test: 0.38524820046613195 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9803215617421122 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.40988915374583573 -- True
+	 	 	 (o) Runs Test: 0.877358250490101 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.12219784401200669 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.955063924924456 -- True
+	 	 	 (o) Cusum Test: 0.7744014388911475 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9422799822256732 -- True
+	 	 	 	 -3: 0.6487529516247016 -- True
+	 	 	 	 -2: 0.2686806384054499 -- True
+	 	 	 	 -1: 0.5829423022219609 -- True
+	 	 	 	 +1: 0.9898800573137265 -- True
+	 	 	 	 +2: 0.35829499837839673 -- True
+	 	 	 	 +3: 0.9589535794594339 -- True
+	 	 	 	 +4: 0.7914178205095013 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6682699817080245 -- True
+	 	 	 	 -8.0: 0.8298806648823108 -- True
+	 	 	 	 -7.0: 0.6489231101904331 -- True
+	 	 	 	 -6.0: 0.28512089902380666 -- True
+	 	 	 	 -5.0: 0.31033818467132734 -- True
+	 	 	 	 -4.0: 0.3817860902491067 -- True
+	 	 	 	 -3.0: 0.34044422687440734 -- True
+	 	 	 	 -2.0: 0.31714288006622726 -- True
+	 	 	 	 -1.0: 0.33258680272948915 -- True
+	 	 	 	 +1.0: 0.7409681422179482 -- True
+	 	 	 	 +2.0: 0.9527680873036651 -- True
+	 	 	 	 +3.0: 0.9349928420103251 -- True
+	 	 	 	 +4.0: 0.9828132037929228 -- True
+	 	 	 	 +5.0: 0.6511529442695394 -- True
+	 	 	 	 +6.0: 0.5293760105618939 -- True
+	 	 	 	 +7.0: 0.6903711826522718 -- True
+	 	 	 	 +8.0: 0.8115706082628953 -- True
+	 	 	 	 +9.0: 0.9448967250939864 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7347605660669452 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.34325001469568805 -- True
+	 	 	 (o) Linear Complexity Test: 0.7649398174875619 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.37865451597495736 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6437289002874158 -- True
+	 	 	 (o) Runs Test: 0.5940924506471914 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.2936229732274728 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6440019643938167 -- True
+	 	 	 (o) Cusum Test: 0.32661844129262596 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.979400875801895 -- True
+	 	 	 	 -3: 0.08520903859534472 -- True
+	 	 	 	 -2: 0.4619859592893054 -- True
+	 	 	 	 -1: 0.516722594450721 -- True
+	 	 	 	 +1: 0.4944715857675783 -- True
+	 	 	 	 +2: 0.6474990407681658 -- True
+	 	 	 	 +3: 0.8264772543947968 -- True
+	 	 	 	 +4: 0.9275430445595785 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9161858770586979 -- True
+	 	 	 	 -8.0: 0.6656408950260573 -- True
+	 	 	 	 -7.0: 0.4265309078217526 -- True
+	 	 	 	 -6.0: 0.2995995225998713 -- True
+	 	 	 	 -5.0: 0.29913420494734644 -- True
+	 	 	 	 -4.0: 0.5043063667411225 -- True
+	 	 	 	 -3.0: 0.492642666755844 -- True
+	 	 	 	 -2.0: 0.3077410566632037 -- True
+	 	 	 	 -1.0: 0.15395086375828362 -- True
+	 	 	 	 +1.0: 0.37706182819024836 -- True
+	 	 	 	 +2.0: 0.9643179958140449 -- True
+	 	 	 	 +3.0: 0.7709918981659785 -- True
+	 	 	 	 +4.0: 0.9766361931554203 -- True
+	 	 	 	 +5.0: 0.6718708693937225 -- True
+	 	 	 	 +6.0: 0.5845977552859551 -- True
+	 	 	 	 +7.0: 0.6830415764939699 -- True
+	 	 	 	 +8.0: 0.4282128432006881 -- True
+	 	 	 	 +9.0: 0.32845893432292594 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8106679247804431 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7981543791334448 -- True
+	 	 	 (o) Linear Complexity Test: 0.7756211884683251 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.428457284431903 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.2861527614022168 -- True
+	 	 	 (o) Runs Test: 0.4217338382780951 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9957756800207535 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7411648038614513 -- True
+	 	 	 (o) Cusum Test: 0.22139741800755883 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.17506581736040197 -- True
+	 	 	 	 -3: 0.06608872623365376 -- True
+	 	 	 	 -2: 0.2011881482505418 -- True
+	 	 	 	 -1: 0.13637776803382476 -- True
+	 	 	 	 +1: 0.7913368594679584 -- True
+	 	 	 	 +2: 0.5703785253939775 -- True
+	 	 	 	 +3: 0.15791736760374941 -- True
+	 	 	 	 +4: 0.924831740606703 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.0026675561356194967 -- False
+	 	 	 	 -8.0: 0.0021142337763629857 -- False
+	 	 	 	 -7.0: 0.004205194081833403 -- False
+	 	 	 	 -6.0: 0.008436376915606362 -- False
+	 	 	 	 -5.0: 0.008688236184697159 -- False
+	 	 	 	 -4.0: 0.005206002887183151 -- False
+	 	 	 	 -3.0: 0.010632033074225581 -- True
+	 	 	 	 -2.0: 0.1744727946747645 -- True
+	 	 	 	 -1.0: 0.9235181326142471 -- True
+	 	 	 	 +1.0: 0.4424725836673784 -- True
+	 	 	 	 +2.0: 0.9337393464207391 -- True
+	 	 	 	 +3.0: 0.6064086932160931 -- True
+	 	 	 	 +4.0: 0.586244501500318 -- True
+	 	 	 	 +5.0: 0.5754672140915872 -- True
+	 	 	 	 +6.0: 0.4604394702706439 -- True
+	 	 	 	 +7.0: 0.5314974024400188 -- True
+	 	 	 	 +8.0: 0.7755976410385108 -- True
+	 	 	 	 +9.0: 0.7268922660928341 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.3969116606737775 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7419212238512388 -- True
+	 	 	 (o) Linear Complexity Test: 0.9303145363821061 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3567958547318184 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8424696249663689 -- True
+	 	 	 (o) Runs Test: 0.3135189485797262 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.30962938936358614 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9573424435204688 -- True
+	 	 	 (o) Cusum Test: 0.3775802098907886 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.148933638484844 -- True
+	 	 	 	 -3: 0.5204828464333106 -- True
+	 	 	 	 -2: 0.4540852309291469 -- True
+	 	 	 	 -1: 0.6696371759319435 -- True
+	 	 	 	 +1: 0.31576023218761956 -- True
+	 	 	 	 +2: 0.40513312281691277 -- True
+	 	 	 	 +3: 0.600885719826012 -- True
+	 	 	 	 +4: 0.509713120621337 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.2088115762555105 -- True
+	 	 	 	 -8.0: 0.3553704938542871 -- True
+	 	 	 	 -7.0: 0.4834392064697598 -- True
+	 	 	 	 -6.0: 0.4525027278039999 -- True
+	 	 	 	 -5.0: 0.4354808683259681 -- True
+	 	 	 	 -4.0: 0.7942022176841277 -- True
+	 	 	 	 -3.0: 0.9208237818872373 -- True
+	 	 	 	 -2.0: 0.9461544132646768 -- True
+	 	 	 	 -1.0: 0.5586248175094619 -- True
+	 	 	 	 +1.0: 0.22825588635113514 -- True
+	 	 	 	 +2.0: 0.40233652695768185 -- True
+	 	 	 	 +3.0: 0.9582787093176631 -- True
+	 	 	 	 +4.0: 0.9260245800871747 -- True
+	 	 	 	 +5.0: 0.9968888680067997 -- True
+	 	 	 	 +6.0: 0.9465714855955605 -- True
+	 	 	 	 +7.0: 0.932775485888723 -- True
+	 	 	 	 +8.0: 0.9855415198657302 -- True
+	 	 	 	 +9.0: 0.7549780776620301 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.018707501866787678 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8232954693344188 -- True
+	 	 	 (o) Linear Complexity Test: 0.3678793264987548 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7561536413601565 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6712476047107087 -- True
+	 	 	 (o) Runs Test: 0.7556959951361908 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9220695138189307 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9914549085904393 -- True
+	 	 	 (o) Cusum Test: 0.4291397493238436 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6824110074266403 -- True
+	 	 	 	 -3: 0.10327851416737512 -- True
+	 	 	 	 -2: 0.12093306231718927 -- True
+	 	 	 	 -1: 0.44545034267010863 -- True
+	 	 	 	 +1: 0.350936507367242 -- True
+	 	 	 	 +2: 0.20411623826519354 -- True
+	 	 	 	 +3: 0.9825838047363324 -- True
+	 	 	 	 +4: 0.839365243071138 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.8666390147692701 -- True
+	 	 	 	 -8.0: 0.6279056144492836 -- True
+	 	 	 	 -7.0: 0.7880466023398347 -- True
+	 	 	 	 -6.0: 0.9297618143941311 -- True
+	 	 	 	 -5.0: 0.8214598556989371 -- True
+	 	 	 	 -4.0: 0.7890732743538613 -- True
+	 	 	 	 -3.0: 0.9014273725700493 -- True
+	 	 	 	 -2.0: 0.5282244136017413 -- True
+	 	 	 	 -1.0: 0.09656589443461912 -- True
+	 	 	 	 +1.0: 0.3247557654026184 -- True
+	 	 	 	 +2.0: 0.9645721577209271 -- True
+	 	 	 	 +3.0: 0.5044788097535188 -- True
+	 	 	 	 +4.0: 0.4122222580476401 -- True
+	 	 	 	 +5.0: 0.48869267211314904 -- True
+	 	 	 	 +6.0: 0.4222180953937863 -- True
+	 	 	 	 +7.0: 0.2581102942498914 -- True
+	 	 	 	 +8.0: 0.24281012423390824 -- True
+	 	 	 	 +9.0: 0.33378125764957645 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.13357219793816436 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.16812635247868568 -- True
+	 	 	 (o) Linear Complexity Test: 0.37427887342208516 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.30556236748471044 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4211607824285943 -- True
+	 	 	 (o) Runs Test: 0.5301821939843869 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8638428539585498 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8127850550000713 -- True
+	 	 	 (o) Cusum Test: 0.20680482883138515 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9973274490194294 -- True
+	 	 	 	 -3: 0.7969115828351663 -- True
+	 	 	 	 -2: 0.13011172867000972 -- True
+	 	 	 	 -1: 0.7982551855292992 -- True
+	 	 	 	 +1: 0.8144418311293947 -- True
+	 	 	 	 +2: 0.6166544896872475 -- True
+	 	 	 	 +3: 0.3572797853417184 -- True
+	 	 	 	 +4: 0.4163398262094822 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.3079141316144338 -- True
+	 	 	 	 -8.0: 0.2777196403594123 -- True
+	 	 	 	 -7.0: 0.5196453156321181 -- True
+	 	 	 	 -6.0: 0.8946445584635359 -- True
+	 	 	 	 -5.0: 0.9001347222014164 -- True
+	 	 	 	 -4.0: 0.5692377874336307 -- True
+	 	 	 	 -3.0: 0.7363218633925968 -- True
+	 	 	 	 -2.0: 0.9422419204907744 -- True
+	 	 	 	 -1.0: 0.9001347222014164 -- True
+	 	 	 	 +1.0: 0.6605028130749279 -- True
+	 	 	 	 +2.0: 0.3104238929075327 -- True
+	 	 	 	 +3.0: 0.1524031305592332 -- True
+	 	 	 	 +4.0: 0.1414623252230375 -- True
+	 	 	 	 +5.0: 0.09024045473209943 -- True
+	 	 	 	 +6.0: 0.04698416086706183 -- True
+	 	 	 	 +7.0: 0.02709707109182135 -- True
+	 	 	 	 +8.0: 0.04122044665645773 -- True
+	 	 	 	 +9.0: 0.09716291251187645 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6023878906113003 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.22684922358048598 -- True
+	 	 	 (o) Linear Complexity Test: 0.17893048509674078 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.35877962549221887 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7101091950011366 -- True
+	 	 	 (o) Runs Test: 0.6355173441848614 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8909965162191826 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9455338832535461 -- True
+	 	 	 (o) Cusum Test: 0.529101392518283 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9897427422576798 -- True
+	 	 	 	 -3: 0.057361882520280086 -- True
+	 	 	 	 -2: 0.20201273191202435 -- True
+	 	 	 	 -1: 0.9462643055964459 -- True
+	 	 	 	 +1: 0.43123901046320423 -- True
+	 	 	 	 +2: 0.456296658214723 -- True
+	 	 	 	 +3: 0.7386794796276861 -- True
+	 	 	 	 +4: 0.6912140370870072 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9387885777628212 -- True
+	 	 	 	 -8.0: 0.7313291295022999 -- True
+	 	 	 	 -7.0: 0.7452432327944192 -- True
+	 	 	 	 -6.0: 0.6297337649839769 -- True
+	 	 	 	 -5.0: 0.5474502779041508 -- True
+	 	 	 	 -4.0: 0.4690541327808343 -- True
+	 	 	 	 -3.0: 0.37235523677616145 -- True
+	 	 	 	 -2.0: 0.39530664470115506 -- True
+	 	 	 	 -1.0: 0.5474502779041508 -- True
+	 	 	 	 +1.0: 0.47621492702180857 -- True
+	 	 	 	 +2.0: 0.9708353858895679 -- True
+	 	 	 	 +3.0: 0.7286542461178851 -- True
+	 	 	 	 +4.0: 0.9284823783097406 -- True
+	 	 	 	 +5.0: 0.7635726487259739 -- True
+	 	 	 	 +6.0: 0.6128790943898268 -- True
+	 	 	 	 +7.0: 0.6862480572448637 -- True
+	 	 	 	 +8.0: 0.9056395873432144 -- True
+	 	 	 	 +9.0: 0.8749101272750933 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5054974669235003 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8788460069817321 -- True
+	 	 	 (o) Linear Complexity Test: 0.5345184724274292 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.831713031585984 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.35683466861825874 -- True
+	 	 	 (o) Runs Test: 0.6935558792998222 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.48968479640213414 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9978771660653525 -- True
+	 	 	 (o) Cusum Test: 0.23352870902045011 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.38640103546362287 -- True
+	 	 	 	 -3: 0.3235697903043481 -- True
+	 	 	 	 -2: 0.8731915874055711 -- True
+	 	 	 	 -1: 0.17003094844928007 -- True
+	 	 	 	 +1: 0.8267664341083485 -- True
+	 	 	 	 +2: 0.6192724109179716 -- True
+	 	 	 	 +3: 0.9519674915348177 -- True
+	 	 	 	 +4: 0.19517708326517996 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7442854612253422 -- True
+	 	 	 	 -8.0: 0.8383116899456184 -- True
+	 	 	 	 -7.0: 0.8026245177626052 -- True
+	 	 	 	 -6.0: 0.890277243010079 -- True
+	 	 	 	 -5.0: 0.95945481563059 -- True
+	 	 	 	 -4.0: 0.7255073969098413 -- True
+	 	 	 	 -3.0: 0.808918685688417 -- True
+	 	 	 	 -2.0: 0.9171191231968223 -- True
+	 	 	 	 -1.0: 0.6876249109146805 -- True
+	 	 	 	 +1.0: 0.2120913066111686 -- True
+	 	 	 	 +2.0: 0.23297693554813603 -- True
+	 	 	 	 +3.0: 0.1287289246517621 -- True
+	 	 	 	 +4.0: 0.13530146175475707 -- True
+	 	 	 	 +5.0: 0.5357212900616778 -- True
+	 	 	 	 +6.0: 0.9866586954668121 -- True
+	 	 	 	 +7.0: 0.8807873671688312 -- True
+	 	 	 	 +8.0: 0.7230326052500786 -- True
+	 	 	 	 +9.0: 0.9758561434217226 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6330178413937544 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.08801624409886458 -- True
+	 	 	 (o) Linear Complexity Test: 0.28954584017301144 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8455524159511021 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4893584002444196 -- True
+	 	 	 (o) Runs Test: 0.95159515957538 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.7967932636168727 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8645109033309306 -- True
+	 	 	 (o) Cusum Test: 0.8515391702400404 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9693205377086126 -- True
+	 	 	 	 -3: 0.8901575519939763 -- True
+	 	 	 	 -2: 0.2573796946361818 -- True
+	 	 	 	 -1: 0.7116247648670228 -- True
+	 	 	 	 +1: 0.44202262758013844 -- True
+	 	 	 	 +2: 0.6522104591097034 -- True
+	 	 	 	 +3: 0.27019632523209036 -- True
+	 	 	 	 +4: 0.25749772693242445 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9272405946958517 -- True
+	 	 	 	 -8.0: 0.8620165241739521 -- True
+	 	 	 	 -7.0: 0.6877733640967987 -- True
+	 	 	 	 -6.0: 0.6949346175654493 -- True
+	 	 	 	 -5.0: 0.8343136935731069 -- True
+	 	 	 	 -4.0: 0.7627554508130838 -- True
+	 	 	 	 -3.0: 0.22266092765337442 -- True
+	 	 	 	 -2.0: 0.21556870307529263 -- True
+	 	 	 	 -1.0: 0.6729171100039424 -- True
+	 	 	 	 +1.0: 0.6729171100039424 -- True
+	 	 	 	 +2.0: 0.8847749373366116 -- True
+	 	 	 	 +3.0: 0.8743184158007823 -- True
+	 	 	 	 +4.0: 0.7431094142122016 -- True
+	 	 	 	 +5.0: 0.9726951767024212 -- True
+	 	 	 	 +6.0: 0.7025747880700377 -- True
+	 	 	 	 +7.0: 0.38418587472597543 -- True
+	 	 	 	 +8.0: 0.30667420288175695 -- True
+	 	 	 	 +9.0: 0.4287017068933149 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.723130142172945 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7967511051373213 -- True
+	 	 	 (o) Linear Complexity Test: 0.7827263494437744 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3405340933423884 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6015637227145624 -- True
+	 	 	 (o) Runs Test: 0.479727966985254 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5213006216034619 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 1.533228763689131e-308 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8326055752229883 -- True
+	 	 	 (o) Cusum Test: 0.4990689265253305 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.7651346590142323 -- True
+	 	 	 	 -3: 0.9331828042610542 -- True
+	 	 	 	 -2: 0.7951414545245402 -- True
+	 	 	 	 -1: 0.07904421079049724 -- True
+	 	 	 	 +1: 0.7330102231273695 -- True
+	 	 	 	 +2: 0.5066041104436844 -- True
+	 	 	 	 +3: 0.5198640531876505 -- True
+	 	 	 	 +4: 0.2450199810221403 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9299512840427796 -- True
+	 	 	 	 -8.0: 0.7382091815233403 -- True
+	 	 	 	 -7.0: 0.9770868784362227 -- True
+	 	 	 	 -6.0: 0.9626447360987771 -- True
+	 	 	 	 -5.0: 0.9449598630788331 -- True
+	 	 	 	 -4.0: 0.8371910952134451 -- True
+	 	 	 	 -3.0: 0.9907623618772106 -- True
+	 	 	 	 -2.0: 0.7764152807590321 -- True
+	 	 	 	 -1.0: 0.27688711450387327 -- True
+	 	 	 	 +1.0: 0.45278414024922087 -- True
+	 	 	 	 +2.0: 0.8225974208855622 -- True
+	 	 	 	 +3.0: 0.5018896892304825 -- True
+	 	 	 	 +4.0: 0.6596975231780862 -- True
+	 	 	 	 +5.0: 0.7364506930675926 -- True
+	 	 	 	 +6.0: 0.9377816552533647 -- True
+	 	 	 	 +7.0: 0.8744827385344599 -- True
+	 	 	 	 +8.0: 0.8936474619746166 -- True
+	 	 	 	 +9.0: 0.9949901083257756 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6411838353418038 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.5901582751010795 -- True
+	 	 	 (o) Linear Complexity Test: 0.3342535580867653 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6200036762776863 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.007709869650004858 -- False
+	 	 	 (o) Runs Test: 0.6076182856364595 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.570793882889822 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9367172682364012 -- True
+	 	 	 (o) Cusum Test: 0.45400440517073143 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.1836987553242758 -- True
+	 	 	 	 -3: 0.7585698557517284 -- True
+	 	 	 	 -2: 0.9336679803547412 -- True
+	 	 	 	 -1: 0.3710491384752464 -- True
+	 	 	 	 +1: 0.9672374966063355 -- True
+	 	 	 	 +2: 0.9184848398734512 -- True
+	 	 	 	 +3: 0.9953958035326996 -- True
+	 	 	 	 +4: 0.691778498897506 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.39367541711740794 -- True
+	 	 	 	 -8.0: 0.2556416701433941 -- True
+	 	 	 	 -7.0: 0.1860942732420371 -- True
+	 	 	 	 -6.0: 0.20181918513526598 -- True
+	 	 	 	 -5.0: 0.28547887617011514 -- True
+	 	 	 	 -4.0: 0.6329714655077077 -- True
+	 	 	 	 -3.0: 0.8475611093185728 -- True
+	 	 	 	 -2.0: 0.44752433490271326 -- True
+	 	 	 	 -1.0: 0.5233107715914695 -- True
+	 	 	 	 +1.0: 0.4818203002833469 -- True
+	 	 	 	 +2.0: 0.7350521064397896 -- True
+	 	 	 	 +3.0: 0.632888374145674 -- True
+	 	 	 	 +4.0: 0.27226141473228327 -- True
+	 	 	 	 +5.0: 0.4710662881657335 -- True
+	 	 	 	 +6.0: 0.8535545374597151 -- True
+	 	 	 	 +7.0: 0.8822498391713226 -- True
+	 	 	 	 +8.0: 0.9009689397633733 -- True
+	 	 	 	 +9.0: 0.9219849390397816 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8085277553991075 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8335609359207403 -- True
+	 	 	 (o) Linear Complexity Test: 0.7553994503288102 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.1031357600075307 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9636271851532267 -- True
+	 	 	 (o) Runs Test: 0.12973282828607396 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.41134630194052396 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7165249589650081 -- True
+	 	 	 (o) Cusum Test: 0.1150595328652759 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.36670743453453675 -- True
+	 	 	 	 -3: 0.3452327942806458 -- True
+	 	 	 	 -2: 0.013675724030830729 -- True
+	 	 	 	 -1: 0.05068817033220071 -- True
+	 	 	 	 +1: 0.06541721282023089 -- True
+	 	 	 	 +2: 0.9864112753654771 -- True
+	 	 	 	 +3: 0.11686647527527648 -- True
+	 	 	 	 +4: 0.8428016736323676 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.8184548071906931 -- True
+	 	 	 	 -8.0: 0.7760467233867804 -- True
+	 	 	 	 -7.0: 0.8539127701941353 -- True
+	 	 	 	 -6.0: 0.49291241169199496 -- True
+	 	 	 	 -5.0: 0.5373665163939688 -- True
+	 	 	 	 -4.0: 0.5182809919373064 -- True
+	 	 	 	 -3.0: 0.32751485079372733 -- True
+	 	 	 	 -2.0: 0.13992011778485502 -- True
+	 	 	 	 -1.0: 0.0296091317806215 -- True
+	 	 	 	 +1.0: 0.5435964966247102 -- True
+	 	 	 	 +2.0: 0.7258337028593356 -- True
+	 	 	 	 +3.0: 0.7713717499719389 -- True
+	 	 	 	 +4.0: 0.927683313627442 -- True
+	 	 	 	 +5.0: 0.7064174618073972 -- True
+	 	 	 	 +6.0: 0.7558765006139367 -- True
+	 	 	 	 +7.0: 1.0 -- True
+	 	 	 	 +8.0: 0.809780471361861 -- True
+	 	 	 	 +9.0: 0.6169511438770923 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5213445137266155 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.44312022994344274 -- True
+	 	 	 (o) Linear Complexity Test: 0.8386955519019117 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.51763064307147 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.3223284504566109 -- True
+	 	 	 (o) Runs Test: 0.6286015432245421 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5181100264882847 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7576783677565292 -- True
+	 	 	 (o) Cusum Test: 0.7846038856789583 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.44453770552145433 -- True
+	 	 	 	 -3: 0.6480361399612703 -- True
+	 	 	 	 -2: 0.11829037080660243 -- True
+	 	 	 	 -1: 0.10006201361022142 -- True
+	 	 	 	 +1: 0.015897926763146056 -- True
+	 	 	 	 +2: 0.09276180398062207 -- True
+	 	 	 	 +3: 0.011754483838201659 -- True
+	 	 	 	 +4: 0.09155439390872086 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6150195535781653 -- True
+	 	 	 	 -8.0: 0.4573799034814807 -- True
+	 	 	 	 -7.0: 0.36971679883808295 -- True
+	 	 	 	 -6.0: 0.35315427497748053 -- True
+	 	 	 	 -5.0: 0.25215893309900506 -- True
+	 	 	 	 -4.0: 0.14050554128479997 -- True
+	 	 	 	 -3.0: 0.21035034835288158 -- True
+	 	 	 	 -2.0: 0.2917712234773262 -- True
+	 	 	 	 -1.0: 0.09165477000390003 -- True
+	 	 	 	 +1.0: 0.01645946460553223 -- True
+	 	 	 	 +2.0: 0.03903510574377002 -- True
+	 	 	 	 +3.0: 0.1684594244357187 -- True
+	 	 	 	 +4.0: 0.5199815327023583 -- True
+	 	 	 	 +5.0: 0.8004598711606762 -- True
+	 	 	 	 +6.0: 0.8923688686750768 -- True
+	 	 	 	 +7.0: 0.7378008318233735 -- True
+	 	 	 	 +8.0: 0.9204330942097793 -- True
+	 	 	 	 +9.0: 0.9252453009481441 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8874181434997893 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7568138234757333 -- True
+	 	 	 (o) Linear Complexity Test: 0.019634818530880206 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5291570867513564 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5838705956090801 -- True
+	 	 	 (o) Runs Test: 0.10418311050081466 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9688451002955398 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7535645883020418 -- True
+	 	 	 (o) Cusum Test: 0.7209153143596572 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9264195862131936 -- True
+	 	 	 	 -3: 0.2531494812613283 -- True
+	 	 	 	 -2: 0.32760878037896113 -- True
+	 	 	 	 -1: 0.14270643487247436 -- True
+	 	 	 	 +1: 0.26402465077547416 -- True
+	 	 	 	 +2: 0.5398742711072473 -- True
+	 	 	 	 +3: 0.46341136298629115 -- True
+	 	 	 	 +4: 0.5196736974474802 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.34071920692252056 -- True
+	 	 	 	 -8.0: 0.5266103495602379 -- True
+	 	 	 	 -7.0: 0.6616098415615513 -- True
+	 	 	 	 -6.0: 0.7398532249653167 -- True
+	 	 	 	 -5.0: 0.739109801439676 -- True
+	 	 	 	 -4.0: 0.7281518218507554 -- True
+	 	 	 	 -3.0: 0.8949747887867419 -- True
+	 	 	 	 -2.0: 0.9790822590683516 -- True
+	 	 	 	 -1.0: 0.7505648927686173 -- True
+	 	 	 	 +1.0: 0.2707758120307132 -- True
+	 	 	 	 +2.0: 0.294279305742719 -- True
+	 	 	 	 +3.0: 0.2490883872579701 -- True
+	 	 	 	 +4.0: 0.41488744727321814 -- True
+	 	 	 	 +5.0: 0.9156102288962487 -- True
+	 	 	 	 +6.0: 0.6963578647043467 -- True
+	 	 	 	 +7.0: 0.5946169550794029 -- True
+	 	 	 	 +8.0: 0.7206169142265528 -- True
+	 	 	 	 +9.0: 0.8817948346541714 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.48470679046184184 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7896953592285265 -- True
+	 	 	 (o) Linear Complexity Test: 0.6541467687489855 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6643868438047957 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.17373526046882462 -- True
+	 	 	 (o) Runs Test: 0.2387148290931198 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6220088086593112 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9604596692688047 -- True
+	 	 	 (o) Cusum Test: 0.6525909498871094 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3811563815873661 -- True
+	 	 	 	 -3: 0.5000915887304013 -- True
+	 	 	 	 -2: 0.9034968161010728 -- True
+	 	 	 	 -1: 0.8878508440429908 -- True
+	 	 	 	 +1: 0.9400038894931341 -- True
+	 	 	 	 +2: 0.3592769628573628 -- True
+	 	 	 	 +3: 0.8398096180817378 -- True
+	 	 	 	 +4: 0.5805443826046776 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.12169686449201857 -- True
+	 	 	 	 -8.0: 0.077564498574605 -- True
+	 	 	 	 -7.0: 0.02791718305876095 -- True
+	 	 	 	 -6.0: 0.019392943714432103 -- True
+	 	 	 	 -5.0: 0.06999060515032217 -- True
+	 	 	 	 -4.0: 0.29626797098280333 -- True
+	 	 	 	 -3.0: 0.5206730488477996 -- True
+	 	 	 	 -2.0: 0.4818940560781808 -- True
+	 	 	 	 -1.0: 0.40298923304680434 -- True
+	 	 	 	 +1.0: 0.5069581854316564 -- True
+	 	 	 	 +2.0: 0.5288355153941806 -- True
+	 	 	 	 +3.0: 0.4544574058970602 -- True
+	 	 	 	 +4.0: 0.273075975265073 -- True
+	 	 	 	 +5.0: 0.097430795504773 -- True
+	 	 	 	 +6.0: 0.05609104009976606 -- True
+	 	 	 	 +7.0: 0.06644619250370985 -- True
+	 	 	 	 +8.0: 0.11691804042865156 -- True
+	 	 	 	 +9.0: 0.11443793873533388 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.19913574741664775 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8442841887329806 -- True
+	 	 	 (o) Linear Complexity Test: 0.35336792112125925 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.45510582601699756 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7088789355064035 -- True
+	 	 	 (o) Runs Test: 0.1740441198382624 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.0793631007316346 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.5170648985614354 -- True
+	 	 	 (o) Cusum Test: 0.8056268164460652 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5853419386832245 -- True
+	 	 	 	 -3: 0.7226815017961729 -- True
+	 	 	 	 -2: 0.8504019090855246 -- True
+	 	 	 	 -1: 0.7179110003696441 -- True
+	 	 	 	 +1: 0.895426296618838 -- True
+	 	 	 	 +2: 0.4968356170641063 -- True
+	 	 	 	 +3: 0.5935541577791904 -- True
+	 	 	 	 +4: 0.08289564492304259 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7033309958926337 -- True
+	 	 	 	 -8.0: 0.5738708843634852 -- True
+	 	 	 	 -7.0: 0.40191415384074003 -- True
+	 	 	 	 -6.0: 0.258423165118976 -- True
+	 	 	 	 -5.0: 0.2306252382382462 -- True
+	 	 	 	 -4.0: 0.4669268535062787 -- True
+	 	 	 	 -3.0: 0.39353445833672207 -- True
+	 	 	 	 -2.0: 0.34937864323073586 -- True
+	 	 	 	 -1.0: 0.6006974475874487 -- True
+	 	 	 	 +1.0: 0.9865293163852763 -- True
+	 	 	 	 +2.0: 0.3964021062914471 -- True
+	 	 	 	 +3.0: 0.2637812713467902 -- True
+	 	 	 	 +4.0: 0.43625064256230095 -- True
+	 	 	 	 +5.0: 0.6204179129060718 -- True
+	 	 	 	 +6.0: 0.7951541885658485 -- True
+	 	 	 	 +7.0: 0.7044646407401873 -- True
+	 	 	 	 +8.0: 0.3288163593946961 -- True
+	 	 	 	 +9.0: 0.13182816783809187 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.09944829432583427 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.483708772005845 -- True
+	 	 	 (o) Linear Complexity Test: 0.41341651998316187 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9354782900338854 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.19802204450328073 -- True
+	 	 	 (o) Runs Test: 0.45243648305262063 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.3167497154350304 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9744269270471907 -- True
+	 	 	 (o) Cusum Test: 0.49064850552428085 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.25524940044158395 -- True
+	 	 	 	 -3: 0.364203027888836 -- True
+	 	 	 	 -2: 0.11971492664798251 -- True
+	 	 	 	 -1: 0.29526428557945095 -- True
+	 	 	 	 +1: 0.019762575206833374 -- True
+	 	 	 	 +2: 0.796393379627811 -- True
+	 	 	 	 +3: 0.07879938100545368 -- True
+	 	 	 	 +4: 0.01863856681916351 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.2655727612437375 -- True
+	 	 	 	 -8.0: 0.2359323206489755 -- True
+	 	 	 	 -7.0: 0.3789664904290895 -- True
+	 	 	 	 -6.0: 0.31660688226571 -- True
+	 	 	 	 -5.0: 0.16353887668885825 -- True
+	 	 	 	 -4.0: 0.209337113239086 -- True
+	 	 	 	 -3.0: 0.34144084097853244 -- True
+	 	 	 	 -2.0: 0.1157428992462994 -- True
+	 	 	 	 -1.0: 0.01691920585371207 -- True
+	 	 	 	 +1.0: 0.709002062915568 -- True
+	 	 	 	 +2.0: 0.9656273663394574 -- True
+	 	 	 	 +3.0: 0.6048868997834576 -- True
+	 	 	 	 +4.0: 0.32345363129738924 -- True
+	 	 	 	 +5.0: 0.16353887668885825 -- True
+	 	 	 	 +6.0: 0.1435222643472061 -- True
+	 	 	 	 +7.0: 0.09981573799192255 -- True
+	 	 	 	 +8.0: 0.05766029918556077 -- True
+	 	 	 	 +9.0: 0.07166845102883165 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8134611162237579 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.07961337396263428 -- True
+	 	 	 (o) Linear Complexity Test: 0.7178984254136491 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.92391706650386 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.764867845284495 -- True
+	 	 	 (o) Runs Test: 0.9259243379470803 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8098531434481769 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6275487879304701 -- True
+	 	 	 (o) Cusum Test: 0.7749862234220274 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8040389910591726 -- True
+	 	 	 	 -3: 0.25723860914853175 -- True
+	 	 	 	 -2: 0.048323383643874306 -- True
+	 	 	 	 -1: 0.43811051365486375 -- True
+	 	 	 	 +1: 0.3728301668168667 -- True
+	 	 	 	 +2: 0.9572613942764948 -- True
+	 	 	 	 +3: 0.04521939862673998 -- True
+	 	 	 	 +4: 0.7366482086522383 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6239196261440008 -- True
+	 	 	 	 -8.0: 0.7952424415569374 -- True
+	 	 	 	 -7.0: 0.8097526595998117 -- True
+	 	 	 	 -6.0: 0.5769320557552082 -- True
+	 	 	 	 -5.0: 0.6781609724508909 -- True
+	 	 	 	 -4.0: 0.9243381667121187 -- True
+	 	 	 	 -3.0: 0.9592636752117486 -- True
+	 	 	 	 -2.0: 0.5841660567986491 -- True
+	 	 	 	 -1.0: 0.1890314726891218 -- True
+	 	 	 	 +1.0: 0.8729612509897753 -- True
+	 	 	 	 +2.0: 0.2974736019022953 -- True
+	 	 	 	 +3.0: 0.12544142124572644 -- True
+	 	 	 	 +4.0: 0.13414737975875093 -- True
+	 	 	 	 +5.0: 0.32598560515190333 -- True
+	 	 	 	 +6.0: 0.3742921794709184 -- True
+	 	 	 	 +7.0: 0.3168302387745595 -- True
+	 	 	 	 +8.0: 0.3075659587780717 -- True
+	 	 	 	 +9.0: 0.2849579462090157 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.14468509244988137 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3192240670961003 -- True
+	 	 	 (o) Linear Complexity Test: 0.446019087834014 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5873729778004348 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.06395561132067033 -- True
+	 	 	 (o) Runs Test: 0.8479559378402979 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.11540531228936694 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9816767742123185 -- True
+	 	 	 (o) Cusum Test: 0.4137712794369617 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5798416889868145 -- True
+	 	 	 	 -3: 0.01805780591384145 -- True
+	 	 	 	 -2: 0.2313146722109035 -- True
+	 	 	 	 -1: 0.5710203686374531 -- True
+	 	 	 	 +1: 0.7347241717956697 -- True
+	 	 	 	 +2: 0.6892302793173954 -- True
+	 	 	 	 +3: 0.4695099288449168 -- True
+	 	 	 	 +4: 0.3991083889751513 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.14388623293384994 -- True
+	 	 	 	 -8.0: 0.16981050508552142 -- True
+	 	 	 	 -7.0: 0.2858107578041478 -- True
+	 	 	 	 -6.0: 0.4543917599200613 -- True
+	 	 	 	 -5.0: 0.38933252670355356 -- True
+	 	 	 	 -4.0: 0.18033370835010432 -- True
+	 	 	 	 -3.0: 0.10787167378640108 -- True
+	 	 	 	 -2.0: 0.06989561022728948 -- True
+	 	 	 	 -1.0: 0.060990015645299885 -- True
+	 	 	 	 +1.0: 0.38933252670355323 -- True
+	 	 	 	 +2.0: 0.4828996977801915 -- True
+	 	 	 	 +3.0: 0.2300563729738222 -- True
+	 	 	 	 +4.0: 0.12574023077336033 -- True
+	 	 	 	 +5.0: 0.12045490499231563 -- True
+	 	 	 	 +6.0: 0.1891777739279934 -- True
+	 	 	 	 +7.0: 0.21650064559415738 -- True
+	 	 	 	 +8.0: 0.1823383541807686 -- True
+	 	 	 	 +9.0: 0.21482446962041502 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.32085998712116726 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7785868168152987 -- True
+	 	 	 (o) Linear Complexity Test: 0.5580760093981498 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6420354296196644 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9977583573085236 -- True
+	 	 	 (o) Runs Test: 0.018138160315767336 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.7080663038209403 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9695461749168166 -- True
+	 	 	 (o) Cusum Test: 0.49039474358054275 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8948801279033048 -- True
+	 	 	 	 -3: 0.29179994256766095 -- True
+	 	 	 	 -2: 0.4397815844533096 -- True
+	 	 	 	 -1: 0.7522314385006228 -- True
+	 	 	 	 +1: 0.7703884093349715 -- True
+	 	 	 	 +2: 0.531649422343727 -- True
+	 	 	 	 +3: 0.006100169968178673 -- False
+	 	 	 	 +4: 0.5150130901186329 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6746369416823077 -- True
+	 	 	 	 -8.0: 0.36874419182669294 -- True
+	 	 	 	 -7.0: 0.2916565315347973 -- True
+	 	 	 	 -6.0: 0.4337409886347988 -- True
+	 	 	 	 -5.0: 0.6453272238582446 -- True
+	 	 	 	 -4.0: 0.9970675585968002 -- True
+	 	 	 	 -3.0: 0.7019562719879122 -- True
+	 	 	 	 -2.0: 0.9239658444603287 -- True
+	 	 	 	 -1.0: 0.8534223129598615 -- True
+	 	 	 	 +1.0: 0.4658239965708798 -- True
+	 	 	 	 +2.0: 0.4060391945905728 -- True
+	 	 	 	 +3.0: 0.21844726876759313 -- True
+	 	 	 	 +4.0: 0.40411858334767414 -- True
+	 	 	 	 +5.0: 0.6499866466828382 -- True
+	 	 	 	 +6.0: 0.6664806367857525 -- True
+	 	 	 	 +7.0: 0.7915503942453096 -- True
+	 	 	 	 +8.0: 0.7008776042301237 -- True
+	 	 	 	 +9.0: 0.5304425654038256 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.2140927561231607 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.012215688390495376 -- True
+	 	 	 (o) Linear Complexity Test: 0.7015195437866699 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9788081790024823 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.31592600176470137 -- True
+	 	 	 (o) Runs Test: 0.8361561094017544 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.42533179092589946 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8484926513124169 -- True
+	 	 	 (o) Cusum Test: 0.7413974313914216 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.4019447804027127 -- True
+	 	 	 	 -3: 0.6890392888560513 -- True
+	 	 	 	 -2: 0.6513389983646436 -- True
+	 	 	 	 -1: 0.8601332126442531 -- True
+	 	 	 	 +1: 0.2535206292764768 -- True
+	 	 	 	 +2: 0.7397554168688254 -- True
+	 	 	 	 +3: 0.8961042296497709 -- True
+	 	 	 	 +4: 0.6813877224675969 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.35881463531391666 -- True
+	 	 	 	 -8.0: 0.6266365937760168 -- True
+	 	 	 	 -7.0: 0.8750955623455807 -- True
+	 	 	 	 -6.0: 0.7499740698419894 -- True
+	 	 	 	 -5.0: 0.6312598975194543 -- True
+	 	 	 	 -4.0: 0.5092487843267007 -- True
+	 	 	 	 -3.0: 0.35507635124934356 -- True
+	 	 	 	 -2.0: 0.5713971535316168 -- True
+	 	 	 	 -1.0: 0.6904385856566905 -- True
+	 	 	 	 +1.0: 0.3422663449340988 -- True
+	 	 	 	 +2.0: 0.3176324411297524 -- True
+	 	 	 	 +3.0: 0.3880631451279457 -- True
+	 	 	 	 +4.0: 0.360324076727766 -- True
+	 	 	 	 +5.0: 0.5848384685659205 -- True
+	 	 	 	 +6.0: 0.7710797618674623 -- True
+	 	 	 	 +7.0: 0.7726665720444135 -- True
+	 	 	 	 +8.0: 0.837056076850814 -- True
+	 	 	 	 +9.0: 0.7776778333059045 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7087920846672491 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.4344152581291406 -- True
+	 	 	 (o) Linear Complexity Test: 0.6077795586801047 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7142219955760506 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.12472038751208428 -- True
+	 	 	 (o) Runs Test: 0.04044272274796616 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.13382812645812986 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7088209465180331 -- True
+	 	 	 (o) Cusum Test: 0.6293028889485122 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.4889153368837931 -- True
+	 	 	 	 -3: 0.9214107706141769 -- True
+	 	 	 	 -2: 0.5235283492178369 -- True
+	 	 	 	 -1: 0.6746982914098796 -- True
+	 	 	 	 +1: 0.5429359036802626 -- True
+	 	 	 	 +2: 0.15548719369524083 -- True
+	 	 	 	 +3: 0.9801467181749067 -- True
+	 	 	 	 +4: 0.9800061884792762 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.08667141186820296 -- True
+	 	 	 	 -8.0: 0.11347531370053751 -- True
+	 	 	 	 -7.0: 0.19958388750326383 -- True
+	 	 	 	 -6.0: 0.5034400111305457 -- True
+	 	 	 	 -5.0: 0.8719961112745387 -- True
+	 	 	 	 -4.0: 0.761805442583566 -- True
+	 	 	 	 -3.0: 0.9061382951065465 -- True
+	 	 	 	 -2.0: 0.49334382925194864 -- True
+	 	 	 	 -1.0: 0.39150888209071144 -- True
+	 	 	 	 +1.0: 0.758387132153539 -- True
+	 	 	 	 +2.0: 0.8790116419308894 -- True
+	 	 	 	 +3.0: 0.4762306977890015 -- True
+	 	 	 	 +4.0: 0.3854981891748701 -- True
+	 	 	 	 +5.0: 0.514518652497387 -- True
+	 	 	 	 +6.0: 0.654758042967359 -- True
+	 	 	 	 +7.0: 0.7932967812403905 -- True
+	 	 	 	 +8.0: 0.8028878096647675 -- True
+	 	 	 	 +9.0: 0.8125531521302138 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7248469086263503 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3496603206865774 -- True
+	 	 	 (o) Linear Complexity Test: 0.9731054468579768 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5492159712845481 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5041609748343122 -- True
+	 	 	 (o) Runs Test: 0.3071112453564211 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5110785134516482 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9782353279938275 -- True
+	 	 	 (o) Cusum Test: 0.44204570862453535 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5642792061764318 -- True
+	 	 	 	 -3: 0.1534874303195974 -- True
+	 	 	 	 -2: 0.29173115636542213 -- True
+	 	 	 	 -1: 0.9454234245569519 -- True
+	 	 	 	 +1: 0.8188251391409781 -- True
+	 	 	 	 +2: 0.49425504623799266 -- True
+	 	 	 	 +3: 0.49767673059241224 -- True
+	 	 	 	 +4: 0.36779114313910855 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6634215158168552 -- True
+	 	 	 	 -8.0: 0.8959224572369026 -- True
+	 	 	 	 -7.0: 0.5860957561065213 -- True
+	 	 	 	 -6.0: 0.2545702116772044 -- True
+	 	 	 	 -5.0: 0.22616087661440443 -- True
+	 	 	 	 -4.0: 0.492599658516508 -- True
+	 	 	 	 -3.0: 0.40609769518295935 -- True
+	 	 	 	 -2.0: 0.3935754828028283 -- True
+	 	 	 	 -1.0: 0.6728787999877004 -- True
+	 	 	 	 +1.0: 0.9327065528096936 -- True
+	 	 	 	 +2.0: 0.42823719351272393 -- True
+	 	 	 	 +3.0: 0.3261829231859521 -- True
+	 	 	 	 +4.0: 0.5180943221208287 -- True
+	 	 	 	 +5.0: 0.8000207888406363 -- True
+	 	 	 	 +6.0: 0.9087872512603239 -- True
+	 	 	 	 +7.0: 0.9346720708445535 -- True
+	 	 	 	 +8.0: 0.9391739342834446 -- True
+	 	 	 	 +9.0: 0.5389565013960307 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.9321243540354869 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.21411162412468907 -- True
+	 	 	 (o) Linear Complexity Test: 0.23874285904979328 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6097771305446245 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8284925831559722 -- True
+	 	 	 (o) Runs Test: 0.7609042997801735 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.7825189659247614 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6054040794747433 -- True
+	 	 	 (o) Cusum Test: 0.4998388549297649 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.743593460736421 -- True
+	 	 	 	 -3: 0.12039493130329734 -- True
+	 	 	 	 -2: 0.3701723544441464 -- True
+	 	 	 	 -1: 0.2673190895543911 -- True
+	 	 	 	 +1: 0.5420108039587019 -- True
+	 	 	 	 +2: 0.3878320942888827 -- True
+	 	 	 	 +3: 0.2250369588965367 -- True
+	 	 	 	 +4: 0.563938731613666 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.29669998615361626 -- True
+	 	 	 	 -8.0: 0.4589241989113886 -- True
+	 	 	 	 -7.0: 0.6779036905464056 -- True
+	 	 	 	 -6.0: 0.7169956672992432 -- True
+	 	 	 	 -5.0: 0.5269055270430362 -- True
+	 	 	 	 -4.0: 0.5236437494787626 -- True
+	 	 	 	 -3.0: 0.5650415677398264 -- True
+	 	 	 	 -2.0: 0.5186794338902035 -- True
+	 	 	 	 -1.0: 0.4476825830667641 -- True
+	 	 	 	 +1.0: 0.42286155677878323 -- True
+	 	 	 	 +2.0: 0.9514506935936072 -- True
+	 	 	 	 +3.0: 0.8577701533738802 -- True
+	 	 	 	 +4.0: 0.8670502703302194 -- True
+	 	 	 	 +5.0: 0.6731530918414745 -- True
+	 	 	 	 +6.0: 0.6198795600689643 -- True
+	 	 	 	 +7.0: 0.7432287788915881 -- True
+	 	 	 	 +8.0: 0.7979899276153206 -- True
+	 	 	 	 +9.0: 0.7941819095058691 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7114580094213087 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3933130816336533 -- True
+	 	 	 (o) Linear Complexity Test: 0.9961966408747841 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.18727953255080942 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.43437385953971025 -- True
+	 	 	 (o) Runs Test: 0.5598653420738956 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9967934330987042 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.5482042149885852 -- True
+	 	 	 (o) Cusum Test: 0.17076296880889744 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.21592584461663258 -- True
+	 	 	 	 -3: 0.8468197548676981 -- True
+	 	 	 	 -2: 0.30283410535293637 -- True
+	 	 	 	 -1: 0.610566873882036 -- True
+	 	 	 	 +1: 0.8512166575843819 -- True
+	 	 	 	 +2: 0.6573259833852593 -- True
+	 	 	 	 +3: 0.7451277851732825 -- True
+	 	 	 	 +4: 0.6486400743278126 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.07379654020859813 -- True
+	 	 	 	 -8.0: 0.09301910456066907 -- True
+	 	 	 	 -7.0: 0.08262966786872127 -- True
+	 	 	 	 -6.0: 0.07503898499606312 -- True
+	 	 	 	 -5.0: 0.19688756459652823 -- True
+	 	 	 	 -4.0: 0.6543967314570316 -- True
+	 	 	 	 -3.0: 0.7102147973831348 -- True
+	 	 	 	 -2.0: 0.36369204148887324 -- True
+	 	 	 	 -1.0: 0.2578990352923395 -- True
+	 	 	 	 +1.0: 0.6973436642249593 -- True
+	 	 	 	 +2.0: 0.4812906090245209 -- True
+	 	 	 	 +3.0: 0.596332771162088 -- True
+	 	 	 	 +4.0: 0.8726000609897289 -- True
+	 	 	 	 +5.0: 0.6206179464376897 -- True
+	 	 	 	 +6.0: 0.19895506450769596 -- True
+	 	 	 	 +7.0: 0.12367943333924268 -- True
+	 	 	 	 +8.0: 0.20775527427598617 -- True
+	 	 	 	 +9.0: 0.13909347004223585 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.17782510182563804 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.89692692220341 -- True
+	 	 	 (o) Linear Complexity Test: 0.8523805364323292 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.13291272217461975 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7413264708139737 -- True
+	 	 	 (o) Runs Test: 0.8298037324428401 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4689181373715525 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.90146724489352 -- True
+	 	 	 (o) Cusum Test: 0.17249360674350545 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3593917707800125 -- True
+	 	 	 	 -3: 0.8756859858026244 -- True
+	 	 	 	 -2: 0.44798356708126275 -- True
+	 	 	 	 -1: 0.7751363287536215 -- True
+	 	 	 	 +1: 0.37824284447158396 -- True
+	 	 	 	 +2: 0.5545495340964838 -- True
+	 	 	 	 +3: 0.11990817055683772 -- True
+	 	 	 	 +4: 0.33773353159116515 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.8408067666140603 -- True
+	 	 	 	 -8.0: 0.9861670865261177 -- True
+	 	 	 	 -7.0: 0.9603904777634917 -- True
+	 	 	 	 -6.0: 0.9086601150366792 -- True
+	 	 	 	 -5.0: 0.8170881436812936 -- True
+	 	 	 	 -4.0: 0.8457216392308967 -- True
+	 	 	 	 -3.0: 0.7639479894422755 -- True
+	 	 	 	 -2.0: 0.6510524552760981 -- True
+	 	 	 	 -1.0: 0.3471718541876071 -- True
+	 	 	 	 +1.0: 0.8931665833596018 -- True
+	 	 	 	 +2.0: 0.31346206724040226 -- True
+	 	 	 	 +3.0: 0.17339930492052036 -- True
+	 	 	 	 +4.0: 0.09064571476286833 -- True
+	 	 	 	 +5.0: 0.06644465633137965 -- True
+	 	 	 	 +6.0: 0.06741287405653028 -- True
+	 	 	 	 +7.0: 0.04628869359606762 -- True
+	 	 	 	 +8.0: 0.01726264846200413 -- True
+	 	 	 	 +9.0: 0.016176407714032916 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.05160334416438111 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8277757961994353 -- True
+	 	 	 (o) Linear Complexity Test: 0.6145663003247452 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8983420577260648 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8843142299747832 -- True
+	 	 	 (o) Runs Test: 0.06570360093971087 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8527491688325821 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9643148889232066 -- True
+	 	 	 (o) Cusum Test: 0.5745139483728638 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.2147166944204574 -- True
+	 	 	 	 -3: 0.4583963047696503 -- True
+	 	 	 	 -2: 0.7038236768414943 -- True
+	 	 	 	 -1: 0.95418969316743 -- True
+	 	 	 	 +1: 0.22168490661421067 -- True
+	 	 	 	 +2: 0.5730966727660519 -- True
+	 	 	 	 +3: 0.18606844530454597 -- True
+	 	 	 	 +4: 0.46401888987571227 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7668090543232664 -- True
+	 	 	 	 -8.0: 0.7668587132794746 -- True
+	 	 	 	 -7.0: 0.820375075530522 -- True
+	 	 	 	 -6.0: 0.9106637276702623 -- True
+	 	 	 	 -5.0: 0.8649184940417451 -- True
+	 	 	 	 -4.0: 0.8407523208872594 -- True
+	 	 	 	 -3.0: 0.7071866138369871 -- True
+	 	 	 	 -2.0: 0.4038061077855746 -- True
+	 	 	 	 -1.0: 0.45031372550499504 -- True
+	 	 	 	 +1.0: 0.3950012310572377 -- True
+	 	 	 	 +2.0: 0.37672243851145437 -- True
+	 	 	 	 +3.0: 0.18621389703200664 -- True
+	 	 	 	 +4.0: 0.25879925882221766 -- True
+	 	 	 	 +5.0: 0.5779218448024281 -- True
+	 	 	 	 +6.0: 0.4589789687923571 -- True
+	 	 	 	 +7.0: 0.3453553185387582 -- True
+	 	 	 	 +8.0: 0.6212045805962394 -- True
+	 	 	 	 +9.0: 0.7648408096262019 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.09892318709474716 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8105534543322098 -- True
+	 	 	 (o) Linear Complexity Test: 0.8401982591914228 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8663998457306856 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.369296337272813 -- True
+	 	 	 (o) Runs Test: 0.9596399655718941 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.48962025058231584 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8911306350306808 -- True
+	 	 	 (o) Cusum Test: 0.9399197537379873 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.14445793400646093 -- True
+	 	 	 	 -3: 0.17962349060410174 -- True
+	 	 	 	 -2: 0.5260698384519256 -- True
+	 	 	 	 -1: 0.2921140335425664 -- True
+	 	 	 	 +1: 0.8940743158932091 -- True
+	 	 	 	 +2: 0.664150098612767 -- True
+	 	 	 	 +3: 0.556010607795949 -- True
+	 	 	 	 +4: 0.6288236435060566 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.13880430707785288 -- True
+	 	 	 	 -8.0: 0.13937968930053027 -- True
+	 	 	 	 -7.0: 0.07374447394749743 -- True
+	 	 	 	 -6.0: 0.03699732584101004 -- True
+	 	 	 	 -5.0: 0.05441456637172754 -- True
+	 	 	 	 -4.0: 0.06104021679279749 -- True
+	 	 	 	 -3.0: 0.022424345398446562 -- True
+	 	 	 	 -2.0: 0.03460871647203493 -- True
+	 	 	 	 -1.0: 0.1909269803485274 -- True
+	 	 	 	 +1.0: 0.6299221373888492 -- True
+	 	 	 	 +2.0: 0.32045173611560107 -- True
+	 	 	 	 +3.0: 0.3943949984882712 -- True
+	 	 	 	 +4.0: 0.6645701881946053 -- True
+	 	 	 	 +5.0: 0.7451444444813857 -- True
+	 	 	 	 +6.0: 0.8194162786077337 -- True
+	 	 	 	 +7.0: 0.6582894175133502 -- True
+	 	 	 	 +8.0: 0.5535648019145047 -- True
+	 	 	 	 +9.0: 0.75955252074813 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5026561111406304 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.39694522324594944 -- True
+	 	 	 (o) Linear Complexity Test: 0.6728252296191113 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.41132751289892844 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5232252978962235 -- True
+	 	 	 (o) Runs Test: 0.3916890457322376 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5094061905131739 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8893084405830846 -- True
+	 	 	 (o) Cusum Test: 0.33978349097963756 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5080814248281612 -- True
+	 	 	 	 -3: 0.3631818243568845 -- True
+	 	 	 	 -2: 0.4557267312100388 -- True
+	 	 	 	 -1: 0.7273304535094185 -- True
+	 	 	 	 +1: 0.00811177145345737 -- False
+	 	 	 	 +2: 0.4186143620055962 -- True
+	 	 	 	 +3: 0.6394986825532406 -- True
+	 	 	 	 +4: 0.529920682123998 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5395872641852064 -- True
+	 	 	 	 -8.0: 0.6330048986284182 -- True
+	 	 	 	 -7.0: 0.6186015667255349 -- True
+	 	 	 	 -6.0: 0.3892364497253603 -- True
+	 	 	 	 -5.0: 0.3275449351061306 -- True
+	 	 	 	 -4.0: 0.3935594269662389 -- True
+	 	 	 	 -3.0: 0.45813641970737085 -- True
+	 	 	 	 -2.0: 0.8382564863858263 -- True
+	 	 	 	 -1.0: 0.9783030753359442 -- True
+	 	 	 	 +1.0: 0.6833131587171801 -- True
+	 	 	 	 +2.0: 0.7534928259969146 -- True
+	 	 	 	 +3.0: 0.5841607691621234 -- True
+	 	 	 	 +4.0: 0.4910047359388442 -- True
+	 	 	 	 +5.0: 0.8703779032953791 -- True
+	 	 	 	 +6.0: 0.9738339903275677 -- True
+	 	 	 	 +7.0: 0.8860409066011827 -- True
+	 	 	 	 +8.0: 0.7466832253487976 -- True
+	 	 	 	 +9.0: 0.9631726046926647 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.09218468500151049 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9515610906442301 -- True
+	 	 	 (o) Linear Complexity Test: 0.1571163426593412 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8788542772813428 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4986361423643486 -- True
+	 	 	 (o) Runs Test: 0.4681859168787528 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.7281210520391466 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9607486026161811 -- True
+	 	 	 (o) Cusum Test: 0.44919517264155895 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6589556264592875 -- True
+	 	 	 	 -3: 0.5192567158403846 -- True
+	 	 	 	 -2: 0.48447689927087256 -- True
+	 	 	 	 -1: 0.9731915983565425 -- True
+	 	 	 	 +1: 0.9863399525597971 -- True
+	 	 	 	 +2: 0.918242209837284 -- True
+	 	 	 	 +3: 0.2279267946440637 -- True
+	 	 	 	 +4: 0.1050022113928457 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.37366052110982906 -- True
+	 	 	 	 -8.0: 0.21494703566850948 -- True
+	 	 	 	 -7.0: 0.10735908678188918 -- True
+	 	 	 	 -6.0: 0.03106546048053046 -- True
+	 	 	 	 -5.0: 0.04127582055751185 -- True
+	 	 	 	 -4.0: 0.14259575825262666 -- True
+	 	 	 	 -3.0: 0.21528657708859822 -- True
+	 	 	 	 -2.0: 0.32201777920894126 -- True
+	 	 	 	 -1.0: 0.7315556702591028 -- True
+	 	 	 	 +1.0: 0.7918647531222878 -- True
+	 	 	 	 +2.0: 0.8074081395885859 -- True
+	 	 	 	 +3.0: 0.6623607926094013 -- True
+	 	 	 	 +4.0: 0.7495966714473723 -- True
+	 	 	 	 +5.0: 0.7783402969546909 -- True
+	 	 	 	 +6.0: 0.599489844167725 -- True
+	 	 	 	 +7.0: 0.4822907504852012 -- True
+	 	 	 	 +8.0: 0.421393650892502 -- True
+	 	 	 	 +9.0: 0.416313047070191 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.2977684443057925 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.132850920801825 -- True
+	 	 	 (o) Linear Complexity Test: 0.7454338045337607 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7236816660769099 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.43157969785275907 -- True
+	 	 	 (o) Runs Test: 0.9959945419777402 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.20400389771712882 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.932880398586053 -- True
+	 	 	 (o) Cusum Test: 0.9288659316549512 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5852917565852601 -- True
+	 	 	 	 -3: 0.6607576551698054 -- True
+	 	 	 	 -2: 0.09000911819354057 -- True
+	 	 	 	 -1: 0.263185004529999 -- True
+	 	 	 	 +1: 0.30343262062913895 -- True
+	 	 	 	 +2: 0.47251078061867324 -- True
+	 	 	 	 +3: 0.25230632031072286 -- True
+	 	 	 	 +4: 0.5462317021540316 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.32882073815287305 -- True
+	 	 	 	 -8.0: 0.34967135155688756 -- True
+	 	 	 	 -7.0: 0.5536157214233738 -- True
+	 	 	 	 -6.0: 0.525264651453889 -- True
+	 	 	 	 -5.0: 0.3482450312303038 -- True
+	 	 	 	 -4.0: 0.3262102188569981 -- True
+	 	 	 	 -3.0: 0.23759720081974978 -- True
+	 	 	 	 -2.0: 0.08459223716897163 -- True
+	 	 	 	 -1.0: 0.054947663787087396 -- True
+	 	 	 	 +1.0: 0.0647274203115704 -- True
+	 	 	 	 +2.0: 0.050238758188013016 -- True
+	 	 	 	 +3.0: 0.035388681459537066 -- True
+	 	 	 	 +4.0: 0.09086804758099981 -- True
+	 	 	 	 +5.0: 0.24051478883677724 -- True
+	 	 	 	 +6.0: 0.30654751453056295 -- True
+	 	 	 	 +7.0: 0.311251433545488 -- True
+	 	 	 	 +8.0: 0.33266445631228236 -- True
+	 	 	 	 +9.0: 0.3573154996458774 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.1985181243344596 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.1507303615646735 -- True
+	 	 	 (o) Linear Complexity Test: 0.40452542192280205 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.19763740584272116 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.42947908119531486 -- True
+	 	 	 (o) Runs Test: 0.6553039399685233 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5688076260957462 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8583895505659217 -- True
+	 	 	 (o) Cusum Test: 0.2176054641190555 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.10818120958406749 -- True
+	 	 	 	 -3: 0.6863368847559798 -- True
+	 	 	 	 -2: 0.5777299705969533 -- True
+	 	 	 	 -1: 0.7795226647743283 -- True
+	 	 	 	 +1: 0.7104859137990938 -- True
+	 	 	 	 +2: 0.3589381112308752 -- True
+	 	 	 	 +3: 0.8496814593364912 -- True
+	 	 	 	 +4: 0.23952006733293363 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.05795296186336805 -- True
+	 	 	 	 -8.0: 0.09560945393701523 -- True
+	 	 	 	 -7.0: 0.09405384108823614 -- True
+	 	 	 	 -6.0: 0.049663004165446646 -- True
+	 	 	 	 -5.0: 0.12145671733314985 -- True
+	 	 	 	 -4.0: 0.4002245672558208 -- True
+	 	 	 	 -3.0: 0.7463263064979234 -- True
+	 	 	 	 -2.0: 1.0 -- True
+	 	 	 	 -1.0: 0.9113919540877395 -- True
+	 	 	 	 +1.0: 0.8022883156500877 -- True
+	 	 	 	 +2.0: 0.541618102058254 -- True
+	 	 	 	 +3.0: 0.6813806073447631 -- True
+	 	 	 	 +4.0: 0.9916101966519859 -- True
+	 	 	 	 +5.0: 0.9704097964276933 -- True
+	 	 	 	 +6.0: 0.8799845036956448 -- True
+	 	 	 	 +7.0: 0.8109515337914446 -- True
+	 	 	 	 +8.0: 0.6100421764018207 -- True
+	 	 	 	 +9.0: 0.5939960583609538 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5100613698603034 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.05451294498340046 -- True
+	 	 	 (o) Linear Complexity Test: 0.1466647911220854 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.444863498587732 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.10066058389356751 -- True
+	 	 	 (o) Runs Test: 0.7438229828512931 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4913501706921989 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8939775828541564 -- True
+	 	 	 (o) Cusum Test: 0.3697870419649609 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.29542772581859883 -- True
+	 	 	 	 -3: 0.47975923970778744 -- True
+	 	 	 	 -2: 0.3515208616821289 -- True
+	 	 	 	 -1: 0.46767205859263006 -- True
+	 	 	 	 +1: 0.012455985401169609 -- True
+	 	 	 	 +2: 0.061379304254059235 -- True
+	 	 	 	 +3: 0.5199107845705295 -- True
+	 	 	 	 +4: 0.2679957006142571 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9370825377975073 -- True
+	 	 	 	 -8.0: 0.9875837750286225 -- True
+	 	 	 	 -7.0: 0.8698728026698748 -- True
+	 	 	 	 -6.0: 0.9594185979411198 -- True
+	 	 	 	 -5.0: 0.6555901754524867 -- True
+	 	 	 	 -4.0: 0.4829036726545648 -- True
+	 	 	 	 -3.0: 0.3031727682298764 -- True
+	 	 	 	 -2.0: 0.16820523647139696 -- True
+	 	 	 	 -1.0: 0.11157130997931085 -- True
+	 	 	 	 +1.0: 0.0193593667254553 -- True
+	 	 	 	 +2.0: 0.008347659357177737 -- False
+	 	 	 	 +3.0: 0.028619583243308568 -- True
+	 	 	 	 +4.0: 0.018725562209377315 -- True
+	 	 	 	 +5.0: 0.0029452171346913405 -- False
+	 	 	 	 +6.0: 0.005075380107139474 -- False
+	 	 	 	 +7.0: 0.01004387362812915 -- True
+	 	 	 	 +8.0: 0.009353288918312644 -- False
+	 	 	 	 +9.0: 0.013942204538310273 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.36239764434377797 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.5918633708916422 -- True
+	 	 	 (o) Linear Complexity Test: 0.30604515537674704 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.10035821678874524 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6950134522846589 -- True
+	 	 	 (o) Runs Test: 0.1463544494392496 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.041961083471165936 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 3.173785250327413e-306 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8643181415992699 -- True
+	 	 	 (o) Cusum Test: 0.1910926751899484 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.14920424437403854 -- True
+	 	 	 	 -3: 0.4828326391316622 -- True
+	 	 	 	 -2: 0.8975727723141375 -- True
+	 	 	 	 -1: 0.477061736127561 -- True
+	 	 	 	 +1: 0.3657901278957655 -- True
+	 	 	 	 +2: 0.4732014690237324 -- True
+	 	 	 	 +3: 0.07736744044842393 -- True
+	 	 	 	 +4: 0.41113242199134853 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5089596233617018 -- True
+	 	 	 	 -8.0: 0.3868366391784569 -- True
+	 	 	 	 -7.0: 0.4578736454366009 -- True
+	 	 	 	 -6.0: 0.5276595056239539 -- True
+	 	 	 	 -5.0: 0.5711551217811941 -- True
+	 	 	 	 -4.0: 0.4336658862462993 -- True
+	 	 	 	 -3.0: 0.3126629674092569 -- True
+	 	 	 	 -2.0: 0.5543483225229748 -- True
+	 	 	 	 -1.0: 0.4563983772554764 -- True
+	 	 	 	 +1.0: 0.06595909484020995 -- True
+	 	 	 	 +2.0: 0.10113121966862286 -- True
+	 	 	 	 +3.0: 0.04345603140636873 -- True
+	 	 	 	 +4.0: 0.008982689712605671 -- False
+	 	 	 	 +5.0: 0.008734281159573476 -- False
+	 	 	 	 +6.0: 0.019446647352974626 -- True
+	 	 	 	 +7.0: 0.0677248427212244 -- True
+	 	 	 	 +8.0: 0.16144921813550217 -- True
+	 	 	 	 +9.0: 0.15001998159202778 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8682859983364357 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.032814595728608516 -- True
+	 	 	 (o) Linear Complexity Test: 0.9177043847216837 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5504819954653823 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.1477006543869931 -- True
+	 	 	 (o) Runs Test: 0.5484478557426652 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.566109783269289 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9136259722325617 -- True
+	 	 	 (o) Cusum Test: 0.849136563191824 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.4594010333588646 -- True
+	 	 	 	 -3: 0.38746721022968444 -- True
+	 	 	 	 -2: 0.16558084414219065 -- True
+	 	 	 	 -1: 0.22794388349493436 -- True
+	 	 	 	 +1: 0.8203940473446207 -- True
+	 	 	 	 +2: 0.88910438832619 -- True
+	 	 	 	 +3: 0.8685364938358213 -- True
+	 	 	 	 +4: 0.6802568237292168 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.23080942625785705 -- True
+	 	 	 	 -8.0: 0.3204973284686171 -- True
+	 	 	 	 -7.0: 0.40960202782286925 -- True
+	 	 	 	 -6.0: 0.342539515727721 -- True
+	 	 	 	 -5.0: 0.15888551395509087 -- True
+	 	 	 	 -4.0: 0.18799632389538623 -- True
+	 	 	 	 -3.0: 0.361514487689076 -- True
+	 	 	 	 -2.0: 0.16502453421525787 -- True
+	 	 	 	 -1.0: 0.0707328909424517 -- True
+	 	 	 	 +1.0: 0.2873697587396151 -- True
+	 	 	 	 +2.0: 0.4388591093458769 -- True
+	 	 	 	 +3.0: 0.5930272190013346 -- True
+	 	 	 	 +4.0: 0.8644099160158605 -- True
+	 	 	 	 +5.0: 0.823170081333065 -- True
+	 	 	 	 +6.0: 0.7251828631087939 -- True
+	 	 	 	 +7.0: 0.9935497666948816 -- True
+	 	 	 	 +8.0: 0.9160866102752365 -- True
+	 	 	 	 +9.0: 0.7026454906087779 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.4624952440907396 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.5843476656262803 -- True
+	 	 	 (o) Linear Complexity Test: 0.3344547496084725 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.808601587259707 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4718632767410597 -- True
+	 	 	 (o) Runs Test: 0.2191169283143427 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.3819223705799725 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8941019192733676 -- True
+	 	 	 (o) Cusum Test: 0.8860186725569302 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.0485959838580535 -- True
+	 	 	 	 -3: 0.4470638471692804 -- True
+	 	 	 	 -2: 0.8313413795768608 -- True
+	 	 	 	 -1: 0.5430890953939149 -- True
+	 	 	 	 +1: 0.8719801205749752 -- True
+	 	 	 	 +2: 0.7835870878124704 -- True
+	 	 	 	 +3: 0.7925601911223392 -- True
+	 	 	 	 +4: 0.5318350096459017 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.29316565230212366 -- True
+	 	 	 	 -8.0: 0.3330041182392188 -- True
+	 	 	 	 -7.0: 0.1290579862681611 -- True
+	 	 	 	 -6.0: 0.03710492194720573 -- True
+	 	 	 	 -5.0: 0.03312577356962821 -- True
+	 	 	 	 -4.0: 0.06299365476609799 -- True
+	 	 	 	 -3.0: 0.20896883483855078 -- True
+	 	 	 	 -2.0: 0.33466195882961214 -- True
+	 	 	 	 -1.0: 0.46473457243702476 -- True
+	 	 	 	 +1.0: 0.6161549446467565 -- True
+	 	 	 	 +2.0: 0.7356132796582391 -- True
+	 	 	 	 +3.0: 0.9590249573772396 -- True
+	 	 	 	 +4.0: 0.6698734519623346 -- True
+	 	 	 	 +5.0: 0.41928542261672364 -- True
+	 	 	 	 +6.0: 0.6299551304665628 -- True
+	 	 	 	 +7.0: 0.758811887878018 -- True
+	 	 	 	 +8.0: 0.5933917217158549 -- True
+	 	 	 	 +9.0: 0.49402896868414614 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.26418132373629355 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9603219958142197 -- True
+	 	 	 (o) Linear Complexity Test: 0.8568621497935681 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7783708621927377 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.29910108641801886 -- True
+	 	 	 (o) Runs Test: 0.6935849144286588 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6940749752829132 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.960307609747111 -- True
+	 	 	 (o) Cusum Test: 0.19400338624416197 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6697721984512159 -- True
+	 	 	 	 -3: 0.923900776002449 -- True
+	 	 	 	 -2: 0.8531616714582894 -- True
+	 	 	 	 -1: 0.6999858358786276 -- True
+	 	 	 	 +1: 0.08959083969484162 -- True
+	 	 	 	 +2: 0.6879797142303236 -- True
+	 	 	 	 +3: 0.11412470698945776 -- True
+	 	 	 	 +4: 0.6119058385337821 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.11256245292631484 -- True
+	 	 	 	 -8.0: 0.14260821815984623 -- True
+	 	 	 	 -7.0: 0.24440272048773337 -- True
+	 	 	 	 -6.0: 0.23001328721250092 -- True
+	 	 	 	 -5.0: 0.35991177639314886 -- True
+	 	 	 	 -4.0: 0.5364405084344395 -- True
+	 	 	 	 -3.0: 0.7197192079565442 -- True
+	 	 	 	 -2.0: 0.7349631405312512 -- True
+	 	 	 	 -1.0: 0.4047104646272154 -- True
+	 	 	 	 +1.0: 0.6434288435636205 -- True
+	 	 	 	 +2.0: 0.32710690685446686 -- True
+	 	 	 	 +3.0: 0.40762594770278093 -- True
+	 	 	 	 +4.0: 0.7884857640231681 -- True
+	 	 	 	 +5.0: 0.5507480131711266 -- True
+	 	 	 	 +6.0: 0.40759634492879604 -- True
+	 	 	 	 +7.0: 0.5209116615531398 -- True
+	 	 	 	 +8.0: 0.4490629714688694 -- True
+	 	 	 	 +9.0: 0.34182214027056934 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.656784195361894 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3633675458549769 -- True
+	 	 	 (o) Linear Complexity Test: 0.37201268039533314 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7537504625438184 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.41807142569261746 -- True
+	 	 	 (o) Runs Test: 0.4265973715957754 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5168124807978935 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8130698813359908 -- True
+	 	 	 (o) Cusum Test: 0.8325654208755942 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8966332420972862 -- True
+	 	 	 	 -3: 0.1311938197805678 -- True
+	 	 	 	 -2: 0.9136311707548965 -- True
+	 	 	 	 -1: 0.7875539741983109 -- True
+	 	 	 	 +1: 0.451665492635424 -- True
+	 	 	 	 +2: 0.40966807801594346 -- True
+	 	 	 	 +3: 0.5854939544331959 -- True
+	 	 	 	 +4: 0.24144135867454553 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.07326581583225404 -- True
+	 	 	 	 -8.0: 0.08960819717924118 -- True
+	 	 	 	 -7.0: 0.19134284000861834 -- True
+	 	 	 	 -6.0: 0.2514508255408764 -- True
+	 	 	 	 -5.0: 0.2250663559746432 -- True
+	 	 	 	 -4.0: 0.14242470664778015 -- True
+	 	 	 	 -3.0: 0.20743135544002145 -- True
+	 	 	 	 -2.0: 0.5849164578821479 -- True
+	 	 	 	 -1.0: 0.946122455159541 -- True
+	 	 	 	 +1.0: 0.5430601536080761 -- True
+	 	 	 	 +2.0: 0.9200857881215398 -- True
+	 	 	 	 +3.0: 0.7989375093468646 -- True
+	 	 	 	 +4.0: 0.9244188548275616 -- True
+	 	 	 	 +5.0: 0.8696403806079864 -- True
+	 	 	 	 +6.0: 0.5352655782069035 -- True
+	 	 	 	 +7.0: 0.3769267964342913 -- True
+	 	 	 	 +8.0: 0.4636635623214157 -- True
+	 	 	 	 +9.0: 0.5598874527353174 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.047660718120157125 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8286185678628731 -- True
+	 	 	 (o) Linear Complexity Test: 0.36873941509900415 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.26294979156332243 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.569380146714476 -- True
+	 	 	 (o) Runs Test: 0.7515288546260438 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6500219918693142 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8803613015792017 -- True
+	 	 	 (o) Cusum Test: 0.32300895605577096 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.7202784984206634 -- True
+	 	 	 	 -3: 0.12371343755391279 -- True
+	 	 	 	 -2: 0.5437458574353194 -- True
+	 	 	 	 -1: 0.6225996875031945 -- True
+	 	 	 	 +1: 0.1904235078846675 -- True
+	 	 	 	 +2: 0.7757976788464658 -- True
+	 	 	 	 +3: 0.5754059048670321 -- True
+	 	 	 	 +4: 0.691124964694136 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.563523716477718 -- True
+	 	 	 	 -8.0: 0.43934080737985237 -- True
+	 	 	 	 -7.0: 0.5683680853839344 -- True
+	 	 	 	 -6.0: 0.4083113918554043 -- True
+	 	 	 	 -5.0: 0.2953545352034951 -- True
+	 	 	 	 -4.0: 0.37534267145568223 -- True
+	 	 	 	 -3.0: 0.3410420063631675 -- True
+	 	 	 	 -2.0: 0.6170750774519738 -- True
+	 	 	 	 -1.0: 0.8852339144732015 -- True
+	 	 	 	 +1.0: 0.8005844843019885 -- True
+	 	 	 	 +2.0: 0.9667644270192732 -- True
+	 	 	 	 +3.0: 1.0 -- True
+	 	 	 	 +4.0: 0.9239412582224694 -- True
+	 	 	 	 +5.0: 0.6737663482279278 -- True
+	 	 	 	 +6.0: 0.6167418794008321 -- True
+	 	 	 	 +7.0: 0.515355983660884 -- True
+	 	 	 	 +8.0: 0.5023349543605022 -- True
+	 	 	 	 +9.0: 0.655352188833137 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5063393750076124 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.4617535413737659 -- True
+	 	 	 (o) Linear Complexity Test: 0.6905927066388207 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6722129996953952 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5962177881127312 -- True
+	 	 	 (o) Runs Test: 0.5441286948666324 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9251523107095275 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7445333944308464 -- True
+	 	 	 (o) Cusum Test: 0.9488574656585695 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9496900826411745 -- True
+	 	 	 	 -3: 0.5403203576791845 -- True
+	 	 	 	 -2: 0.4663503463715173 -- True
+	 	 	 	 -1: 0.2191449552371116 -- True
+	 	 	 	 +1: 0.6318725628141131 -- True
+	 	 	 	 +2: 0.3525463955870121 -- True
+	 	 	 	 +3: 0.5913548908601454 -- True
+	 	 	 	 +4: 0.6949211372862024 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.07020427427364992 -- True
+	 	 	 	 -8.0: 0.04654968099386053 -- True
+	 	 	 	 -7.0: 0.04925216130993014 -- True
+	 	 	 	 -6.0: 0.047167505524219326 -- True
+	 	 	 	 -5.0: 0.06738120483674928 -- True
+	 	 	 	 -4.0: 0.15830338830912016 -- True
+	 	 	 	 -3.0: 0.15045073824452063 -- True
+	 	 	 	 -2.0: 0.11930092956114499 -- True
+	 	 	 	 -1.0: 0.20124262095772394 -- True
+	 	 	 	 +1.0: 0.20124262095772394 -- True
+	 	 	 	 +2.0: 0.29452966530026914 -- True
+	 	 	 	 +3.0: 0.6698217497413763 -- True
+	 	 	 	 +4.0: 0.9663626412540667 -- True
+	 	 	 	 +5.0: 0.9649418325376391 -- True
+	 	 	 	 +6.0: 0.909907981082105 -- True
+	 	 	 	 +7.0: 0.7591212290305434 -- True
+	 	 	 	 +8.0: 0.7994687826039304 -- True
+	 	 	 	 +9.0: 0.5832873848996938 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.4425269902613148 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.2917906995311223 -- True
+	 	 	 (o) Linear Complexity Test: 0.6104622128813244 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8649074776497734 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.2530820146993459 -- True
+	 	 	 (o) Runs Test: 0.8614343598318662 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.0992999445652188 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9766435311851311 -- True
+	 	 	 (o) Cusum Test: 0.45448721289138083 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.28807519079992094 -- True
+	 	 	 	 -3: 0.9965629575470085 -- True
+	 	 	 	 -2: 0.30373813501605695 -- True
+	 	 	 	 -1: 0.4956617185279242 -- True
+	 	 	 	 +1: 0.7390895299187318 -- True
+	 	 	 	 +2: 0.9236151785788531 -- True
+	 	 	 	 +3: 0.1005870442447066 -- True
+	 	 	 	 +4: 0.7830248230933533 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5603961349455868 -- True
+	 	 	 	 -8.0: 0.46957840051101307 -- True
+	 	 	 	 -7.0: 0.5549419082281468 -- True
+	 	 	 	 -6.0: 0.7501150099767295 -- True
+	 	 	 	 -5.0: 0.9532041460480838 -- True
+	 	 	 	 -4.0: 0.7576959103952527 -- True
+	 	 	 	 -3.0: 0.9885787058105932 -- True
+	 	 	 	 -2.0: 0.45977264654856653 -- True
+	 	 	 	 -1.0: 0.5863336181885408 -- True
+	 	 	 	 +1.0: 0.7855617607408363 -- True
+	 	 	 	 +2.0: 0.3952670113331167 -- True
+	 	 	 	 +3.0: 0.7365681023525066 -- True
+	 	 	 	 +4.0: 0.9421323147212047 -- True
+	 	 	 	 +5.0: 0.96170522059342 -- True
+	 	 	 	 +6.0: 0.9615124478946154 -- True
+	 	 	 	 +7.0: 0.9433801806351173 -- True
+	 	 	 	 +8.0: 0.855720542052951 -- True
+	 	 	 	 +9.0: 0.48960294616039646 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.9511878261942912 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.765267056427208 -- True
+	 	 	 (o) Linear Complexity Test: 0.2873223347599365 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.11706215363144026 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9965340247421413 -- True
+	 	 	 (o) Runs Test: 0.09388894595285496 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.29182969854946256 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8465423816615801 -- True
+	 	 	 (o) Cusum Test: 0.185621824286116 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.13903447115682804 -- True
+	 	 	 	 -3: 0.2898747625303375 -- True
+	 	 	 	 -2: 0.005522019507059118 -- False
+	 	 	 	 -1: 0.06164932129085433 -- True
+	 	 	 	 +1: 0.829965975240744 -- True
+	 	 	 	 +2: 0.830537186168425 -- True
+	 	 	 	 +3: 0.29009096934408035 -- True
+	 	 	 	 +4: 0.29249193826329184 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.21625768243915655 -- True
+	 	 	 	 -8.0: 0.07169156295278237 -- True
+	 	 	 	 -7.0: 0.029338767920766888 -- True
+	 	 	 	 -6.0: 0.022733547611314207 -- True
+	 	 	 	 -5.0: 0.01663409733603682 -- True
+	 	 	 	 -4.0: 0.006113911622355304 -- False
+	 	 	 	 -3.0: 0.005836830082645425 -- False
+	 	 	 	 -2.0: 0.00437334129079835 -- False
+	 	 	 	 -1.0: 0.004694414217417487 -- False
+	 	 	 	 +1.0: 0.44441558541687676 -- True
+	 	 	 	 +2.0: 0.5650672675085069 -- True
+	 	 	 	 +3.0: 0.8357920293333335 -- True
+	 	 	 	 +4.0: 0.8403388498499771 -- True
+	 	 	 	 +5.0: 0.8347836208311021 -- True
+	 	 	 	 +6.0: 0.9220726866982719 -- True
+	 	 	 	 +7.0: 0.8220098978092967 -- True
+	 	 	 	 +8.0: 0.6929023727277251 -- True
+	 	 	 	 +9.0: 0.7614977898350352 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.2051688053491495 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.565441924172935 -- True
+	 	 	 (o) Linear Complexity Test: 0.06734752791811364 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9118703297575395 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.26458939893533234 -- True
+	 	 	 (o) Runs Test: 0.6722158255106234 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4371395045151176 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.5849110516914622 -- True
+	 	 	 (o) Cusum Test: 0.5443708101841093 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8592043760326831 -- True
+	 	 	 	 -3: 0.8725892942953215 -- True
+	 	 	 	 -2: 0.8880897752353001 -- True
+	 	 	 	 -1: 0.4656536870801439 -- True
+	 	 	 	 +1: 0.8627092480138215 -- True
+	 	 	 	 +2: 0.979948187183828 -- True
+	 	 	 	 +3: 0.05703542979049725 -- True
+	 	 	 	 +4: 0.6970983321722355 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.1472783920520533 -- True
+	 	 	 	 -8.0: 0.15853801365627962 -- True
+	 	 	 	 -7.0: 0.1501308731543208 -- True
+	 	 	 	 -6.0: 0.1889887038394279 -- True
+	 	 	 	 -5.0: 0.4960454204409268 -- True
+	 	 	 	 -4.0: 0.7969549717393694 -- True
+	 	 	 	 -3.0: 0.8075842881940538 -- True
+	 	 	 	 -2.0: 0.2906126272420464 -- True
+	 	 	 	 -1.0: 0.4960454204409268 -- True
+	 	 	 	 +1.0: 0.9638030859247575 -- True
+	 	 	 	 +2.0: 0.868203816789032 -- True
+	 	 	 	 +3.0: 0.65523852442865 -- True
+	 	 	 	 +4.0: 0.744499586052542 -- True
+	 	 	 	 +5.0: 0.7970530736454817 -- True
+	 	 	 	 +6.0: 0.6062760461945154 -- True
+	 	 	 	 +7.0: 0.5768399557707191 -- True
+	 	 	 	 +8.0: 0.7310619159291443 -- True
+	 	 	 	 +9.0: 0.9356681270095696 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.3697014849128216 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.3511789257222228 -- True
+	 	 	 (o) Linear Complexity Test: 0.4994532948923204 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.42221402232073924 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7832487458718903 -- True
+	 	 	 (o) Runs Test: 0.17726264142953752 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9515349961897288 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8013011643490529 -- True
+	 	 	 (o) Cusum Test: 0.6932931442514817 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.013975034513043298 -- True
+	 	 	 	 -3: 0.2256727500919095 -- True
+	 	 	 	 -2: 0.2877215218473165 -- True
+	 	 	 	 -1: 0.06914863864940507 -- True
+	 	 	 	 +1: 0.9757122231492493 -- True
+	 	 	 	 +2: 0.7525015446462889 -- True
+	 	 	 	 +3: 0.8983259786769825 -- True
+	 	 	 	 +4: 0.05554205605175846 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9935170604786493 -- True
+	 	 	 	 -8.0: 0.8762696636277618 -- True
+	 	 	 	 -7.0: 0.9555413915155596 -- True
+	 	 	 	 -6.0: 0.9235526621760818 -- True
+	 	 	 	 -5.0: 0.8625808062351116 -- True
+	 	 	 	 -4.0: 0.3619347669211923 -- True
+	 	 	 	 -3.0: 0.21644626728745286 -- True
+	 	 	 	 -2.0: 0.6424993873606966 -- True
+	 	 	 	 -1.0: 0.6390570221529589 -- True
+	 	 	 	 +1.0: 0.40229387130422456 -- True
+	 	 	 	 +2.0: 0.7569629734251189 -- True
+	 	 	 	 +3.0: 0.9880463658418595 -- True
+	 	 	 	 +4.0: 0.8246330602101011 -- True
+	 	 	 	 +5.0: 0.6551036160648462 -- True
+	 	 	 	 +6.0: 0.6640390674817513 -- True
+	 	 	 	 +7.0: 0.8344010078016716 -- True
+	 	 	 	 +8.0: 0.8119782963600187 -- True
+	 	 	 	 +9.0: 0.5612705704098715 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5695823390334668 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.16373325472056127 -- True
+	 	 	 (o) Linear Complexity Test: 0.8882277969735628 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3115720733144085 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6209849474099128 -- True
+	 	 	 (o) Runs Test: 0.2534993340189303 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.2347230812832452 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9146492069165593 -- True
+	 	 	 (o) Cusum Test: 0.5557777017128211 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3960224017782367 -- True
+	 	 	 	 -3: 0.30808806214583817 -- True
+	 	 	 	 -2: 0.8841708061568677 -- True
+	 	 	 	 -1: 0.24866890919918622 -- True
+	 	 	 	 +1: 0.8972009697727564 -- True
+	 	 	 	 +2: 0.9457661142364588 -- True
+	 	 	 	 +3: 0.11991722085134356 -- True
+	 	 	 	 +4: 0.7677257400037392 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.04636188518439968 -- True
+	 	 	 	 -8.0: 0.029668633674530598 -- True
+	 	 	 	 -7.0: 0.027856538119608594 -- True
+	 	 	 	 -6.0: 0.04458194939421765 -- True
+	 	 	 	 -5.0: 0.06546630088753842 -- True
+	 	 	 	 -4.0: 0.12760698614396265 -- True
+	 	 	 	 -3.0: 0.4411863454154189 -- True
+	 	 	 	 -2.0: 0.5478677448171481 -- True
+	 	 	 	 -1.0: 0.5199259928913128 -- True
+	 	 	 	 +1.0: 0.20480020042889235 -- True
+	 	 	 	 +2.0: 0.67001014504135 -- True
+	 	 	 	 +3.0: 0.4876705110498196 -- True
+	 	 	 	 +4.0: 0.4656258683853245 -- True
+	 	 	 	 +5.0: 0.37374080627494066 -- True
+	 	 	 	 +6.0: 0.2093477414719992 -- True
+	 	 	 	 +7.0: 0.16906351610920933 -- True
+	 	 	 	 +8.0: 0.0605989141028089 -- True
+	 	 	 	 +9.0: 0.02308186448077125 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8811201464405416 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.03391275289218559 -- True
+	 	 	 (o) Linear Complexity Test: 0.27684231663823966 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8361559351479085 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8286897462041501 -- True
+	 	 	 (o) Runs Test: 0.4023763891530623 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.32750577411803694 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.24645060814873757 -- True
+	 	 	 (o) Cusum Test: 0.6838116550566787 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.1708902536742188 -- True
+	 	 	 	 -3: 0.10722171386956754 -- True
+	 	 	 	 -2: 0.10377203490705622 -- True
+	 	 	 	 -1: 0.5227032304770342 -- True
+	 	 	 	 +1: 0.8258969715680677 -- True
+	 	 	 	 +2: 0.8962372340117681 -- True
+	 	 	 	 +3: 0.4868087301107987 -- True
+	 	 	 	 +4: 0.5145193166638842 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.48729289670416664 -- True
+	 	 	 	 -8.0: 0.982545178656381 -- True
+	 	 	 	 -7.0: 0.7457018283717132 -- True
+	 	 	 	 -6.0: 0.8701184019141444 -- True
+	 	 	 	 -5.0: 0.6111717615876914 -- True
+	 	 	 	 -4.0: 0.30242525642949614 -- True
+	 	 	 	 -3.0: 0.10321935039727438 -- True
+	 	 	 	 -2.0: 0.05391910046802018 -- True
+	 	 	 	 -1.0: 0.32565189542221773 -- True
+	 	 	 	 +1.0: 0.747462048819242 -- True
+	 	 	 	 +2.0: 0.537627829356855 -- True
+	 	 	 	 +3.0: 0.35516675008637966 -- True
+	 	 	 	 +4.0: 0.3942700113343759 -- True
+	 	 	 	 +5.0: 0.7346591711112135 -- True
+	 	 	 	 +6.0: 0.8221164846068005 -- True
+	 	 	 	 +7.0: 0.686054647581986 -- True
+	 	 	 	 +8.0: 0.6680606686666793 -- True
+	 	 	 	 +9.0: 0.7175791404778977 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6272209508239627 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9009887761740751 -- True
+	 	 	 (o) Linear Complexity Test: 0.3943163450885532 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.1939220820964127 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.20352135001397234 -- True
+	 	 	 (o) Runs Test: 0.7818440156788905 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.19573047716513223 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6779301301761849 -- True
+	 	 	 (o) Cusum Test: 0.27123697800093527 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6811963300280875 -- True
+	 	 	 	 -3: 0.5709653166046194 -- True
+	 	 	 	 -2: 0.4954077752629691 -- True
+	 	 	 	 -1: 0.9914857764230232 -- True
+	 	 	 	 +1: 0.04990882771106171 -- True
+	 	 	 	 +2: 0.04649340034232817 -- True
+	 	 	 	 +3: 0.23939808595137152 -- True
+	 	 	 	 +4: 0.9060937589755065 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.399561554060884 -- True
+	 	 	 	 -8.0: 0.43917768218635655 -- True
+	 	 	 	 -7.0: 0.41016270338649197 -- True
+	 	 	 	 -6.0: 0.4357211542387315 -- True
+	 	 	 	 -5.0: 0.713786240529839 -- True
+	 	 	 	 -4.0: 0.9161981951451629 -- True
+	 	 	 	 -3.0: 0.9291372434162534 -- True
+	 	 	 	 -2.0: 0.9694727764242514 -- True
+	 	 	 	 -1.0: 0.9155381903162175 -- True
+	 	 	 	 +1.0: 0.34657983904927747 -- True
+	 	 	 	 +2.0: 0.4260282950495683 -- True
+	 	 	 	 +3.0: 0.7176134522477657 -- True
+	 	 	 	 +4.0: 0.8294099918922846 -- True
+	 	 	 	 +5.0: 0.9577097334962061 -- True
+	 	 	 	 +6.0: 0.8384681567340904 -- True
+	 	 	 	 +7.0: 0.735161762976287 -- True
+	 	 	 	 +8.0: 0.910064846493496 -- True
+	 	 	 	 +9.0: 0.9743501610021149 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.2640314317114407 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.643430400965401 -- True
+	 	 	 (o) Linear Complexity Test: 0.38470502799122386 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.13177438291164276 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.07308686585165709 -- True
+	 	 	 (o) Runs Test: 0.8534150040348235 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.11929567241345611 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7848037309542358 -- True
+	 	 	 (o) Cusum Test: 0.13131287157431798 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6568312823774617 -- True
+	 	 	 	 -3: 0.3830476719178273 -- True
+	 	 	 	 -2: 0.1422512111656182 -- True
+	 	 	 	 -1: 0.9559042749397113 -- True
+	 	 	 	 +1: 0.6100547880804715 -- True
+	 	 	 	 +2: 0.060429651051759466 -- True
+	 	 	 	 +3: 0.3808827015842227 -- True
+	 	 	 	 +4: 0.15662816871131305 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7334423212669512 -- True
+	 	 	 	 -8.0: 0.8045170516437721 -- True
+	 	 	 	 -7.0: 0.9820751637047328 -- True
+	 	 	 	 -6.0: 0.7446808597441783 -- True
+	 	 	 	 -5.0: 0.4854514267192602 -- True
+	 	 	 	 -4.0: 0.39979345434989866 -- True
+	 	 	 	 -3.0: 0.3651013010134596 -- True
+	 	 	 	 -2.0: 0.404249387121565 -- True
+	 	 	 	 -1.0: 0.7459163841252807 -- True
+	 	 	 	 +1.0: 0.30484890118066865 -- True
+	 	 	 	 +2.0: 0.23301735390633727 -- True
+	 	 	 	 +3.0: 0.334010843475528 -- True
+	 	 	 	 +4.0: 0.37184652662854356 -- True
+	 	 	 	 +5.0: 0.30273268008486853 -- True
+	 	 	 	 +6.0: 0.26818698945619446 -- True
+	 	 	 	 +7.0: 0.1659039059792078 -- True
+	 	 	 	 +8.0: 0.09223299908126922 -- True
+	 	 	 	 +9.0: 0.13368432338987585 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.28563363183346957 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.6629823284610964 -- True
+	 	 	 (o) Linear Complexity Test: 0.013254070368226947 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9455426868198956 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8156428160209136 -- True
+	 	 	 (o) Runs Test: 0.13209922763768445 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.38051977556306776 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9833068192375098 -- True
+	 	 	 (o) Cusum Test: 0.4738307174877466 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6631369867558962 -- True
+	 	 	 	 -3: 0.6130383105992396 -- True
+	 	 	 	 -2: 0.8804719557056175 -- True
+	 	 	 	 -1: 0.9952339053060184 -- True
+	 	 	 	 +1: 0.9246773316274672 -- True
+	 	 	 	 +2: 0.6504320250574762 -- True
+	 	 	 	 +3: 0.022308216102587042 -- True
+	 	 	 	 +4: 0.40308158495322133 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.2518642707607517 -- True
+	 	 	 	 -8.0: 0.15912452770904661 -- True
+	 	 	 	 -7.0: 0.07188435989782219 -- True
+	 	 	 	 -6.0: 0.05660651051041296 -- True
+	 	 	 	 -5.0: 0.034069914088685746 -- True
+	 	 	 	 -4.0: 0.06995465732904207 -- True
+	 	 	 	 -3.0: 0.2580459063773244 -- True
+	 	 	 	 -2.0: 0.5001192687540348 -- True
+	 	 	 	 -1.0: 0.9789828132575724 -- True
+	 	 	 	 +1.0: 0.7585778832961206 -- True
+	 	 	 	 +2.0: 0.8432581288726617 -- True
+	 	 	 	 +3.0: 0.9843339086229475 -- True
+	 	 	 	 +4.0: 0.8943814424581349 -- True
+	 	 	 	 +5.0: 0.6332749316112118 -- True
+	 	 	 	 +6.0: 0.5012569803936708 -- True
+	 	 	 	 +7.0: 0.6699503720373192 -- True
+	 	 	 	 +8.0: 0.8525056141038269 -- True
+	 	 	 	 +9.0: 0.4407140545485444 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6998170891307132 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.13585075554123177 -- True
+	 	 	 (o) Linear Complexity Test: 0.3494521206631287 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5869375129428416 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6084014753606738 -- True
+	 	 	 (o) Runs Test: 0.8160329594161083 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8351532622521021 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9524009643442195 -- True
+	 	 	 (o) Cusum Test: 0.3933016942327519 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5465137652300626 -- True
+	 	 	 	 -3: 0.1997240122176627 -- True
+	 	 	 	 -2: 0.10242517625553152 -- True
+	 	 	 	 -1: 0.9714947014163746 -- True
+	 	 	 	 +1: 0.7616805481766079 -- True
+	 	 	 	 +2: 0.7394344160222358 -- True
+	 	 	 	 +3: 0.18365330771454155 -- True
+	 	 	 	 +4: 0.5072936236275482 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.4247176787173633 -- True
+	 	 	 	 -8.0: 0.3840818355850909 -- True
+	 	 	 	 -7.0: 0.16651543189429252 -- True
+	 	 	 	 -6.0: 0.08537072348167736 -- True
+	 	 	 	 -5.0: 0.11084354622778289 -- True
+	 	 	 	 -4.0: 0.11318008066034903 -- True
+	 	 	 	 -3.0: 0.10863754089543105 -- True
+	 	 	 	 -2.0: 0.33376325983829713 -- True
+	 	 	 	 -1.0: 0.7498155281533468 -- True
+	 	 	 	 +1.0: 0.6734771845981067 -- True
+	 	 	 	 +2.0: 0.7225420730391727 -- True
+	 	 	 	 +3.0: 0.8705331554133622 -- True
+	 	 	 	 +4.0: 0.6450980659320763 -- True
+	 	 	 	 +5.0: 0.5137884386292422 -- True
+	 	 	 	 +6.0: 0.43368052045187777 -- True
+	 	 	 	 +7.0: 0.2730566253655785 -- True
+	 	 	 	 +8.0: 0.32170404539849995 -- True
+	 	 	 	 +9.0: 0.4863890332593086 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7905093507087634 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.15043812155225694 -- True
+	 	 	 (o) Linear Complexity Test: 0.37243100603810075 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6040302676761964 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.36505425947055586 -- True
+	 	 	 (o) Runs Test: 0.769236050366502 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4233966982319326 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.40615437183112996 -- True
+	 	 	 (o) Cusum Test: 0.38894869571819485 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8410303469327027 -- True
+	 	 	 	 -3: 0.7684410154831768 -- True
+	 	 	 	 -2: 0.2405767480360948 -- True
+	 	 	 	 -1: 0.933979566887253 -- True
+	 	 	 	 +1: 0.759458127327717 -- True
+	 	 	 	 +2: 0.7057549929222459 -- True
+	 	 	 	 +3: 0.24136225825374502 -- True
+	 	 	 	 +4: 0.27713278136740177 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.654125806052706 -- True
+	 	 	 	 -8.0: 0.6712992572695113 -- True
+	 	 	 	 -7.0: 0.6703239805035983 -- True
+	 	 	 	 -6.0: 0.6029764495333942 -- True
+	 	 	 	 -5.0: 0.6248464810258434 -- True
+	 	 	 	 -4.0: 0.6588370221690425 -- True
+	 	 	 	 -3.0: 0.8458735286540934 -- True
+	 	 	 	 -2.0: 0.8877433948179891 -- True
+	 	 	 	 -1.0: 0.8919545230382828 -- True
+	 	 	 	 +1.0: 0.8385510677352022 -- True
+	 	 	 	 +2.0: 0.7124371220004598 -- True
+	 	 	 	 +3.0: 0.3402319350579027 -- True
+	 	 	 	 +4.0: 0.16104447110190556 -- True
+	 	 	 	 +5.0: 0.10215281737549692 -- True
+	 	 	 	 +6.0: 0.10397038063644665 -- True
+	 	 	 	 +7.0: 0.18985242684667292 -- True
+	 	 	 	 +8.0: 0.3401111551547775 -- True
+	 	 	 	 +9.0: 0.324611979050754 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.1176003584153688 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.11955740131224563 -- True
+	 	 	 (o) Linear Complexity Test: 0.6638205908089716 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9636794445004652 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.22946522583673917 -- True
+	 	 	 (o) Runs Test: 0.11765429075334874 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.4307564773333934 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9279074521742451 -- True
+	 	 	 (o) Cusum Test: 0.6420767095319544 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8842671857397155 -- True
+	 	 	 	 -3: 0.8592542655758176 -- True
+	 	 	 	 -2: 0.508358693746229 -- True
+	 	 	 	 -1: 0.2013531782673486 -- True
+	 	 	 	 +1: 0.015547022656699985 -- True
+	 	 	 	 +2: 0.024433044481547424 -- True
+	 	 	 	 +3: 0.47697438742474607 -- True
+	 	 	 	 +4: 0.6730689136910626 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.748651354118532 -- True
+	 	 	 	 -8.0: 0.6880631892584734 -- True
+	 	 	 	 -7.0: 0.8305387425065236 -- True
+	 	 	 	 -6.0: 0.8379990329781033 -- True
+	 	 	 	 -5.0: 0.740452812094487 -- True
+	 	 	 	 -4.0: 0.7671794714007816 -- True
+	 	 	 	 -3.0: 0.5441778378673183 -- True
+	 	 	 	 -2.0: 0.34811733438897785 -- True
+	 	 	 	 -1.0: 0.12854359787124087 -- True
+	 	 	 	 +1.0: 0.6568475654169275 -- True
+	 	 	 	 +2.0: 0.924712198255072 -- True
+	 	 	 	 +3.0: 0.6305000465182226 -- True
+	 	 	 	 +4.0: 0.5776768303035166 -- True
+	 	 	 	 +5.0: 0.6206480541553843 -- True
+	 	 	 	 +6.0: 0.5143130913762006 -- True
+	 	 	 	 +7.0: 0.37428878894476336 -- True
+	 	 	 	 +8.0: 0.3493804157840379 -- True
+	 	 	 	 +9.0: 0.2799872487692282 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8799340488372511 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.033566645399770376 -- True
+	 	 	 (o) Linear Complexity Test: 0.5183534633518967 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9757816477846312 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.20920968042401222 -- True
+	 	 	 (o) Runs Test: 0.9904120946443261 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.135892364426112 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9544820331045584 -- True
+	 	 	 (o) Cusum Test: 0.8369578875117014 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5535934460942764 -- True
+	 	 	 	 -3: 0.6380504061725579 -- True
+	 	 	 	 -2: 0.25506596576053275 -- True
+	 	 	 	 -1: 0.8814201757129491 -- True
+	 	 	 	 +1: 0.7341993733385839 -- True
+	 	 	 	 +2: 0.9792365953277089 -- True
+	 	 	 	 +3: 0.137846463561818 -- True
+	 	 	 	 +4: 0.2479014931254261 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5420527781358342 -- True
+	 	 	 	 -8.0: 0.8182739469172691 -- True
+	 	 	 	 -7.0: 0.7979021168310008 -- True
+	 	 	 	 -6.0: 0.6458908865433507 -- True
+	 	 	 	 -5.0: 0.7582729192571616 -- True
+	 	 	 	 -4.0: 0.8106063144614121 -- True
+	 	 	 	 -3.0: 0.5146149104437876 -- True
+	 	 	 	 -2.0: 0.6346169472838907 -- True
+	 	 	 	 -1.0: 0.6806556036262086 -- True
+	 	 	 	 +1.0: 0.9645107065920546 -- True
+	 	 	 	 +2.0: 0.6392008655526218 -- True
+	 	 	 	 +3.0: 0.9960308835116517 -- True
+	 	 	 	 +4.0: 0.717674868069381 -- True
+	 	 	 	 +5.0: 0.6166832951008561 -- True
+	 	 	 	 +6.0: 0.3998901082320303 -- True
+	 	 	 	 +7.0: 0.4153781836930117 -- True
+	 	 	 	 +8.0: 0.7498783934439558 -- True
+	 	 	 	 +9.0: 0.9655696600874064 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6097578260774025 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7637877962431292 -- True
+	 	 	 (o) Linear Complexity Test: 0.19834394047454248 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.31765919676225096 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7133837448470173 -- True
+	 	 	 (o) Runs Test: 0.5540765022983749 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5829289600714229 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.604889060698071 -- True
+	 	 	 (o) Cusum Test: 0.366868914399288 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.08848126775825327 -- True
+	 	 	 	 -3: 0.9547838057692302 -- True
+	 	 	 	 -2: 0.42901067005236293 -- True
+	 	 	 	 -1: 0.9086740392090497 -- True
+	 	 	 	 +1: 0.39684845145988684 -- True
+	 	 	 	 +2: 0.042671179723622624 -- True
+	 	 	 	 +3: 0.34335566916774923 -- True
+	 	 	 	 +4: 0.06623540417895835 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6681335245786959 -- True
+	 	 	 	 -8.0: 0.7208412731306061 -- True
+	 	 	 	 -7.0: 0.44948321179090545 -- True
+	 	 	 	 -6.0: 0.2611165996509581 -- True
+	 	 	 	 -5.0: 0.3706645825544598 -- True
+	 	 	 	 -4.0: 0.6411333181637315 -- True
+	 	 	 	 -3.0: 0.8445365607406427 -- True
+	 	 	 	 -2.0: 0.739687152349692 -- True
+	 	 	 	 -1.0: 0.528488882871615 -- True
+	 	 	 	 +1.0: 0.19300653724226757 -- True
+	 	 	 	 +2.0: 0.3546524447899292 -- True
+	 	 	 	 +3.0: 0.8782417649022295 -- True
+	 	 	 	 +4.0: 0.6374308924033879 -- True
+	 	 	 	 +5.0: 0.583623580094367 -- True
+	 	 	 	 +6.0: 0.4980515413404035 -- True
+	 	 	 	 +7.0: 0.5763959778908878 -- True
+	 	 	 	 +8.0: 0.7234912396505916 -- True
+	 	 	 	 +9.0: 0.8706414771786175 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.2543908579306605 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.14090446870766338 -- True
+	 	 	 (o) Linear Complexity Test: 0.9771867861691629 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.42624767111906847 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.1449015561691669 -- True
+	 	 	 (o) Runs Test: 0.4607311887088631 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6728370674034467 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8431625308801718 -- True
+	 	 	 (o) Cusum Test: 0.31569372528767625 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.2563616343941246 -- True
+	 	 	 	 -3: 0.22371916206658057 -- True
+	 	 	 	 -2: 0.20174276063628835 -- True
+	 	 	 	 -1: 0.17682392838112815 -- True
+	 	 	 	 +1: 0.6727574664947542 -- True
+	 	 	 	 +2: 0.3030032151778863 -- True
+	 	 	 	 +3: 0.08032141280134349 -- True
+	 	 	 	 +4: 0.09884177320526297 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.28768649919280376 -- True
+	 	 	 	 -8.0: 0.2434288933648321 -- True
+	 	 	 	 -7.0: 0.1464352522256419 -- True
+	 	 	 	 -6.0: 0.1459689032011983 -- True
+	 	 	 	 -5.0: 0.1395472548702308 -- True
+	 	 	 	 -4.0: 0.04938412158289981 -- True
+	 	 	 	 -3.0: 0.029791847386411614 -- True
+	 	 	 	 -2.0: 0.12536725145900196 -- True
+	 	 	 	 -1.0: 0.4076491264506621 -- True
+	 	 	 	 +1.0: 0.9223958763421647 -- True
+	 	 	 	 +2.0: 0.39494741932079924 -- True
+	 	 	 	 +3.0: 0.0934867111748373 -- True
+	 	 	 	 +4.0: 0.15364627313737214 -- True
+	 	 	 	 +5.0: 0.2523581468360703 -- True
+	 	 	 	 +6.0: 0.1790217516495063 -- True
+	 	 	 	 +7.0: 0.21392454268191397 -- True
+	 	 	 	 +8.0: 0.3855202127139 -- True
+	 	 	 	 +9.0: 0.48765700434915105 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.919537304440121 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.4942571254408583 -- True
+	 	 	 (o) Linear Complexity Test: 0.1136976372151132 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.33574964311604116 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7887926063936361 -- True
+	 	 	 (o) Runs Test: 0.3108055000559964 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.3680028175299175 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9303077243126161 -- True
+	 	 	 (o) Cusum Test: 0.2669559839069948 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8738065297983522 -- True
+	 	 	 	 -3: 0.9611965986320868 -- True
+	 	 	 	 -2: 0.21517363357981878 -- True
+	 	 	 	 -1: 0.7838183494326706 -- True
+	 	 	 	 +1: 0.41970588998703484 -- True
+	 	 	 	 +2: 0.589822153334029 -- True
+	 	 	 	 +3: 0.4451966494718993 -- True
+	 	 	 	 +4: 0.6118514916597209 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.4927166772270878 -- True
+	 	 	 	 -8.0: 0.5438116466753855 -- True
+	 	 	 	 -7.0: 0.8215642242603709 -- True
+	 	 	 	 -6.0: 0.9617400231483364 -- True
+	 	 	 	 -5.0: 0.9342524651132826 -- True
+	 	 	 	 -4.0: 0.8568375037579525 -- True
+	 	 	 	 -3.0: 0.9432773819962964 -- True
+	 	 	 	 -2.0: 0.8863795033804841 -- True
+	 	 	 	 -1.0: 0.9155299733767719 -- True
+	 	 	 	 +1.0: 0.4471710307009207 -- True
+	 	 	 	 +2.0: 0.21684871175978393 -- True
+	 	 	 	 +3.0: 0.21162861921975662 -- True
+	 	 	 	 +4.0: 0.16869925264886598 -- True
+	 	 	 	 +5.0: 0.1129441378232598 -- True
+	 	 	 	 +6.0: 0.08514276735140151 -- True
+	 	 	 	 +7.0: 0.09168053014599112 -- True
+	 	 	 	 +8.0: 0.14163700871320214 -- True
+	 	 	 	 +9.0: 0.1824000805972502 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.011600874828786682 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9761098743990649 -- True
+	 	 	 (o) Linear Complexity Test: 0.9949149261368484 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6406771906266296 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5042602587400136 -- True
+	 	 	 (o) Runs Test: 0.46204909894221413 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.2056887348863367 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.980774423211216 -- True
+	 	 	 (o) Cusum Test: 0.331413559661904 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5725147459094624 -- True
+	 	 	 	 -3: 0.34017628845967907 -- True
+	 	 	 	 -2: 0.5850508894159425 -- True
+	 	 	 	 -1: 0.5979168934340784 -- True
+	 	 	 	 +1: 0.3131015054162763 -- True
+	 	 	 	 +2: 0.0183024724135576 -- True
+	 	 	 	 +3: 0.10278102233247817 -- True
+	 	 	 	 +4: 0.07502833097289768 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6845227610164872 -- True
+	 	 	 	 -8.0: 0.7237768614368707 -- True
+	 	 	 	 -7.0: 0.654425587780497 -- True
+	 	 	 	 -6.0: 0.5709225737631138 -- True
+	 	 	 	 -5.0: 0.6728727983960605 -- True
+	 	 	 	 -4.0: 0.9139144105034258 -- True
+	 	 	 	 -3.0: 0.919947710871948 -- True
+	 	 	 	 -2.0: 0.7323106750376629 -- True
+	 	 	 	 -1.0: 0.5132778607160484 -- True
+	 	 	 	 +1.0: 0.04105792099309741 -- True
+	 	 	 	 +2.0: 0.006912246581486148 -- False
+	 	 	 	 +3.0: 0.009466894114863237 -- False
+	 	 	 	 +4.0: 0.02513865228547873 -- True
+	 	 	 	 +5.0: 0.0583407593075027 -- True
+	 	 	 	 +6.0: 0.08457817236379703 -- True
+	 	 	 	 +7.0: 0.08095675377240752 -- True
+	 	 	 	 +8.0: 0.13411757664691004 -- True
+	 	 	 	 +9.0: 0.27350527353490395 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8368106744917173 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7245921899945315 -- True
+	 	 	 (o) Linear Complexity Test: 0.5168905976613523 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.33100868527449245 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.16123281377198737 -- True
+	 	 	 (o) Runs Test: 0.4761899916829837 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9243610128509755 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8243398531780727 -- True
+	 	 	 (o) Cusum Test: 0.5381797263775452 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9399249695002818 -- True
+	 	 	 	 -3: 0.3298958232782935 -- True
+	 	 	 	 -2: 0.4491414723094864 -- True
+	 	 	 	 -1: 0.12397195250199575 -- True
+	 	 	 	 +1: 0.4922457555370985 -- True
+	 	 	 	 +2: 0.01270187578408669 -- True
+	 	 	 	 +3: 0.9999224413827774 -- True
+	 	 	 	 +4: 0.7835191195354403 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.41940726297333786 -- True
+	 	 	 	 -8.0: 0.7676225028584387 -- True
+	 	 	 	 -7.0: 0.8062504631471024 -- True
+	 	 	 	 -6.0: 0.6719488933476394 -- True
+	 	 	 	 -5.0: 0.6273156282156218 -- True
+	 	 	 	 -4.0: 0.5421939132853633 -- True
+	 	 	 	 -3.0: 0.30602699676056977 -- True
+	 	 	 	 -2.0: 0.2751844559062202 -- True
+	 	 	 	 -1.0: 0.2315280757648286 -- True
+	 	 	 	 +1.0: 0.6029327128767704 -- True
+	 	 	 	 +2.0: 0.9361671510082954 -- True
+	 	 	 	 +3.0: 0.7387994882806427 -- True
+	 	 	 	 +4.0: 0.4164101674538895 -- True
+	 	 	 	 +5.0: 0.37965110133884117 -- True
+	 	 	 	 +6.0: 0.5902369953490364 -- True
+	 	 	 	 +7.0: 0.8174401895715362 -- True
+	 	 	 	 +8.0: 0.8860800831979936 -- True
+	 	 	 	 +9.0: 0.7428915750121889 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.10825167637657127 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8657675415243162 -- True
+	 	 	 (o) Linear Complexity Test: 0.19065073479906308 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.719419488362526 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.45329834444596545 -- True
+	 	 	 (o) Runs Test: 0.6721832230048745 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8397945528702678 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9944607798871055 -- True
+	 	 	 (o) Cusum Test: 0.20467011226524617 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.07367155828953813 -- True
+	 	 	 	 -3: 0.00802162153228434 -- False
+	 	 	 	 -2: 0.009394348636025422 -- False
+	 	 	 	 -1: 0.06554776519359845 -- True
+	 	 	 	 +1: 0.29531316913579747 -- True
+	 	 	 	 +2: 0.6935603072253095 -- True
+	 	 	 	 +3: 0.4094180318529963 -- True
+	 	 	 	 +4: 0.08249751883317492 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.10193292300598654 -- True
+	 	 	 	 -8.0: 0.043278422453478835 -- True
+	 	 	 	 -7.0: 0.03478963560937687 -- True
+	 	 	 	 -6.0: 0.09779168304903069 -- True
+	 	 	 	 -5.0: 0.2193374557165494 -- True
+	 	 	 	 -4.0: 0.2191097539962772 -- True
+	 	 	 	 -3.0: 0.08679519063807374 -- True
+	 	 	 	 -2.0: 0.07285404495062962 -- True
+	 	 	 	 -1.0: 0.07086970578315274 -- True
+	 	 	 	 +1.0: 0.11747276616129602 -- True
+	 	 	 	 +2.0: 0.28431136826111636 -- True
+	 	 	 	 +3.0: 0.7142114732386629 -- True
+	 	 	 	 +4.0: 0.8483986471392573 -- True
+	 	 	 	 +5.0: 0.9424009990722901 -- True
+	 	 	 	 +6.0: 0.9884124981441319 -- True
+	 	 	 	 +7.0: 0.733354400585022 -- True
+	 	 	 	 +8.0: 0.5971019559504854 -- True
+	 	 	 	 +9.0: 0.46887122922263813 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6312583126989001 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8111250473587867 -- True
+	 	 	 (o) Linear Complexity Test: 0.9344511853540104 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.833687000489332 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.34618878561907784 -- True
+	 	 	 (o) Runs Test: 0.9990018716371298 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6810736203663049 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.846923485868239 -- True
+	 	 	 (o) Cusum Test: 0.9143411324531713 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.6761311600836389 -- True
+	 	 	 	 -3: 0.7999125977857952 -- True
+	 	 	 	 -2: 0.2525674233450186 -- True
+	 	 	 	 -1: 0.6561546387840077 -- True
+	 	 	 	 +1: 0.5542962500689208 -- True
+	 	 	 	 +2: 0.03676979986684087 -- True
+	 	 	 	 +3: 0.38785884255917175 -- True
+	 	 	 	 +4: 0.5055063491748426 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.457008391908566 -- True
+	 	 	 	 -8.0: 0.3793092293876097 -- True
+	 	 	 	 -7.0: 0.42073639002144414 -- True
+	 	 	 	 -6.0: 0.5147061459410109 -- True
+	 	 	 	 -5.0: 0.623350631325873 -- True
+	 	 	 	 -4.0: 0.5199085454878486 -- True
+	 	 	 	 -3.0: 0.3562963891631149 -- True
+	 	 	 	 -2.0: 0.2567259755858555 -- True
+	 	 	 	 -1.0: 0.2609749290316792 -- True
+	 	 	 	 +1.0: 0.1016254568655064 -- True
+	 	 	 	 +2.0: 0.1637708208866553 -- True
+	 	 	 	 +3.0: 0.22612378646924758 -- True
+	 	 	 	 +4.0: 0.15470864864266465 -- True
+	 	 	 	 +5.0: 0.15597071130709286 -- True
+	 	 	 	 +6.0: 0.25216416242264517 -- True
+	 	 	 	 +7.0: 0.5713784673889033 -- True
+	 	 	 	 +8.0: 0.8946370397288556 -- True
+	 	 	 	 +9.0: 0.6777283326482973 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6873488668694425 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.530824287178537 -- True
+	 	 	 (o) Linear Complexity Test: 0.179767483838043 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.17712503475710395 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9543925265998731 -- True
+	 	 	 (o) Runs Test: 0.2102235187424497 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.05066640596995338 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7620924995373621 -- True
+	 	 	 (o) Cusum Test: 0.33704136203051466 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.38206746512857587 -- True
+	 	 	 	 -3: 0.6836870268102944 -- True
+	 	 	 	 -2: 0.24686757319671926 -- True
+	 	 	 	 -1: 0.09317430475701477 -- True
+	 	 	 	 +1: 0.6751792327788456 -- True
+	 	 	 	 +2: 0.8026805867126587 -- True
+	 	 	 	 +3: 0.922080651380401 -- True
+	 	 	 	 +4: 0.8991113482556391 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.9075534722217589 -- True
+	 	 	 	 -8.0: 0.9817352832580781 -- True
+	 	 	 	 -7.0: 0.821013463657166 -- True
+	 	 	 	 -6.0: 0.7201693791755875 -- True
+	 	 	 	 -5.0: 0.8268766378874874 -- True
+	 	 	 	 -4.0: 0.35849126193291514 -- True
+	 	 	 	 -3.0: 0.3534748234853724 -- True
+	 	 	 	 -2.0: 0.7124429894698301 -- True
+	 	 	 	 -1.0: 0.6195213509341868 -- True
+	 	 	 	 +1.0: 0.6575275557323887 -- True
+	 	 	 	 +2.0: 0.7587310596673087 -- True
+	 	 	 	 +3.0: 0.8677313517397746 -- True
+	 	 	 	 +4.0: 0.9358951796557874 -- True
+	 	 	 	 +5.0: 0.4966490825673887 -- True
+	 	 	 	 +6.0: 0.19202647900527126 -- True
+	 	 	 	 +7.0: 0.14140721282551347 -- True
+	 	 	 	 +8.0: 0.2485703900284778 -- True
+	 	 	 	 +9.0: 0.46468299575190997 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.05270409180689349 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.965186739929692 -- True
+	 	 	 (o) Linear Complexity Test: 0.5172283132425859 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3718426006673452 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6283828420329172 -- True
+	 	 	 (o) Runs Test: 0.38471250378583566 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5408537866340617 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7188131530661879 -- True
+	 	 	 (o) Cusum Test: 0.42451146491603364 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.17528683013010415 -- True
+	 	 	 	 -3: 0.2728284009164661 -- True
+	 	 	 	 -2: 0.28387596475594584 -- True
+	 	 	 	 -1: 0.6694089203577442 -- True
+	 	 	 	 +1: 0.7620354677243832 -- True
+	 	 	 	 +2: 0.25161221298588465 -- True
+	 	 	 	 +3: 0.4531552878708486 -- True
+	 	 	 	 +4: 0.4751803535412802 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.2794936871134234 -- True
+	 	 	 	 -8.0: 0.15011533973795838 -- True
+	 	 	 	 -7.0: 0.08046069571374963 -- True
+	 	 	 	 -6.0: 0.055719324352751155 -- True
+	 	 	 	 -5.0: 0.04541213339113408 -- True
+	 	 	 	 -4.0: 0.038055920999867786 -- True
+	 	 	 	 -3.0: 0.05766469138942784 -- True
+	 	 	 	 -2.0: 0.11888225169741341 -- True
+	 	 	 	 -1.0: 0.17006696145390476 -- True
+	 	 	 	 +1.0: 0.3911725228101395 -- True
+	 	 	 	 +2.0: 0.7853986031250466 -- True
+	 	 	 	 +3.0: 0.9541290836092371 -- True
+	 	 	 	 +4.0: 0.9096851762048855 -- True
+	 	 	 	 +5.0: 0.7859761803958486 -- True
+	 	 	 	 +6.0: 0.5961016124425949 -- True
+	 	 	 	 +7.0: 0.4537661366311826 -- True
+	 	 	 	 +8.0: 0.3190962696824047 -- True
+	 	 	 	 +9.0: 0.15729920705028516 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8184752123466683 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.22791138084263504 -- True
+	 	 	 (o) Linear Complexity Test: 0.3646911694779794 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5804235604824801 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.38985131916469906 -- True
+	 	 	 (o) Runs Test: 0.4922402165092251 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.36952364903180174 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9367545291431371 -- True
+	 	 	 (o) Cusum Test: 0.34491980872180594 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.33758543189979323 -- True
+	 	 	 	 -3: 0.933618265929912 -- True
+	 	 	 	 -2: 0.5975888816172275 -- True
+	 	 	 	 -1: 0.45810692576799816 -- True
+	 	 	 	 +1: 0.5635975755270051 -- True
+	 	 	 	 +2: 0.963146525148626 -- True
+	 	 	 	 +3: 0.5129077419483328 -- True
+	 	 	 	 +4: 0.9349389868313362 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.4727470711398539 -- True
+	 	 	 	 -8.0: 0.4321589048689558 -- True
+	 	 	 	 -7.0: 0.4568976301792438 -- True
+	 	 	 	 -6.0: 0.5474072140895515 -- True
+	 	 	 	 -5.0: 0.7477023991137473 -- True
+	 	 	 	 -4.0: 0.9113970128723768 -- True
+	 	 	 	 -3.0: 0.9708251518660655 -- True
+	 	 	 	 -2.0: 0.7987488074746661 -- True
+	 	 	 	 -1.0: 0.9088471087023199 -- True
+	 	 	 	 +1.0: 0.8316158889146632 -- True
+	 	 	 	 +2.0: 0.8060511120807299 -- True
+	 	 	 	 +3.0: 0.9883278753860001 -- True
+	 	 	 	 +4.0: 0.573731117625033 -- True
+	 	 	 	 +5.0: 0.35969686874947293 -- True
+	 	 	 	 +6.0: 0.2935243538328882 -- True
+	 	 	 	 +7.0: 0.5194685447493399 -- True
+	 	 	 	 +8.0: 0.6789715137170543 -- True
+	 	 	 	 +9.0: 0.7873509904616991 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5344033864892273 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.4156847985200773 -- True
+	 	 	 (o) Linear Complexity Test: 0.040636880783790734 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.09841101401949585 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9242416738250475 -- True
+	 	 	 (o) Runs Test: 0.09527862014997691 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6025320393565163 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8187428249845187 -- True
+	 	 	 (o) Cusum Test: 0.14393096224173701 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.7125482589547267 -- True
+	 	 	 	 -3: 0.2054740481532781 -- True
+	 	 	 	 -2: 0.2622316166982642 -- True
+	 	 	 	 -1: 0.5804249776959117 -- True
+	 	 	 	 +1: 0.732937347157451 -- True
+	 	 	 	 +2: 0.37932370055796355 -- True
+	 	 	 	 +3: 0.35527100871121664 -- True
+	 	 	 	 +4: 0.49966741230834166 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7270439369797891 -- True
+	 	 	 	 -8.0: 0.6566112321621784 -- True
+	 	 	 	 -7.0: 0.4803944668954909 -- True
+	 	 	 	 -6.0: 0.5251605452061561 -- True
+	 	 	 	 -5.0: 0.7839802476449458 -- True
+	 	 	 	 -4.0: 0.6690835632239772 -- True
+	 	 	 	 -3.0: 0.4481094766781929 -- True
+	 	 	 	 -2.0: 0.4671868803221907 -- True
+	 	 	 	 -1.0: 0.6809231537049152 -- True
+	 	 	 	 +1.0: 0.20791786923809896 -- True
+	 	 	 	 +2.0: 0.08255494627078541 -- True
+	 	 	 	 +3.0: 0.21028184778071157 -- True
+	 	 	 	 +4.0: 0.2986308630352822 -- True
+	 	 	 	 +5.0: 0.33302333770265047 -- True
+	 	 	 	 +6.0: 0.5151054931844767 -- True
+	 	 	 	 +7.0: 0.5493403946109043 -- True
+	 	 	 	 +8.0: 0.4573567139707868 -- True
+	 	 	 	 +9.0: 0.6490910999288537 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.3331759249756504 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.03130288831702392 -- True
+	 	 	 (o) Linear Complexity Test: 0.684895110337862 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6080062777318398 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.43991161023186526 -- True
+	 	 	 (o) Runs Test: 0.944602048197438 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.44056609594173957 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7906231624840092 -- True
+	 	 	 (o) Cusum Test: 0.6699269806516349 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.08085683919445028 -- True
+	 	 	 	 -3: 0.7038447280931963 -- True
+	 	 	 	 -2: 0.4349436556900276 -- True
+	 	 	 	 -1: 0.3073271909046874 -- True
+	 	 	 	 +1: 0.9744780445894359 -- True
+	 	 	 	 +2: 0.4995623410365121 -- True
+	 	 	 	 +3: 0.7134685675803842 -- True
+	 	 	 	 +4: 0.9165162766143243 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.3940974580665081 -- True
+	 	 	 	 -8.0: 0.35296780485818335 -- True
+	 	 	 	 -7.0: 0.39381340307642365 -- True
+	 	 	 	 -6.0: 0.4839368839235273 -- True
+	 	 	 	 -5.0: 0.5303604972550399 -- True
+	 	 	 	 -4.0: 0.6868266951454947 -- True
+	 	 	 	 -3.0: 0.6004181419118022 -- True
+	 	 	 	 -2.0: 0.14732442626295986 -- True
+	 	 	 	 -1.0: 0.14317658663137517 -- True
+	 	 	 	 +1.0: 0.9167122852603005 -- True
+	 	 	 	 +2.0: 0.9614759030181109 -- True
+	 	 	 	 +3.0: 0.836964096021518 -- True
+	 	 	 	 +4.0: 0.9810794622876862 -- True
+	 	 	 	 +5.0: 0.7221713849600262 -- True
+	 	 	 	 +6.0: 0.5703370818504507 -- True
+	 	 	 	 +7.0: 0.4719542230251377 -- True
+	 	 	 	 +8.0: 0.4528700131168515 -- True
+	 	 	 	 +9.0: 0.5699398359419301 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6810711310988706 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.1516099288824281 -- True
+	 	 	 (o) Linear Complexity Test: 0.44017566527658814 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.48503280049955466 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9060982228149141 -- True
+	 	 	 (o) Runs Test: 0.1803445070123013 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5825954541429794 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7113870711012643 -- True
+	 	 	 (o) Cusum Test: 0.7316086253463729 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.3303950097774692 -- True
+	 	 	 	 -3: 0.5147934163940721 -- True
+	 	 	 	 -2: 0.5356192154183261 -- True
+	 	 	 	 -1: 0.7811938529151891 -- True
+	 	 	 	 +1: 0.710505693646636 -- True
+	 	 	 	 +2: 0.5204075707103674 -- True
+	 	 	 	 +3: 0.7081045298747788 -- True
+	 	 	 	 +4: 0.8576594859017881 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.40657799275624606 -- True
+	 	 	 	 -8.0: 0.29531118025107417 -- True
+	 	 	 	 -7.0: 0.10642854446353095 -- True
+	 	 	 	 -6.0: 0.032385369687244765 -- True
+	 	 	 	 -5.0: 0.010883221933526241 -- True
+	 	 	 	 -4.0: 0.0070077651375498266 -- False
+	 	 	 	 -3.0: 0.05703878103197333 -- True
+	 	 	 	 -2.0: 0.36988531389913026 -- True
+	 	 	 	 -1.0: 0.29462328098193025 -- True
+	 	 	 	 +1.0: 0.29462328098193025 -- True
+	 	 	 	 +2.0: 0.9941833549519263 -- True
+	 	 	 	 +3.0: 0.852171472089061 -- True
+	 	 	 	 +4.0: 0.8823836585131697 -- True
+	 	 	 	 +5.0: 0.7908823229406242 -- True
+	 	 	 	 +6.0: 0.963560627917692 -- True
+	 	 	 	 +7.0: 0.4728034473792452 -- True
+	 	 	 	 +8.0: 0.27189660023112794 -- True
+	 	 	 	 +9.0: 0.2949306410351662 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.27188189399646323 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.6226914548450553 -- True
+	 	 	 (o) Linear Complexity Test: 0.6605310728651106 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6763707523340259 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.36310410257305054 -- True
+	 	 	 (o) Runs Test: 0.3094860924723183 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9488604820109183 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.942293207313154 -- True
+	 	 	 (o) Cusum Test: 0.7277483704614363 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.20168681795540727 -- True
+	 	 	 	 -3: 0.10515705607224335 -- True
+	 	 	 	 -2: 0.04352929234556008 -- True
+	 	 	 	 -1: 0.19420908769342174 -- True
+	 	 	 	 +1: 0.6609399262280198 -- True
+	 	 	 	 +2: 0.5974884855791077 -- True
+	 	 	 	 +3: 0.7667662837933557 -- True
+	 	 	 	 +4: 0.6976095259740778 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.704397343008282 -- True
+	 	 	 	 -8.0: 0.8693831373956755 -- True
+	 	 	 	 -7.0: 0.9678650212005783 -- True
+	 	 	 	 -6.0: 0.9034691033112939 -- True
+	 	 	 	 -5.0: 0.6046683281767296 -- True
+	 	 	 	 -4.0: 0.14512169104305267 -- True
+	 	 	 	 -3.0: 0.050139008185838295 -- True
+	 	 	 	 -2.0: 0.05295563871266342 -- True
+	 	 	 	 -1.0: 0.053237299313760596 -- True
+	 	 	 	 +1.0: 0.1526625188365357 -- True
+	 	 	 	 +2.0: 0.1413412360377002 -- True
+	 	 	 	 +3.0: 0.14731116621518894 -- True
+	 	 	 	 +4.0: 0.25242920959544723 -- True
+	 	 	 	 +5.0: 0.42543191138915804 -- True
+	 	 	 	 +6.0: 0.4855768124714658 -- True
+	 	 	 	 +7.0: 0.6200149623505138 -- True
+	 	 	 	 +8.0: 0.7796002346769101 -- True
+	 	 	 	 +9.0: 0.9395159600428002 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.9741883351752252 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.6438222793549457 -- True
+	 	 	 (o) Linear Complexity Test: 0.4128379817571227 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5513268089696647 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.34264209088904046 -- True
+	 	 	 (o) Runs Test: 0.2394032896509899 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9173092119545645 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.5273312217328279 -- True
+	 	 	 (o) Cusum Test: 0.6956662359994583 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8320013937349002 -- True
+	 	 	 	 -3: 0.649043750210495 -- True
+	 	 	 	 -2: 0.7010930627684688 -- True
+	 	 	 	 -1: 0.5859972030453064 -- True
+	 	 	 	 +1: 0.5397057070588763 -- True
+	 	 	 	 +2: 0.708060403824653 -- True
+	 	 	 	 +3: 0.557144845670367 -- True
+	 	 	 	 +4: 0.17547367288104582 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.42825750272216634 -- True
+	 	 	 	 -8.0: 0.3990401236159069 -- True
+	 	 	 	 -7.0: 0.2126474392065688 -- True
+	 	 	 	 -6.0: 0.056130608165084056 -- True
+	 	 	 	 -5.0: 0.07471498865141021 -- True
+	 	 	 	 -4.0: 0.2041192145623174 -- True
+	 	 	 	 -3.0: 0.22826250147991833 -- True
+	 	 	 	 -2.0: 0.42792979952907273 -- True
+	 	 	 	 -1.0: 0.8270846782817629 -- True
+	 	 	 	 +1.0: 0.6322999348276117 -- True
+	 	 	 	 +2.0: 0.7548192339823808 -- True
+	 	 	 	 +3.0: 0.9517773829555762 -- True
+	 	 	 	 +4.0: 0.8441566935104681 -- True
+	 	 	 	 +5.0: 0.5838025399147182 -- True
+	 	 	 	 +6.0: 0.5366706094409177 -- True
+	 	 	 	 +7.0: 0.516258043499627 -- True
+	 	 	 	 +8.0: 0.33629512156704555 -- True
+	 	 	 	 +9.0: 0.24074436096104845 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.88110331431943 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9993660310421127 -- True
+	 	 	 (o) Linear Complexity Test: 0.42630086491960695 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.62805878034929 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.2640508510552214 -- True
+	 	 	 (o) Runs Test: 0.9389406924529864 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8682079728215388 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.48071066524443856 -- True
+	 	 	 (o) Cusum Test: 0.9606075444016073 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.7391595805490312 -- True
+	 	 	 	 -3: 0.7379476180981145 -- True
+	 	 	 	 -2: 0.19903571796929434 -- True
+	 	 	 	 -1: 0.6027066320946658 -- True
+	 	 	 	 +1: 0.4929612222870702 -- True
+	 	 	 	 +2: 0.5481181614775656 -- True
+	 	 	 	 +3: 0.7136326573194552 -- True
+	 	 	 	 +4: 0.8582801386696688 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.11347883064568556 -- True
+	 	 	 	 -8.0: 0.19779580589969648 -- True
+	 	 	 	 -7.0: 0.171661894011793 -- True
+	 	 	 	 -6.0: 0.26398103322330124 -- True
+	 	 	 	 -5.0: 0.4984424586366183 -- True
+	 	 	 	 -4.0: 0.6857230909349036 -- True
+	 	 	 	 -3.0: 0.6759425328944524 -- True
+	 	 	 	 -2.0: 0.3589359976287477 -- True
+	 	 	 	 -1.0: 0.7532203897677766 -- True
+	 	 	 	 +1.0: 0.8450522052772295 -- True
+	 	 	 	 +2.0: 0.5462294158735526 -- True
+	 	 	 	 +3.0: 0.834445791233187 -- True
+	 	 	 	 +4.0: 0.7142708221637808 -- True
+	 	 	 	 +5.0: 0.6181305661627605 -- True
+	 	 	 	 +6.0: 0.6520532398345747 -- True
+	 	 	 	 +7.0: 0.48249508499429417 -- True
+	 	 	 	 +8.0: 0.3837521430805153 -- True
+	 	 	 	 +9.0: 0.5215677401537082 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6987358205558376 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.4946445289444419 -- True
+	 	 	 (o) Linear Complexity Test: 0.922334071786009 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3544902078945932 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.054060188182158256 -- True
+	 	 	 (o) Runs Test: 0.8806359519972495 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.9228120281440582 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9768758796072853 -- True
+	 	 	 (o) Cusum Test: 0.6345176846964202 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8470661171057523 -- True
+	 	 	 	 -3: 0.9818642446526963 -- True
+	 	 	 	 -2: 0.9069715840126041 -- True
+	 	 	 	 -1: 0.38470568027677987 -- True
+	 	 	 	 +1: 0.9929447990649277 -- True
+	 	 	 	 +2: 0.7831712767413405 -- True
+	 	 	 	 +3: 0.1510338042837922 -- True
+	 	 	 	 +4: 0.011388728290851545 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5981241526168186 -- True
+	 	 	 	 -8.0: 0.5257147172578217 -- True
+	 	 	 	 -7.0: 0.3856536126802179 -- True
+	 	 	 	 -6.0: 0.20932405925537834 -- True
+	 	 	 	 -5.0: 0.15119634337510987 -- True
+	 	 	 	 -4.0: 0.21646694478964357 -- True
+	 	 	 	 -3.0: 0.5131084699124269 -- True
+	 	 	 	 -2.0: 0.25533655378341846 -- True
+	 	 	 	 -1.0: 0.0879832500935293 -- True
+	 	 	 	 +1.0: 0.9514123014465526 -- True
+	 	 	 	 +2.0: 0.8511698337977822 -- True
+	 	 	 	 +3.0: 0.8345120019548595 -- True
+	 	 	 	 +4.0: 0.470524088257235 -- True
+	 	 	 	 +5.0: 0.5558463571908732 -- True
+	 	 	 	 +6.0: 0.960925476488592 -- True
+	 	 	 	 +7.0: 0.821721356020868 -- True
+	 	 	 	 +8.0: 0.6940809441004538 -- True
+	 	 	 	 +9.0: 0.7675584192475173 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6885273131093912 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.788039191301907 -- True
+	 	 	 (o) Linear Complexity Test: 0.11923367369389865 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8149783434371605 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.9748288097342984 -- True
+	 	 	 (o) Runs Test: 0.024633815775654423 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5697815306687861 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9815195556040544 -- True
+	 	 	 (o) Cusum Test: 0.5325620386081982 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.050379525788672004 -- True
+	 	 	 	 -3: 0.03228476714758548 -- True
+	 	 	 	 -2: 0.18953506634321665 -- True
+	 	 	 	 -1: 0.12159207792687707 -- True
+	 	 	 	 +1: 0.6117792337342113 -- True
+	 	 	 	 +2: 0.6496628956836333 -- True
+	 	 	 	 +3: 0.9905657639183449 -- True
+	 	 	 	 +4: 0.24162828656312385 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6338566778576205 -- True
+	 	 	 	 -8.0: 0.75396715805 -- True
+	 	 	 	 -7.0: 0.6554947586671149 -- True
+	 	 	 	 -6.0: 0.44799981710520376 -- True
+	 	 	 	 -5.0: 0.44929234528163 -- True
+	 	 	 	 -4.0: 0.22116438455178655 -- True
+	 	 	 	 -3.0: 0.0565745522902953 -- True
+	 	 	 	 -2.0: 0.0419451217028321 -- True
+	 	 	 	 -1.0: 0.08595315225157359 -- True
+	 	 	 	 +1.0: 0.28206986978339177 -- True
+	 	 	 	 +2.0: 0.4184762879190743 -- True
+	 	 	 	 +3.0: 0.474628330571392 -- True
+	 	 	 	 +4.0: 0.49251211866666833 -- True
+	 	 	 	 +5.0: 0.5471829824958986 -- True
+	 	 	 	 +6.0: 0.3881943556782639 -- True
+	 	 	 	 +7.0: 0.4131385442236206 -- True
+	 	 	 	 +8.0: 0.5241133626883743 -- True
+	 	 	 	 +9.0: 0.6051596346121914 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.5136962061038908 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9236595295168645 -- True
+	 	 	 (o) Linear Complexity Test: 0.8270190257203905 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.6429415883490188 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.46029208130025745 -- True
+	 	 	 (o) Runs Test: 0.5744209087280935 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.14002987070444992 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9301448684538539 -- True
+	 	 	 (o) Cusum Test: 0.7523463644435315 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.2342094048192632 -- True
+	 	 	 	 -3: 0.3079838417095885 -- True
+	 	 	 	 -2: 0.3933048051948957 -- True
+	 	 	 	 -1: 0.25964035668429175 -- True
+	 	 	 	 +1: 0.40042017231114463 -- True
+	 	 	 	 +2: 0.174105978302644 -- True
+	 	 	 	 +3: 0.40225452593180366 -- True
+	 	 	 	 +4: 0.44969739518554286 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.046013700110602164 -- True
+	 	 	 	 -8.0: 0.14579012223057505 -- True
+	 	 	 	 -7.0: 0.1149727729021729 -- True
+	 	 	 	 -6.0: 0.049740800673564275 -- True
+	 	 	 	 -5.0: 0.06752623830861255 -- True
+	 	 	 	 -4.0: 0.1007824241967046 -- True
+	 	 	 	 -3.0: 0.1252869742582312 -- True
+	 	 	 	 -2.0: 0.22613806578703455 -- True
+	 	 	 	 -1.0: 0.15537646488105825 -- True
+	 	 	 	 +1.0: 0.45018439399099586 -- True
+	 	 	 	 +2.0: 0.9086617199854272 -- True
+	 	 	 	 +3.0: 0.5725464927653052 -- True
+	 	 	 	 +4.0: 0.5809270052417115 -- True
+	 	 	 	 +5.0: 0.6216809049187633 -- True
+	 	 	 	 +6.0: 0.5253701753013718 -- True
+	 	 	 	 +7.0: 0.596747009775078 -- True
+	 	 	 	 +8.0: 0.8434102059811839 -- True
+	 	 	 	 +9.0: 0.9500425609007317 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.3984084162412982 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7845377609796146 -- True
+	 	 	 (o) Linear Complexity Test: 0.6131818595164542 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7696544571730138 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.43340871044910784 -- True
+	 	 	 (o) Runs Test: 0.9637010570391508 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.5168767695393375 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8409124982884819 -- True
+	 	 	 (o) Cusum Test: 0.5759042236990158 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.22786717157477535 -- True
+	 	 	 	 -3: 0.04546687486754762 -- True
+	 	 	 	 -2: 0.7290686275462681 -- True
+	 	 	 	 -1: 0.8026691379520793 -- True
+	 	 	 	 +1: 0.6938592547783239 -- True
+	 	 	 	 +2: 0.9711962629759423 -- True
+	 	 	 	 +3: 0.784362666848247 -- True
+	 	 	 	 +4: 0.19384210035858207 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.4580638562941055 -- True
+	 	 	 	 -8.0: 0.4527241226673582 -- True
+	 	 	 	 -7.0: 0.3180491102720999 -- True
+	 	 	 	 -6.0: 0.30760322273408525 -- True
+	 	 	 	 -5.0: 0.5521086861696443 -- True
+	 	 	 	 -4.0: 0.9153917646987592 -- True
+	 	 	 	 -3.0: 0.6083080515381082 -- True
+	 	 	 	 -2.0: 0.9800813949591948 -- True
+	 	 	 	 -1.0: 0.27965402328941746 -- True
+	 	 	 	 +1.0: 0.45569348519923725 -- True
+	 	 	 	 +2.0: 0.5742833544740757 -- True
+	 	 	 	 +3.0: 0.3736777809633324 -- True
+	 	 	 	 +4.0: 0.32273593497718656 -- True
+	 	 	 	 +5.0: 0.42161915882269974 -- True
+	 	 	 	 +6.0: 0.5861950290025612 -- True
+	 	 	 	 +7.0: 0.723478323709853 -- True
+	 	 	 	 +8.0: 0.8341722824635699 -- True
+	 	 	 	 +9.0: 0.7830744474187168 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.6621092977966501 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.9906868968108317 -- True
+	 	 	 (o) Linear Complexity Test: 0.7720006390629611 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.5773953506960785 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.18475726153852814 -- True
+	 	 	 (o) Runs Test: 0.05902890408153052 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.8985021999812223 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7792194069984798 -- True
+	 	 	 (o) Cusum Test: 0.6310394265701398 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8839779574884159 -- True
+	 	 	 	 -3: 0.6639521172217798 -- True
+	 	 	 	 -2: 0.3049972034211896 -- True
+	 	 	 	 -1: 0.6442430224232859 -- True
+	 	 	 	 +1: 0.9106419061449156 -- True
+	 	 	 	 +2: 0.5712839647113199 -- True
+	 	 	 	 +3: 0.046761860890482676 -- True
+	 	 	 	 +4: 0.7359394281164512 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6150116765670839 -- True
+	 	 	 	 -8.0: 0.5093005644414266 -- True
+	 	 	 	 -7.0: 0.4951596104818261 -- True
+	 	 	 	 -6.0: 0.5223238298706419 -- True
+	 	 	 	 -5.0: 0.5333522236296272 -- True
+	 	 	 	 -4.0: 0.6388216722735914 -- True
+	 	 	 	 -3.0: 0.9226870878976604 -- True
+	 	 	 	 -2.0: 0.49515270156315727 -- True
+	 	 	 	 -1.0: 0.8564923345191586 -- True
+	 	 	 	 +1.0: 0.47689329442309336 -- True
+	 	 	 	 +2.0: 0.7967609401488026 -- True
+	 	 	 	 +3.0: 0.507220686877661 -- True
+	 	 	 	 +4.0: 0.19720177679243545 -- True
+	 	 	 	 +5.0: 0.3470260085950502 -- True
+	 	 	 	 +6.0: 0.6653271856694478 -- True
+	 	 	 	 +7.0: 0.8409916980243313 -- True
+	 	 	 	 +8.0: 0.8542809923175068 -- True
+	 	 	 	 +9.0: 0.8127761434023265 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.42197961896840375 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.5969410926878517 -- True
+	 	 	 (o) Linear Complexity Test: 0.8772570765042184 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7764314293190547 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.3095554736040109 -- True
+	 	 	 (o) Runs Test: 0.43551321205778926 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.14617274541514766 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9788774205561955 -- True
+	 	 	 (o) Cusum Test: 0.4047814064197799 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9276315594215109 -- True
+	 	 	 	 -3: 0.8824955875320702 -- True
+	 	 	 	 -2: 0.32440823635168964 -- True
+	 	 	 	 -1: 0.4180830929840309 -- True
+	 	 	 	 +1: 0.1988382831949673 -- True
+	 	 	 	 +2: 0.08286834052956264 -- True
+	 	 	 	 +3: 0.6519586776120725 -- True
+	 	 	 	 +4: 0.8621563517504536 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.6840460827094949 -- True
+	 	 	 	 -8.0: 0.49914362067699447 -- True
+	 	 	 	 -7.0: 0.2720924281481649 -- True
+	 	 	 	 -6.0: 0.22468396391009338 -- True
+	 	 	 	 -5.0: 0.2930391911056993 -- True
+	 	 	 	 -4.0: 0.3746182118555814 -- True
+	 	 	 	 -3.0: 0.2934766219489964 -- True
+	 	 	 	 -2.0: 0.2450420106323863 -- True
+	 	 	 	 -1.0: 0.3829341021856191 -- True
+	 	 	 	 +1.0: 0.2828900557546681 -- True
+	 	 	 	 +2.0: 0.12114907277502146 -- True
+	 	 	 	 +3.0: 0.18661459180604045 -- True
+	 	 	 	 +4.0: 0.41693276573762406 -- True
+	 	 	 	 +5.0: 0.5913195290659061 -- True
+	 	 	 	 +6.0: 0.6272034297909665 -- True
+	 	 	 	 +7.0: 0.5765469734532953 -- True
+	 	 	 	 +8.0: 0.46672050886918304 -- True
+	 	 	 	 +9.0: 0.4738501352239405 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.7353150311164673 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7863760608934112 -- True
+	 	 	 (o) Linear Complexity Test: 0.3970846860721852 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3499072162986434 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.7301010864380925 -- True
+	 	 	 (o) Runs Test: 0.9997795302780697 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.3664988290633598 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.6572890064363069 -- True
+	 	 	 (o) Cusum Test: 0.25934984349521234 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.9652589624585531 -- True
+	 	 	 	 -3: 0.36374080626541655 -- True
+	 	 	 	 -2: 0.47651564087070875 -- True
+	 	 	 	 -1: 0.8418155824629829 -- True
+	 	 	 	 +1: 0.3153369995891884 -- True
+	 	 	 	 +2: 0.1669764929077097 -- True
+	 	 	 	 +3: 0.3963081313946703 -- True
+	 	 	 	 +4: 0.8762317356499872 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5656773188658633 -- True
+	 	 	 	 -8.0: 0.9099587627824164 -- True
+	 	 	 	 -7.0: 0.8115256749294953 -- True
+	 	 	 	 -6.0: 0.7357475253482202 -- True
+	 	 	 	 -5.0: 0.7993820769053398 -- True
+	 	 	 	 -4.0: 0.9218510657145591 -- True
+	 	 	 	 -3.0: 0.8277073757089305 -- True
+	 	 	 	 -2.0: 0.7430590808351842 -- True
+	 	 	 	 -1.0: 0.757914402269575 -- True
+	 	 	 	 +1.0: 0.0322480190270999 -- True
+	 	 	 	 +2.0: 0.08653753526682001 -- True
+	 	 	 	 +3.0: 0.3167508026859561 -- True
+	 	 	 	 +4.0: 0.37068903793590835 -- True
+	 	 	 	 +5.0: 0.5592222523242978 -- True
+	 	 	 	 +6.0: 0.9259575534471681 -- True
+	 	 	 	 +7.0: 0.9497752812594101 -- True
+	 	 	 	 +8.0: 0.6034965798327747 -- True
+	 	 	 	 +9.0: 0.40644358078177956 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.41475970073236734 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.6143298524524147 -- True
+	 	 	 (o) Linear Complexity Test: 0.20182458135369072 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.27057579293565215 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.5718639329704197 -- True
+	 	 	 (o) Runs Test: 0.5397220691812086 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.14906216532452435 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.45594891533207804 -- True
+	 	 	 (o) Cusum Test: 0.19298697134723547 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.18260416811054256 -- True
+	 	 	 	 -3: 0.9116977774801022 -- True
+	 	 	 	 -2: 0.4537205128134508 -- True
+	 	 	 	 -1: 0.38055238853053247 -- True
+	 	 	 	 +1: 0.765839380763413 -- True
+	 	 	 	 +2: 0.5287924675084985 -- True
+	 	 	 	 +3: 0.5649444103674364 -- True
+	 	 	 	 +4: 0.5178638458861436 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7601982161521733 -- True
+	 	 	 	 -8.0: 0.7452325065725602 -- True
+	 	 	 	 -7.0: 0.4851359184946177 -- True
+	 	 	 	 -6.0: 0.3645154251352788 -- True
+	 	 	 	 -5.0: 0.43416078003765435 -- True
+	 	 	 	 -4.0: 0.5241966905727515 -- True
+	 	 	 	 -3.0: 0.6746941320808499 -- True
+	 	 	 	 -2.0: 0.5794668465204433 -- True
+	 	 	 	 -1.0: 0.3935535223861627 -- True
+	 	 	 	 +1.0: 0.3703327180038115 -- True
+	 	 	 	 +2.0: 0.38866971139726947 -- True
+	 	 	 	 +3.0: 0.6470456881976061 -- True
+	 	 	 	 +4.0: 0.7349113924196856 -- True
+	 	 	 	 +5.0: 0.3516467315825671 -- True
+	 	 	 	 +6.0: 0.16675656872516997 -- True
+	 	 	 	 +7.0: 0.18709342558746145 -- True
+	 	 	 	 +8.0: 0.22777751748927622 -- True
+	 	 	 	 +9.0: 0.19235168806005365 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.386564066161062 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.24890576656791233 -- True
+	 	 	 (o) Linear Complexity Test: 0.43301061570967503 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.18266842239167402 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.646756769276107 -- True
+	 	 	 (o) Runs Test: 0.9681604057834212 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.16696141377182716 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9128748254084441 -- True
+	 	 	 (o) Cusum Test: 0.23903502743096844 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.4170021509951408 -- True
+	 	 	 	 -3: 0.9659415003933065 -- True
+	 	 	 	 -2: 0.9568402885338869 -- True
+	 	 	 	 -1: 0.6423919487968249 -- True
+	 	 	 	 +1: 0.3600735324237545 -- True
+	 	 	 	 +2: 0.7162402809971382 -- True
+	 	 	 	 +3: 0.19657894222920455 -- True
+	 	 	 	 +4: 0.2340887975744476 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5460117468651642 -- True
+	 	 	 	 -8.0: 0.488606118942002 -- True
+	 	 	 	 -7.0: 0.5305251046608666 -- True
+	 	 	 	 -6.0: 0.5609595849206144 -- True
+	 	 	 	 -5.0: 0.5356485271425965 -- True
+	 	 	 	 -4.0: 0.7605264598774785 -- True
+	 	 	 	 -3.0: 0.8630632551765446 -- True
+	 	 	 	 -2.0: 0.6560803112447089 -- True
+	 	 	 	 -1.0: 0.30926676077349124 -- True
+	 	 	 	 +1.0: 0.9860135001985194 -- True
+	 	 	 	 +2.0: 0.30190394700800605 -- True
+	 	 	 	 +3.0: 0.4284644371820172 -- True
+	 	 	 	 +4.0: 0.35360456689802766 -- True
+	 	 	 	 +5.0: 0.07097635574663515 -- True
+	 	 	 	 +6.0: 0.039266153418693446 -- True
+	 	 	 	 +7.0: 0.027974253179658945 -- True
+	 	 	 	 +8.0: 0.013122575199549968 -- True
+	 	 	 	 +9.0: 0.017068608655524595 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.035574400565094255 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.07391231043765106 -- True
+	 	 	 (o) Linear Complexity Test: 0.02916982945434892 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.9053532824310385 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.8107510530322143 -- True
+	 	 	 (o) Runs Test: 0.03162810402897691 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.6644263974013911 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9619911430133483 -- True
+	 	 	 (o) Cusum Test: 0.5645544089407855 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.5134352865623085 -- True
+	 	 	 	 -3: 0.3517237183819672 -- True
+	 	 	 	 -2: 0.5839647983062795 -- True
+	 	 	 	 -1: 0.29274933709588463 -- True
+	 	 	 	 +1: 0.5094920116781299 -- True
+	 	 	 	 +2: 0.6825360532498009 -- True
+	 	 	 	 +3: 0.4984240326276175 -- True
+	 	 	 	 +4: 0.8351018388493426 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.029107296802943577 -- True
+	 	 	 	 -8.0: 0.02259612677804948 -- True
+	 	 	 	 -7.0: 0.015251136801288746 -- True
+	 	 	 	 -6.0: 0.013151735348880318 -- True
+	 	 	 	 -5.0: 0.014223608605852018 -- True
+	 	 	 	 -4.0: 0.03422105820976279 -- True
+	 	 	 	 -3.0: 0.1337328321539824 -- True
+	 	 	 	 -2.0: 0.3310833061048164 -- True
+	 	 	 	 -1.0: 0.28179432336081256 -- True
+	 	 	 	 +1.0: 0.490235595274623 -- True
+	 	 	 	 +2.0: 0.6555006629949814 -- True
+	 	 	 	 +3.0: 0.8628189790106884 -- True
+	 	 	 	 +4.0: 0.8551594215168343 -- True
+	 	 	 	 +5.0: 0.6654807026961194 -- True
+	 	 	 	 +6.0: 0.5886042659162083 -- True
+	 	 	 	 +7.0: 0.6598555541310778 -- True
+	 	 	 	 +8.0: 0.303174077989949 -- True
+	 	 	 	 +9.0: 0.10243197547718988 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.8241417282389694 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.035887616775959426 -- True
+	 	 	 (o) Linear Complexity Test: 0.02448364598308995 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.3076569599715049 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.6831919574956089 -- True
+	 	 	 (o) Runs Test: 0.28899691384742976 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.7547575705747274 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.7746018423659611 -- True
+	 	 	 (o) Cusum Test: 0.3382145424466357 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.8442409971394151 -- True
+	 	 	 	 -3: 0.481071455677763 -- True
+	 	 	 	 -2: 0.291018869305213 -- True
+	 	 	 	 -1: 0.9814384210344995 -- True
+	 	 	 	 +1: 0.9695599988952867 -- True
+	 	 	 	 +2: 0.900379351304884 -- True
+	 	 	 	 +3: 0.24576637430124354 -- True
+	 	 	 	 +4: 0.22647436951060587 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.7959872153886274 -- True
+	 	 	 	 -8.0: 0.9123329418135505 -- True
+	 	 	 	 -7.0: 1.0 -- True
+	 	 	 	 -6.0: 0.7723740364676985 -- True
+	 	 	 	 -5.0: 0.6441280160472187 -- True
+	 	 	 	 -4.0: 0.5455995223759657 -- True
+	 	 	 	 -3.0: 0.47454914344940113 -- True
+	 	 	 	 -2.0: 0.6224606558934542 -- True
+	 	 	 	 -1.0: 0.8311704095417624 -- True
+	 	 	 	 +1.0: 0.8311704095417624 -- True
+	 	 	 	 +2.0: 0.6665990972678644 -- True
+	 	 	 	 +3.0: 0.2728679060822673 -- True
+	 	 	 	 +4.0: 0.2426279985476697 -- True
+	 	 	 	 +5.0: 0.2706629953488259 -- True
+	 	 	 	 +6.0: 0.3512872754993077 -- True
+	 	 	 	 +7.0: 0.47796780460396593 -- True
+	 	 	 	 +8.0: 0.7620689311980033 -- True
+	 	 	 	 +9.0: 0.8767217432348915 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.33436017602145807 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.6414480245572763 -- True
+	 	 	 (o) Linear Complexity Test: 0.06749528242177097 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.7213127218554098 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.3026475613388404 -- True
+	 	 	 (o) Runs Test: 0.5812625485975287 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.24514747286280186 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.9617406993748847 -- True
+	 	 	 (o) Cusum Test: 0.31718404220070734 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.23639849058065301 -- True
+	 	 	 	 -3: 0.1199430403791372 -- True
+	 	 	 	 -2: 0.14123468282664947 -- True
+	 	 	 	 -1: 0.2066444337423709 -- True
+	 	 	 	 +1: 0.6686023143065983 -- True
+	 	 	 	 +2: 0.1755607640277264 -- True
+	 	 	 	 +3: 0.06701857353326075 -- True
+	 	 	 	 +4: 0.5298807758328795 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.5355403070253981 -- True
+	 	 	 	 -8.0: 0.6464849019129607 -- True
+	 	 	 	 -7.0: 0.970057025247433 -- True
+	 	 	 	 -6.0: 0.8383270563759282 -- True
+	 	 	 	 -5.0: 0.5021794492027953 -- True
+	 	 	 	 -4.0: 0.16723046604749436 -- True
+	 	 	 	 -3.0: 0.0754108122228289 -- True
+	 	 	 	 -2.0: 0.1049352081440491 -- True
+	 	 	 	 -1.0: 0.19269271083730632 -- True
+	 	 	 	 +1.0: 0.9730085790524426 -- True
+	 	 	 	 +2.0: 0.6391882485626434 -- True
+	 	 	 	 +3.0: 0.7449325241875309 -- True
+	 	 	 	 +4.0: 0.8528892585182375 -- True
+	 	 	 	 +5.0: 0.48791974716650577 -- True
+	 	 	 	 +6.0: 0.24276896278882043 -- True
+	 	 	 	 +7.0: 0.3108248814746236 -- True
+	 	 	 	 +8.0: 0.4710712955826084 -- True
+	 	 	 	 +9.0: 0.5824442690216748 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.2591496066830665 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.8982491127758097 -- True
+	 	 	 (o) Linear Complexity Test: 0.39195849119846454 -- True
+--> END NIST BATTERY TEST ----------
+
+	 --> NIST Battery Test:
+	 	 --> FREQUENCY IN SEQUENCES
+	 	 	 (o) Monobit_Test: 0.8218593415540265 -- True
+	 	 	 (o) Frequency Test Within a Block (used 101010 bits for each block. Used 99 blocks): 0.4330313544507169 -- True
+	 	 	 (o) Runs Test: 0.8371314383053159 -- True
+	 	 	 (o) Test for the Longest Run of Ones in a Block: 0.24256761516763495 -- True
+	 	 SPECTRAL TESTS
+	 	 	 (o) Spectral Test: 0.0 -- False
+	 	 STATISTICAL MECHANICS TESTS
+	 	 	 (o) Approximate Entropy Test: 0.8905641693223945 -- True
+	 	 	 (o) Cusum Test: 0.9236171410521036 -- True
+	 	 	 (o) Random Excursions Test:
+	 	 	 	 -4: 0.40839806466799683 -- True
+	 	 	 	 -3: 0.3147255286377403 -- True
+	 	 	 	 -2: 0.8168931249002352 -- True
+	 	 	 	 -1: 0.3960194901088796 -- True
+	 	 	 	 +1: 0.6978077201581283 -- True
+	 	 	 	 +2: 0.5854472265756125 -- True
+	 	 	 	 +3: 0.7704848168781736 -- True
+	 	 	 	 +4: 0.16175275050249244 -- True
+	 	 	 (o) Random Excursions Variant Test:
+	 	 	 	 -9.0: 0.2590268092468698 -- True
+	 	 	 	 -8.0: 0.30718632543988456 -- True
+	 	 	 	 -7.0: 0.3281014771686922 -- True
+	 	 	 	 -6.0: 0.3730699653702 -- True
+	 	 	 	 -5.0: 0.28248611018353964 -- True
+	 	 	 	 -4.0: 0.20959760553141893 -- True
+	 	 	 	 -3.0: 0.4819265715605511 -- True
+	 	 	 	 -2.0: 0.8688957949992551 -- True
+	 	 	 	 -1.0: 0.8364165287838242 -- True
+	 	 	 	 +1.0: 0.2872550594371387 -- True
+	 	 	 	 +2.0: 0.21235011692796257 -- True
+	 	 	 	 +3.0: 0.2218082751347089 -- True
+	 	 	 	 +4.0: 0.246610628658832 -- True
+	 	 	 	 +5.0: 0.3823544910432073 -- True
+	 	 	 	 +6.0: 0.48145143896086284 -- True
+	 	 	 	 +7.0: 0.5201247722193615 -- True
+	 	 	 	 +8.0: 0.7428524444906482 -- True
+	 	 	 	 +9.0: 0.9754150105693138 -- True
+	 	 KOLMOGOROV COMPLEXITY TEST
+	 	 	 (o) Maurer's Test: 0.9447973872276154 -- True
+	 	 	 (o) Binary Matrix Rank Test: 0.7346729249238556 -- True
+	 	 	 (o) Linear Complexity Test: 0.12544384734273661 -- True
+--> END NIST BATTERY TEST ----------
+

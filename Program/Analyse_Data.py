@@ -31,9 +31,7 @@ from NIST.Universal import Universal as ut
 import NIST.BinaryMatrix as bm
 
 # For Kolmogorov Complexity estimations
-import gzip as gzip # Compresor de Huffmann https://docs.python.org/3/library/gzip.html
-import lzip as lzip # Compresor de Cadenas de Markov https://www.nongnu.org/lzip/
-import pyppmd as ppm # Compresor PPM https://pyppmd.readthedocs.io/en/latest/api_guide.html
+import brotli as brotli
 
 from uncertainties import ufloat
 
@@ -116,21 +114,32 @@ def Estimate_H(fileName):
 def Estimate_KComplexity(path):
     """
     Estimate_KComplexity:
-        Given a file containing bits, evaluate its compression using different algorithms
+        Given a path to a bitstring, evaluate its compression using different algorithms
         (Deflate// Huffman with gzip; Lempel-Ziv-Markov chain with lzip and PPM with pyppmd).
         We consider the Kolmogorov complexity as the length of the maximum achievable compression,
         and also return the deficiency function.
     """
-    y = WF.ReadFile(path,readAsBit = True)
-    #print("Estimating Kolmogorov_Complexity")
-    initLength = len(y)
-    deflate = len(gzip.compress(y, compresslevel = 9)) # Huffmann
-    lempel = len(lzip.compress_to_buffer(y,level = 9)) # Lempel-Ziv
-    PPM = len(ppm.compress(y, max_order = 64)) # PPM. maxorder = 64 es la compresion maxima
-    maxComp = min(deflate,lempel,PPM)
-    d = initLength - maxComp
-    probD = 2**(-d)
-    return maxComp,d,probD, probD > alpha # If prob is greater than alpha, H0 is accepted
+    bitstring = WF.ReadFile(path,readAsBytes=True)
+    """
+    Currently bitstring is formatted with ASCII (each "0" corresponds to 00110000 bit, etc)
+    This correspondence made by ASCII affects compression rate (as they are not optimally compression algorithms)
+    thus we transform the sequences to their bytes sequence equivalent
+    """
+    # Remove bits that are insufficient to pack into bytes
+    nBytes = len(bitstring)//8
+    #print("Bits eliminados:", len(bitstring)%8)
+    # Translate to bytes
+    bytestring = bytearray()
+    for b in range(0,nBytes):
+        bytestring.append(int(bitstring[8*b:8*(b+1)],2))
+        
+    bytestring = bytes(bytestring) # Ya no vamos a annadir mas bytes  
+    N = len(bytestring)*8 # Len on bits instead of bytes
+    # K is estimated with brotli compression algorithm. Check bestCompression_Tester.py to check other compressors
+    K = len(brotli.compress(bytestring, quality = 11))*8 # 11 is max compression. Also in bits now.
+    d = np.max([0,N-K])
+    pval = 2.0**(-d)
+    return K,d,pval, pval > alpha # If prob is greater than alpha, H0 is accepted
 #%%% Calculo de la tasa de generado
 def Compute_Creation_Ratio(filePath):
     """
@@ -225,6 +234,8 @@ def KS_Shen_Test(dirPr,dirMix, outDir = "KS_Results",nPoints = 5000):
     dirPr: Directory containing the sequences from the problem generator
     dirMix: Directory containing the p-values from the Mix Reference^Problem
     nPoints: Number of points used for the discretization of the G distributions
+    prPvalDir: Directory of the pvalues from the problem generator results (if able)
+    
     We run the complete NIST test suite
     We expect to have as many Mixed sequences as sequences of reference RNG. 
     So if the sample size is of m, pvalues
@@ -537,7 +548,7 @@ def Block_Frequency_Test(data):
     n_blocks = data_size//block_size
     return ft.block_frequency(data,block_size = block_size) # According to NIST, the number of blocks should not exceed 100. The reason is unknown
 
-def NIST_Battery(QC,filePath):
+def NIST_Battery(QC,filePath,outDir = ""):
     """
     Execute the complete battery of tests programmed by Steve
     on the data from fileName, and save the results in the associated txt file.
@@ -631,7 +642,10 @@ def NIST_Battery(QC,filePath):
 
     #%%%% END MESSAGE
     message.append("--> END NIST BATTERY TEST ----------")
-    WF.Write_Analysis_Files(QC,message,showEndMessage=False)
+    if outDir == "":
+        WF.Write_Analysis_Files(QC,message,showEndMessage=False)
+    else:
+        WF.Write_Analysis_Files(QC,message,directory=outDir,showEndMessage=False)
     return
 
 #%% Summarize RESULTS

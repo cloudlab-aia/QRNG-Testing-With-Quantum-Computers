@@ -1,0 +1,15 @@
+Tested at 2026-09-25 11:55:13.722223
+BitFiles from:
+	 badPRNG_examples/LCG_1103515244_12345_1.048575e+06
+Total Files tested: 100
+
+Compressors used:
+	 gzip: 0.0 out of 100 was best compressor (0.0) %
+	 lzip: 0.0 out of 100 was best compressor (0.0) %
+	 PPM: 0.0 out of 100 was best compressor (0.0) %
+	 Brotli: 100.0 out of 100 was best compressor (100.0) %
+	 Zpaq: 0.0 out of 100 was best compressor (0.0) %
+	 Lzma: 0.0 out of 100 was best compressor (0.0) %
+
+
+Best Compressor: Brotli with 100.0 % of success

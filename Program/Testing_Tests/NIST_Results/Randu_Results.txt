@@ -1,0 +1,1105 @@
+ANALYSIS OF randu-1.000000e+07-0-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995384114371472 bits
+		 --> H = 0.9999999261340126 bits
+
+ANALYSIS OF randu-1.000000e+07-0-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995384114371472 bits
+		 --> H = 0.9999999261340126 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-1-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9987223381144448 bits
+		 --> H = 0.9999994337450078 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-10-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9991894331349811 bits
+		 --> H = 0.9999997721667017 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-11-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9999509492024689 bits
+		 --> H = 0.9999999991661224 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-12-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9979643514321788 bits
+		 --> H = 0.9999985618172313 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-13-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9986675652723066 bits
+		 --> H = 0.9999993841307118 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-14-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9994143846852656 bits
+		 --> H = 0.9999998810959567 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-15-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9972211619011345 bits
+		 --> H = 0.9999973186168774 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-16-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9982208118529965 bits
+		 --> H = 0.9999989015634565 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-17-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9986560344126172 bits
+		 --> H = 0.9999993734201407 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-18-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9973478803272994 bits
+		 --> H = 0.9999975578044568 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-19-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.998670448001629 bits
+		 --> H = 0.9999993867939275 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-2-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9999971146128038 bits
+		 --> H = 0.9999999999971145 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-20-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9976532022488974 bits
+		 --> H = 0.9999980881512289 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-21-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9989760499802267 bits
+		 --> H = 0.9999996363686843 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-22-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995672563960288 bits
+		 --> H = 0.9999999350787221 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-23-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9997980368313675 bits
+		 --> H = 0.9999999858615886 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-24-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9999826877633827 bits
+		 --> H = 0.999999999896126 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-25-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9998297720284278 bits
+		 --> H = 0.9999999899559571 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-26-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9996278326869698 bits
+		 --> H = 0.9999999519842232 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-27-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.997529337453378 bits
+		 --> H = 0.9999978808271022 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-28-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9997922668705381 bits
+		 --> H = 0.9999999850421377 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-29-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.999613409529851 bits
+		 --> H = 0.9999999481899351 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-3-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9976186342594171 bits
+		 --> H = 0.9999980313667011 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-30-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9988895522860409 bits
+		 --> H = 0.9999995723130128 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-31-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995672563960288 bits
+		 --> H = 0.9999999350787221 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-32-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9977396258464677 bits
+		 --> H = 0.9999982264769471 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-33-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9984859649364459 bits
+		 --> H = 0.9999992047142126 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-34-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9994893763305833 bits
+		 --> H = 0.9999999096036123 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-35-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9999307522999688 bits
+		 --> H = 0.9999999983380152 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-36-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9990308345356592 bits
+		 --> H = 0.9999996742509768 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-37-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9987454009858984 bits
+		 --> H = 0.9999994540119929 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-38-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9985810860709855 bits
+		 --> H = 0.9999993015508226 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-39-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9997172594796518 bits
+		 --> H = 0.9999999722887134 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-4-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992355741832812 bits
+		 --> H = 0.999999797373472 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-40-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9987425181068043 bits
+		 --> H = 0.9999994514988175 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-41-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9967604614267174 bits
+		 --> H = 0.9999963546643498 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-42-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995787945410651 bits
+		 --> H = 0.9999999384950241 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-43-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9984167898684929 bits
+		 --> H = 0.9999991303403692 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-44-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9991259916030265 bits
+		 --> H = 0.9999997350952057 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-45-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9986473863283304 bits
+		 --> H = 0.999999365326619 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-46-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9987511667613688 bits
+		 --> H = 0.9999994590210314 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-47-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9993970794745213 bits
+		 --> H = 0.9999998739632721 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-48-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992182711172336 bits
+		 --> H = 0.9999997880940567 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-49-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.999359585563332 bits
+		 --> H = 0.9999998577964306 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-5-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9990683199038666 bits
+		 --> H = 0.9999996989701172 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-50-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9986963928247423 bits
+		 --> H = 0.9999994105031844 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-51-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9985119064420754 bits
+		 --> H = 0.999999231747442 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-52-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9981602946104096 bits
+		 --> H = 0.9999988255189608 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-53-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9973478803272994 bits
+		 --> H = 0.9999975578044568 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-54-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992701809379653 bits
+		 --> H = 0.9999998153090583 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-55-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9996855267574243 bits
+		 --> H = 0.9999999657186801 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-56-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9990452518697062 bits
+		 --> H = 0.9999996838737542 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-57-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992759488111207 bits
+		 --> H = 0.9999998182175318 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-58-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9985205537142776 bits
+		 --> H = 0.9999992406546443 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-59-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9990164173456878 bits
+		 --> H = 0.9999996644839299 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-6-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.998114187938917 bits
+		 --> H = 0.999998765872144 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-60-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9994086162586199 bits
+		 --> H = 0.9999998787414783 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-61-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9994374586224932 bits
+		 --> H = 0.9999998902830394 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-62-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9965560727080074 bits
+		 --> H = 0.9999958795869057 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-63-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.999333628811004 bits
+		 --> H = 0.9999998460326943 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-64-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9982208118529965 bits
+		 --> H = 0.9999989015634565 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-65-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9984600238972696 bits
+		 --> H = 0.9999991772135494 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-66-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9977626730135418 bits
+		 --> H = 0.9999982624866446 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-67-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992990205343442 bits
+		 --> H = 0.9999998296205944 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-68-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9998153468523157 bits
+		 --> H = 0.9999999881814421 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-69-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9998788187061085 bits
+		 --> H = 0.9999999949101719 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-7-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9991375262195143 bits
+		 --> H = 0.9999997420432258 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-70-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992499935635154 bits
+		 --> H = 0.9999998049476218 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-71-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9983389718815014 bits
+		 --> H = 0.9999990426966086 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-72-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9997836119725628 bits
+		 --> H = 0.9999999837696807 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-73-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9999509492024685 bits
+		 --> H = 0.9999999991661223 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-74-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9997518777908654 bits
+		 --> H = 0.9999999786596548 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-75-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9990885047363317 bits
+		 --> H = 0.9999997118764687 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-76-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9981545311958899 bits
+		 --> H = 0.9999988181438999 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-77-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9987136896326998 bits
+		 --> H = 0.9999994260496703 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-78-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9996018711079748 bits
+		 --> H = 0.9999999450506305 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-79-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9985176712844511 bits
+		 --> H = 0.9999992376913477 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-8-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9985580258260937 bits
+		 --> H = 0.9999992786523593 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-80-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9978116494660821 bits
+		 --> H = 0.9999983377809578 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-81-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9996537947331571 bits
+		 --> H = 0.9999999584503824 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-82-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992932525689475 bits
+		 --> H = 0.9999998268044534 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-83-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.999157712020279 bits
+		 --> H = 0.9999997539800862 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-84-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9986387382958837 bits
+		 --> H = 0.9999993571811606 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-85-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992903685948972 bits
+		 --> H = 0.9999998253877267 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-86-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995384114371475 bits
+		 --> H = 0.9999999261340127 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-87-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9997230291405012 bits
+		 --> H = 0.999999973408245 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-88-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9974141239345578 bits
+		 --> H = 0.9999976783879263 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-89-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9996566794337954 bits
+		 --> H = 0.9999999591399906 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-9-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9980018090999665 bits
+		 --> H = 0.999998614293855 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-90-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9989270339834613 bits
+		 --> H = 0.9999996007081421 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-91-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9999884584858388 bits
+		 --> H = 0.9999999999538338 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-92-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9974630885558206 bits
+		 --> H = 0.999997765552767 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-93-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9991750143600174 bits
+		 --> H = 0.99999976398662 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-94-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9995759099961549 bits
+		 --> H = 0.9999999376496047 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-95-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9994663015629944 bits
+		 --> H = 0.9999999012475221 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-96-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9992326903245283 bits
+		 --> H = 0.9999997958413298 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-97-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9987108068169723 bits
+		 --> H = 0.9999994234730164 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-98-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9990539023392924 bits
+		 --> H = 0.9999996895781711 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+
+ANALYSIS OF randu-1.000000e+07-99-.txt:
+	--> Entropy Estimations:
+		 --> H_min = 0.9989760499802267 bits
+		 --> H = 0.9999996363686843 bits
+
+	 --> Complexity Estimations:
+		 --> Minimum Complexity = 10000040 bits
+	 	 --> Deficiency Function = 0
+	 	 --> Probability of that deficiency with Randomness Hypothesis = 1.0
+	 	 --> Test Passed: True
+

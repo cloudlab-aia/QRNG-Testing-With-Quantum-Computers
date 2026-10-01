@@ -24,3 +24,4 @@ for i in range(nTests):
     GprIBM[i] = WF.Load_Distributions()
 #%% Plots 
 
+# We also do an histogram for checking uniformity in the pvalues distribution

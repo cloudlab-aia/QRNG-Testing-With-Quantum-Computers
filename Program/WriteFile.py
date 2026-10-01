@@ -11,6 +11,7 @@ from decimal import Decimal
 def Write_Bitfiles(directory,origin ,results, overwrite_shots = False, shots = 0):
     if not os.path.exists(directory):
         os.makedirs(directory)
+        
     N = np.size(results) # Results must be an array
     if type(results) == str:
         N = len(results)
@@ -84,21 +85,6 @@ def Combine_Bitfiles(inDir,outDir):
     print(f"Total Bits: {nBits}. Total shots: {shots}, qubits: {qbits}")
     return newName
 
-def Delete_Directory(directory):
-    """
-    Remove the temporary directory
-    """
-    fileList = Scan_Dir(path = directory)
-    for file in fileList:
-        os.remove(file)
-    os.rmdir(directory)
-    return
-
-def GetDirectory(path):
-    words = path.split('/')[:-1]
-    directory = '/'.join(words)
-    return directory
-
 def Write_Analysis_Files(QC, message, directory = "Data_Processing", showEndMessage = False):
     """
     Write the required message to the specified path.
@@ -157,8 +143,8 @@ def Scan_Dir(path= "Outputs"):
                 fileList = fileList + Scan_Dir(path = entry.path)
     return fileList
 
-def ReadFile(filePath, readAsBit = False):
-    if readAsBit:
+def ReadFile(filePath, readAsBytes = False):
+    if readAsBytes:
         readType = "rb"
     else:
         readType = "r"
@@ -196,3 +182,18 @@ def LoadTimes(filePath):
     bits = np.array(bits,dtype = int)
     return times,bits
 
+#%% Directory Operations
+def Delete_Directory(directory):
+    """
+    Remove the temporary directory
+    """
+    fileList = Scan_Dir(path = directory)
+    for file in fileList:
+        os.remove(file)
+    os.rmdir(directory)
+    return
+
+def GetDirectory(path):
+    words = path.split('/')[:-1]
+    directory = '/'.join(words)
+    return directory
