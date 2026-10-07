@@ -19,16 +19,18 @@ import os as os
 import WriteFile as WF
 import tqdm as tqdm
 import matplotlib.pyplot as plt
-# Tests NIST (by stevenang: https://github.com/stevenang/randomness_testsuite)
-from NIST.ApproximateEntropy import ApproximateEntropy as aet
-from NIST.Complexity import ComplexityTest as ct
-from NIST.CumulativeSum import CumulativeSums as cst
-from NIST.FrequencyTest import FrequencyTest as ft
-from NIST.RandomExcursions import RandomExcursions as ret
-from NIST.RunTest import RunTest as rt
-from NIST.Spectral import SpectralTest as st
-from NIST.Universal import Universal as ut
-import NIST.BinaryMatrix as bm
+from numba import njit
+
+# NIST Tests (Original by stevenang: https://github.com/stevenang/randomness_testsuite)
+from NIST_Improved.ApproximateEntropy import ApproximateEntropy as aet
+from NIST_Improved.Complexity import ComplexityTest as ct
+from NIST_Improved.CumulativeSum import CumulativeSums as cst
+from NIST_Improved.FrequencyTest import FrequencyTest as ft
+from NIST_Improved.RandomExcursions import RandomExcursions as ret
+from NIST_Improved.RunTest import RunTest as rt
+from NIST_Improved.Spectral import SpectralTest as st
+from NIST_Improved.Universal import Universal as ut
+import NIST_Improved.BinaryMatrix as bm
 
 # For Kolmogorov Complexity estimations
 import brotli as brotli
@@ -38,7 +40,6 @@ from uncertainties import ufloat
 # For Second Order Test
 from scipy.special import kolmogorov as QKS
 #%% Global Variables
-readStep = 10**6 # N of bytes for each read order
 alpha = 0.01 # Tolerance of tests
 #%% Functions
 
@@ -74,7 +75,7 @@ def Compute_Prob(path, showCount = False):
     
     try:
         with open(path,"r") as f: # To avoid overflow
-            strArr = f.read(readStep)
+            strArr = f.read()
             currLen = len(strArr)
             while currLen != 0:
                 curr_oCount = strArr.count('1')
@@ -82,7 +83,7 @@ def Compute_Prob(path, showCount = False):
                 zCount += currLen-curr_oCount
                 
                 bitCount += currLen
-                currBit = f.read(readStep)
+                currBit = f.read()
                 currLen = len(currBit)
     except:
         print(f"ERROR: File was not found in path \n {path}")
@@ -97,7 +98,6 @@ def Compute_Prob(path, showCount = False):
 def Estimate_Hmin(fileName):
     """
     It is sufficient to consider the most probable outcome in the sequence.
-
     We use the definition
 
     Hmin = -log(Max(P_i))
@@ -494,34 +494,35 @@ def Construct_Sol_Message(testName,p,passMsg, nPassed = ""):
         return f"\t \t \t (o) {testName}: " + str(p) +" -- " +  str(passMsg) + " (" + str(nPassed) + ")" # The case of summaries
     return f"\t \t \t (o) {testName}: " + str(p) +" -- " +  str(passMsg)
 
-def Binary_Matrix_Test(binary_data): # Implemented by Lucas Hernández Bellón
+@njit() 
+def BMT_Rank_Counting(binArr,verbose=False):
+    nData = len(binArr)
     # As in NIST, we will use M = Q = 32 (32 rows, 32 columns)
     M = 32
-    Q = 32
-    nData = len(binary_data)
+    Q = 32    
     # Given the data length, find the number of matrices that will be generated
     N = nData//(M**2)
     # Check how many bits are discarded
     # nLeft = nData%(M**2)
-    # Build matrices row by row
-    #print(len(dataCrop))
+    # Build matrices by reshaping
     # Counter for each rank range
     rankM = 0
     rankM1 = 0
     rankLessM1 = 0
-    for i in range(N):
-        auxMatrix = np.zeros((M,Q),dtype = int)
-        for j in range(M): # Fill row by row
-            for k in range(Q):
-                auxMatrix[j,k] = binary_data[M*Q*i + M*j + k]
-
+    for i in range(N): # Cant use parallel here as we are summing up ranks
+        # Aux matrix is now computed as binary_data[M*Q*i:M*Q*(i+1)].reshape(M,Q). 
+        # We dont copy the array as the crops are disjoint to each other
         # Compute the ranks, classifying them as r = N, r = N-1 and r < N-1
-        matrix = bm.BinaryMatrix(auxMatrix,M,Q)
-        rank = matrix.compute_rank()
+        rank = bm.BinaryMatrix(binArr[M*Q*i:M*Q*(i+1)].reshape(M,Q),M,Q).compute_rank()
         if rank == M: rankM += 1
         elif rank == M-1: rankM1 += 1
         else: rankLessM1 += 1
+    return N,rankM,rankM1,rankLessM1
 
+def Binary_Matrix_Test(binary_data, verbose = False): # Implemented by Lucas Hernández Bellón
+    # As with Complexity Test Improved, we transform bit format to numpy int8 arrays
+    binArr = np.frombuffer(binary_data.encode('ascii'),np.uint8) - ord('0') # We extract the last bit of ascii codification of '0' and '1'
+    N,rankM,rankM1,rankLessM1 = BMT_Rank_Counting(binArr,verbose=verbose)
     # Compute the test p-value using X^2.
     """
     Note that the theoretical probability values are evaluated with:
@@ -537,7 +538,7 @@ def Binary_Matrix_Test(binary_data): # Implemented by Lucas Hernández Bellón
     # Boolean value to check whether the test was passed
     return pval, pval > alpha
 
-def Block_Frequency_Test(data):
+def Block_Frequency_Test(data, verbose = False):
     data_size = len(data) # To select the number of blocks
     """
     Block selection:
@@ -545,15 +546,14 @@ def Block_Frequency_Test(data):
         2. There must not be more than 100 blocks
     """
     block_size = max(data_size//99,21)
-    n_blocks = data_size//block_size
-    return ft.block_frequency(data,block_size = block_size) # According to NIST, the number of blocks should not exceed 100. The reason is unknown
+    return ft.block_frequency(data,block_size = block_size, verbose=verbose) # According to NIST, the number of blocks should not exceed 100. The reason is unknown
 
 def NIST_Battery(QC,filePath,outDir = ""):
     """
     Execute the complete battery of tests programmed by Steve
     on the data from fileName, and save the results in the associated txt file.
     """
-    message = ["\t --> NIST Battery Test:"]
+    message = [f"\t --> NIST Battery Test (decision rule with alpha = {alpha}):"]
     # Data is directly a string. It could store up to 10^9 bits. For larger amounts, bitarray should be used.
     data = WF.ReadFile(filePath)
 
@@ -561,7 +561,8 @@ def NIST_Battery(QC,filePath,outDir = ""):
     message.append("\t \t --> FREQUENCY IN SEQUENCES")
 
     # Monobit
-    p,passMsg = ft.monobit_test(data)
+    p = ft.monobit_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Monobit_Test", p, passMsg))
 
     # Within a block
@@ -574,54 +575,57 @@ def NIST_Battery(QC,filePath,outDir = ""):
     block_size = max(data_size//99,21)
     n_blocks = data_size//block_size # Only used for the txt message
 
-    p,passMsg = Block_Frequency_Test(data)
+    p = Block_Frequency_Test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message(f"Frequency Test Within a Block (used {block_size} bits for each block. Used {n_blocks} blocks)", p, passMsg))
 
     # runTest
-    p,passMsg = rt.run_test(data)
+    p = rt.run_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Runs Test",p,passMsg))
 
     # Longest One Block
-    p,passMsg = rt.longest_one_block_test(data)
+    p = rt.longest_one_block_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Test for the Longest Run of Ones in a Block",p,passMsg))
 
     # Discrete Fourier Transform (Spectral) Tests
     message.append("\t \t SPECTRAL TESTS")
-    p,passMsg = st.spectral_test(data)
+    p = st.spectral_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Spectral Test",p,passMsg))
 
     #%%%% STATISTICAL MECHANICS TESTS
     message.append("\t \t STATISTICAL MECHANICS TESTS")
 
     # Approximate Entropy Test
-    p,passMsg = aet.approximate_entropy_test(data)
+    p = aet.approximate_entropy_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Approximate Entropy Test",p,passMsg))
 
     # Cusum Test
-    p,passMsg = cst.cumulative_sums_test(data)
+    p = cst.cumulative_sums_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Cusum Test",p,passMsg))
 
     # Random Excursions Test
     result = ret.random_excursions_test(data) # [pos,xVal,xObs, pos_pValue,passed]
     message.append("\t \t \t (o) Random Excursions Test:")
     for i in range(len(result)):
-        message.append(f"\t \t \t \t {result[i][0]}: {result[i][3]} -- {result[i][4]}")
-
-    """
-    NOTE: FOR SOME REASON, IF THERE ARE NOT AROUND 10^7 BITS, THE VARIANT TEST DOES NOT REACH FROM -9 TO 9
-    """
+        message.append(f"\t \t \t \t {result[i][0]}: {result[i][3]} -- {result[i][3] >= alpha}")
 
     # Random Excursions Variant Test
     result = ret.variant_test(data)
     message.append("\t \t \t (o) Random Excursions Variant Test:")
     for i in range(len(result)):
-        message.append(f"\t \t \t \t {result[i][0]}: {result[i][3]} -- {result[i][4]}")
+        message.append(f"\t \t \t \t {result[i][0]}: {result[i][3]} -- {result[i][3] >= alpha}")
 
     #%%%% KOLMOGOROV COMPLEXITY TESTS
     message.append("\t \t KOLMOGOROV COMPLEXITY TEST")
 
     # Maurer Universal Statistical Test
-    p,passMsg = ut.statistical_test(data)
+    p = ut.statistical_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Maurer's Test",p,passMsg))
 
     # Binary Matrix Tests.
@@ -630,11 +634,13 @@ def NIST_Battery(QC,filePath,outDir = ""):
     and check the rank of each submatrix as the test criterion.
     I decided to implement it manually using numpy.
     """
-    p,passMsg = Binary_Matrix_Test(data)
+    p= Binary_Matrix_Test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Binary Matrix Rank Test",p,passMsg))
 
     # Linear Complexity Test
-    p,passMsg = ct.linear_complexity_test(data)
+    p = ct.linear_complexity_test(data)[0]
+    passMsg = p >= alpha
     message.append(Construct_Sol_Message("Linear Complexity Test",p,passMsg))
 
     # Non-Overlapping Tests (Check suspicious sequences) NOT INCLUDED BECAUSE WE DO NOT HAVE SUSPICIOUS SEQUENCES

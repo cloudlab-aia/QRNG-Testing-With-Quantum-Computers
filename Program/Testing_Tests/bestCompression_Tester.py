@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Coger algoritmos de:
+More compression algorithms can be checked at:
     https://www.mattmahoney.net/dc/text.html
-
-Nos falta un algoritmo de compresion basado en content mixing
-
-Estamos usando https://github.com/ElsevierSoftwareX/SOFTX-D-24-00288
-
 """
 import numpy as np
 import WriteFile as WF
@@ -15,10 +10,10 @@ from datetime import datetime
 import os as os
 import matplotlib.pyplot as plt
 
-import gzip as gzip # Compresor de Huffmann https://docs.python.org/3/library/gzip.html
-import lzip as lzip # Compresor de Cadenas de Markov https://www.nongnu.org/lzip/
-import pyppmd as ppm # Compresor PPM https://pyppmd.readthedocs.io/en/latest/api_guide.html
-import brotli as brotli # Otra mezcla de Huffmann y Lzip
+import gzip as gzip #  Huffmann https://docs.python.org/3/library/gzip.html
+import lzip as lzip # Markov Chains https://www.nongnu.org/lzip/
+import pyppmd as ppm # PPM https://pyppmd.readthedocs.io/en/latest/api_guide.html
+import brotli as brotli # Huffmann & Lzip
 import zpaq as zpaq # https://github.com/zen-ham/zpaq
 import lzma as lzma # Python Native
 
@@ -32,7 +27,7 @@ compressorsCount = np.zeros(nCompress) # We are using 6 different compressors
 #%% Functions
 def Check_Best_Compressor(string):
     """
-    Dado un string (idealmente bytes), calcula su complejidad de Kolmogorov asociada
+    Given a bytestring, computes its best Complexity from the compressors
     """
     # Unnecessary assignation, but it is left as it is for debugging purposes
     huffmann = gzip.compress(string, compresslevel = 9) # Pasamos de bytes a bits

@@ -1,0 +1,15 @@
+TIME RESULTS OF NIST's BATTERY for file Randu/randu-1.000000e+07-0-.txt:
+Monobit Test: 1.3418607711791992
+Frequency Test Within a Block: 0.7510714530944824
+Runs Test: 1.8836002349853516
+Test for the Longest Run of Ones in a Block: 2.598405122756958
+Spectral Test: 2.278291940689087
+Approximate Entropy Test: 12.912955045700073
+Cusum Test: 5.006812334060669
+Maurer's Test: 2.3639748096466064
+Binary Matrix Rank Test: 24.971845388412476
+Linear Complexity Test: 404.187703371048
+Random Excursions: 2.1633687019348145
+Random Excursions Variant: 3.8858180046081543
+Sorted by least to most expensive:
+Frequency Test Within a Block < Monobit Test < Runs Test < Random Excursions < Spectral Test < Maurer's Test < Test for the Longest Run of Ones in a Block < Random Excursions Variant < Cusum Test < Approximate Entropy Test < Binary Matrix Rank Test < Linear Complexity Test < 
