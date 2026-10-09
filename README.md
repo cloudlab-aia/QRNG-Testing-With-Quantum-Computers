@@ -1,4 +1,4 @@
-# Quantum Random Number Generation using Quantum Cloud Computing from AWS and IBMQ
+# Quantum Random Number Generation using Quantum Cloud Computing from AWS Braket and IBMQ
 
 This repository contains all code used to extract, refine and study bitstrings of QRNG computed by Quantum Computers of IBM and AWS Cloud. 
 Associated with the paper: 
