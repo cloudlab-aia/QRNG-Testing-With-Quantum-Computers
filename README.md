@@ -19,7 +19,7 @@ The repository is structured as follows:
   1. On *Program* there are the scripts, each focused in a specific task. We will talk about them later
   2. *Program\Data_Processing* contains the study logs of the sequences obtained.
   3. *Program\Outputs* would contain any sequence obtained by the scripts by default. It can be changed.
-  4. *Program\NIST* contains all the tests of the *NIST800-22-1a Test Suite*, ported to Python by stevenang et.al.( https://github.com/stevenang/randomness_testsuite; On MIT License), but with some changes to focus only in the test's methods.   
+  4. *Program\NIST* contains all the tests of the *NIST800-22-1a Test Suite*, ported to Python by stevenang et.al.( https://github.com/stevenang/randomness_testsuite; On MIT License), but with some improvements to focus only in the test's execution for our data format.   
 
 Results obtained by the research can be consulted in *Paper Results*
 ## Requirements
